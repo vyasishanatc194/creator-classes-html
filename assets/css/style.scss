@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+@import "./default-style";
+@import "./custom-icons";
+
+/* customs general css */
+
+.display_show {
+  display: block;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
+.main-middle-area.pt-custom-0 {
+  padding-top: 0;
+}
+
+.mlr-10 {
+  margin-right: -10px !important;
+  margin-left: -10px !important;
+}
+
+.plr-10 {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+.mlr-20 {
+  margin-right: -20px !important;
+  margin-left: -20px !important;
+}
+
+.plr-20 {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+.btn.btn-common {
+  background: #EF4443;
+  background-image: linear-gradient(121deg, #EF4443 2%, #EF6B18 100%);
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 0;
+  min-height: 50px;
+  padding: 6px 30px 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s;
+  position: relative;
+
+  .text {
+    z-index: 2;
+    position: relative;
+  }
+
+  &::before {
+    content: "";
+    opacity: 0.49;
+    background-image: linear-gradient(121deg, #EF4443 2%, #EF6B18 100%);
+    border-radius: 28px;
+    filter: blur(26px);
+    display: block;
+    height: 47px;
+    position: absolute;
+    top: 13px;
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px 0 rgba(19, 19, 19, 0.3);
+  }
+
+  &.min-width-280 {
+    min-width: 280px;
+  }
+}
+
+.btn-common-primary {
+  background: #04d1c5;
+  border: 1px solid #04d1c5;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #111315;
+  letter-spacing: 2.4px;
+  min-height: 50px;
+  padding: 6px 30px 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s;
+
+  &:hover,
+  &:focus {
+    color: #111315;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px 0 rgba(4, 209, 195, 0.3);
+  }
+}
+
+.btn.btn-common-black {
+  background: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #dbdbdb;
+  letter-spacing: 1.24px;
+  min-height: 42px;
+  padding: 6px 25px 5px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-2px);
+    background: #000;
+    border: 1px solid #000;
+    box-shadow: 0 5px 10px 0 rgba(19, 19, 19, 0.3);
+  }
+}
+
+.btn.btn-common-primary2 {
+  background: #ebebeb;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #040404;
+  letter-spacing: 2.7px;
+  min-height: 66px;
+  padding: 6px 35px 5px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s;
+  min-width: 66px;
+
+  &:hover,
+  &:focus {
+    color: #111315;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px 0 rgba(4, 209, 195, 0.3);
+  }
+}
+/* End of general css */
+
+.main-middle-area {
+  padding: 90px 0 0 0;
+  position: relative;
+}
+
+/* general card */
+
+@media (min-width: 1025px) {
+  .max-md-1920 {
+    margin: 0 auto;
+    max-width: 1920px;
+    position: relative;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1290px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  body.overflow-fixed {
+    overflow-y: hidden;
+  }
+
+  .position-fixed-custom {
+    overflow: hidden;
+  }
+
+  .position-fixed-remove {
+    .slideInDown {
+      animation: none;
+    }
+  }
+
+  .main-middle-area {
+    padding: 70px 0 0 0;
+  }
+
+  .btn.btn-common {
+    font-size: 16px;
+    min-height: 44px;
+    padding: 6px 20px 5px 20px;
+
+    &.min-width-280 {
+      min-width: 200px;
+    }
+
+    &::before {
+      height: 37px;
+      top: 8px;
+    }
+  }
+}
+
+// custom animation
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+} // custom animation
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  body.overflow-fixed {
+    overflow-y: hidden;
+  }
+
+  .position-fixed-custom {
+    overflow: hidden;
+  }
+
+  .position-fixed-remove {
+    .slideInDown {
+      animation: none;
+    }
+  }
+
+  .main-middle-area {
+    padding: 70px 0 0 0;
+  }
+
+  .btn.btn-common {
+    font-size: 16px;
+    min-height: 44px;
+    padding: 6px 20px 5px 20px;
+
+    &.min-width-280 {
+      min-width: 200px;
+    }
+
+    &::before {
+      height: 37px;
+      top: 8px;
+    }
+  }
+}
