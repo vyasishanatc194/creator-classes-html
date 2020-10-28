@@ -1,32 +1,74 @@
 $(document).ready(function () {
-  $("#owl-world-icons").owlCarousel({
+  $("#our-classes-owl").owlCarousel({
     loop: true,
-    nav: true,
-    navText: [
-      '<span class="span-round-circle left-round-circle"><i class="bg-custom-icon left-arrow-round"></span>',
-      '<span class="span-round-circle right-round-circle"><i class="bg-custom-icon right-arrow-round"></span>',
-    ],
+    nav: false,
     dots: false,
     stagePadding: 0,
-    margin: 40,
-    autoplay: true,
+    margin: 15,
+    autoplay: false,
     smartSpeed: 2000,
     responsive: {
       0: {
         items: 1,
-        nav: false,
-        margin: 20,
-        mouseDrag: true,
+        autoplay: true,
       },
       600: {
-        items: 2,
+        items: 2.3,
       },
       1200: {
-        items: 4,
+        items: 3.1,
       },
       1600: {
-        items: 4,
+        items: 3.15,
       }
+    }
+  });
+
+  $("#meet-the-creators-owl").owlCarousel({
+    loop: true,
+    nav: false,
+    dots: false,
+    stagePadding: 0,
+    margin: 15,
+    autoplay: false,
+    autoWidth:true,
+    smartSpeed: 2000,
+    responsive: {
+      0: {
+        items: 1,
+        autoplay: true,
+      },
+      600: {
+        items: 2.3,
+      },
+      1200: {
+        items: 3.1,
+      },
+      1600: {
+        items: 3.15,
+      }
+    }
+  });
+
+  $('#testimonials-owl').owlCarousel({
+    loop:false,
+    nav:true,
+    navText: ['<span class="span-roundcircle left-roundcircle"><i class="fe fe-chevron-left left-arrow"></span>','<span class="span-roundcircle right-roundcircle"><i class="fe fe-chevron-right right-arrow"></span>'],
+    dots: false,
+    stagePadding: 0,
+    margin: 15,
+    smartSpeed:2000,
+    responsive:{
+        0:{
+            items:1 
+        },
+        600:{
+            items:1
+        },
+        1180:{
+          items:1
+        } 
+
     }
   });
 });

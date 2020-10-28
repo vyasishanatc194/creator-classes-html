@@ -86,6 +86,11 @@ video {
   vertical-align: baseline;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
 *,
 *::before,
 *::after {
