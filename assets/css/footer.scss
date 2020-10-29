@@ -1,4 +1,6 @@
-footer { position: relative; }
+footer {
+  position: relative;
+}
 
 .footer-div {
   padding: 100px 0 75px 0;
@@ -8,6 +10,7 @@ footer { position: relative; }
 
   .footer-logo-row {
     margin: 0 0 40px 0;
+
     .footer-logo-box-root {
       .footer-logo-thumb {
         .logo-link {
@@ -24,8 +27,8 @@ footer { position: relative; }
 
   .footer-content-row {
     padding: 40px 0 10px 0;
-    border-top: 1px solid rgba(255,255,255,0.31);
-    border-bottom: 1px solid rgba(255,255,255,0.31);
+    border-top: 1px solid rgba(255, 255, 255, 0.31);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.31);
 
     .about-desc-footer-div {
       padding: 0 10px 0 0;
@@ -46,7 +49,7 @@ footer { position: relative; }
         opacity: 0.71;
         font-weight: 400;
         font-size: 13px;
-        color: rgba(255,255,255,0.85);
+        color: rgba(255, 255, 255, 0.85);
         letter-spacing: 0;
         line-height: 1.4;
       }
@@ -118,7 +121,7 @@ footer { position: relative; }
           }
         }
       }
-    } 
+    }
   }
 
   .footer-copyright-div {
@@ -152,7 +155,7 @@ footer { position: relative; }
 
     .footer-content-row {
       padding: 40px 0 40px 0;
-      
+
       .footer-nav-list-inner {
         .footer-list-ul {
           margin: 0 0 25px 0;
