@@ -8,6 +8,14 @@ footer {
   position: relative;
   background-color: #0f0f0f;
 
+  &.footer-bg2 {
+    background-color: #212121;
+  }
+
+  &.footer-bg3 {
+    background-color: #191919;
+  }
+
   .footer-logo-row {
     margin: 0 0 40px 0;
 

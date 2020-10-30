@@ -9,6 +9,14 @@ footer {
   background-color: #0f0f0f;
 }
 
+.footer-div.footer-bg2 {
+  background-color: #212121;
+}
+
+.footer-div.footer-bg3 {
+  background-color: #191919;
+}
+
 .footer-div .footer-logo-row {
   margin: 0 0 40px 0;
 }
