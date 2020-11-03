@@ -54,7 +54,7 @@
           padding: 0;
           margin: 0 0 0 5px;
           line-height: inherit;
-          color: #FF5F00;
+          color: #ff5f00;
           text-decoration: underline;
 
           &:hover {
@@ -84,13 +84,13 @@
         transition: all 0.8s;
 
         &:hover {
-          color: #FF5F00;
+          color: #ff5f00;
         }
 
         &.disable {
           color: #acacac;
         }
-      }    
+      }
     }
   }
 
@@ -129,7 +129,7 @@
           }
         }
       }
-      
+
       .btn.btn-blck-sb {
         border-radius: 50px;
         font-weight: 700;
@@ -311,5 +311,5 @@
         }
       }
     }
-  } 
+  }
 }

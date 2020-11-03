@@ -67,7 +67,7 @@
   padding: 0;
   margin: 0 0 0 5px;
   line-height: inherit;
-  color: #FF5F00;
+  color: #ff5f00;
   text-decoration: underline;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .form-ls-root .next-box-row .text-center-side .btn-next-link:hover {
-  color: #FF5F00;
+  color: #ff5f00;
 }
 
 .form-ls-root .next-box-row .text-center-side .btn-next-link.disable {
