@@ -121,7 +121,7 @@
 @media (max-width: 767px) {
   .booking-common-div {
     .booking-common-inner {
-      min-height: calc(100vh - 230px);
+      min-height: calc(100vh - 220px);
     }
 
     .button-oto-session-div {
@@ -169,10 +169,12 @@
       .booking-common-bottom-row {
         .btn.btn-common-black {
           font-size: 14px;
+          min-height: 40px;
         }
 
         .btn.btn-common-primary {
           font-size: 14px;
+          min-height: 40px;
         }
       }
     }

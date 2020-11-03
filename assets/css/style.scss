@@ -560,6 +560,50 @@
       }
     }
   }
+
+  .common-form-div {
+    .form-group {
+      label {
+        font-size: 14px;
+      }
+
+      label.oto-label {
+        span.text {
+          width: calc(100% - 95px);
+        }
+
+        span.oto-span-text {
+          font-size: 12px;
+
+          span.bg-custom-icon {
+            margin: 0 0 0 0;
+            width: 20px;
+            height: 19px;
+          }
+        }
+      }
+
+      textarea.form-control {
+        padding: 10px 15px;
+        font-size: 16px;
+      }
+
+      .catagory-control-row {
+        .category-inner {
+          .category-list-ul {
+            li {
+              .filter-link {
+                font-size: 13px;
+                line-height: 21px;
+                min-height: 34px;
+                padding: 6px 20px 5px 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }  
 }
 
 // custom animation

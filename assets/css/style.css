@@ -859,6 +859,30 @@ body {
   .account-card-box .account-card-box-row .card-number .form-control {
     padding-left: 0;
   }
+  .common-form-div .form-group label {
+    font-size: 14px;
+  }
+  .common-form-div .form-group label.oto-label span.text {
+    width: calc(100% - 95px);
+  }
+  .common-form-div .form-group label.oto-label span.oto-span-text {
+    font-size: 12px;
+  }
+  .common-form-div .form-group label.oto-label span.oto-span-text span.bg-custom-icon {
+    margin: 0 0 0 0;
+    width: 20px;
+    height: 19px;
+  }
+  .common-form-div .form-group textarea.form-control {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .common-form-div .form-group .catagory-control-row .category-inner .category-list-ul li .filter-link {
+    font-size: 13px;
+    line-height: 21px;
+    min-height: 34px;
+    padding: 6px 20px 5px 20px;
+  }
 }
 
 .animated {
