@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>Log in | Creator classes</title>
+<title>Sign up | Creator classes</title>
 <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
 <meta name="theme-color" content="#191919">
 <meta name="msapplication-navbutton-color" content="#191919">
@@ -25,11 +25,11 @@
 
 <body>
 
-<div id="wrapper" class="wrapper login-wrapper">
+<div id="wrapper" class="wrapper sign-up-wrapper">
 
 	<div class="main-middle-area pt-custom-0">
     
-    <section class="auth-section" id="login-section">
+    <section class="auth-section" id="sign-up-section">
       <div class="auth-div">
 
         <div class="container-fluid">
@@ -60,7 +60,7 @@
                       </div>
 
                       <div class="heading-div">
-                        <h2>Log in to Creator Classes</h2>
+                        <h2>Sign Up to Creator Classes</h2>
                       </div>
 
                       <div class="form-auth-root">
@@ -73,7 +73,7 @@
                                 <div class="social-button-div">
                                   <div class="sb-div-row">
                                     <div class="sb-div sb-full-div">
-                                      <a href="#" class="btn btn-blck-sb btn-blck-sb-full"> <i class="fab fa-google icon-i"></i> <span class="text-div"> Log in with google </span> </a>
+                                      <a href="#" class="btn btn-blck-sb btn-blck-sb-full"> <i class="fab fa-google icon-i"></i> <span class="text-div"> Sign up with google </span> </a>
                                     </div>
                                     <div class="sb-div">
                                       <a href="#" class="btn btn-blck-sb"> <i class="fab fa-twitter icon-i"></i> </a>
@@ -103,14 +103,40 @@
   
                               <div class="col-xl-12 col-lg-12 col-md-12 plr-8">
                                 <div class="form-group-custom form-group-icon">
+                                  <span class="custom-icon"><span class="material-icons user-rounded-icon">mail</span></span>
+                                  <div class="form-group-control">
+                                    <input type="email" class="form-control" placeholder="e-mail">
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="col-xl-12 col-lg-12 col-md-12 plr-8">
+                                <div class="form-group-custom form-group-icon">
                                   <span class="custom-icon"><span
                                       class="material-icons pass-key-icon">vpn_key</span></span>
                                   <div class="form-group-control">
-                                    <input type="password" id="password01" class="form-control"
+                                    <input type="password" id="password02" class="form-control"
                                       placeholder="Password">
                                   </div>
                                   <span class="icon-group">
-                                    <button type="button" id="show_password01" name="show_password"
+                                    <button type="button" id="show_password02" name="show_password"
+                                      class="pass-hide password-view-click">
+                                      <span class="pass-custom-icon material-icons"> visibility </span>
+                                    </button>
+                                  </span>
+                                </div>
+                              </div>
+  
+                              <div class="col-xl-12 col-lg-12 col-md-12 plr-8">
+                                <div class="form-group-custom form-group-icon">
+                                  <span class="custom-icon"><span
+                                      class="material-icons pass-key-icon">vpn_key</span></span>
+                                  <div class="form-group-control">
+                                    <input type="password" id="password03" class="form-control"
+                                      placeholder="Confirm Password">
+                                  </div>
+                                  <span class="icon-group">
+                                    <button type="button" id="show_password03" name="show_password"
                                       class="pass-hide password-view-click">
                                       <span class="pass-custom-icon material-icons"> visibility </span>
                                     </button>
@@ -127,7 +153,7 @@
 
                               <div class="col-xl-12 col-lg-12 col-md-12 plr-8">
                                 <div class="general-form-btn">
-                                  <button type="button" class="btn btn-common-primary btn-login">Log in</button>
+                                  <button type="button" class="btn btn-common-primary btn-signup">Sign Up</button>
                                 </div>
                               </div>
   
@@ -144,7 +170,7 @@
                         <div class="col-xl-12 col-lg-12 col-md-12 plr-8">
                           <div class="bottom-row">
                             <div class="link-box text-center-reg-side">
-                              <p>Don’t have an account? <a href="signup.html" class="btn btn-link btn-red-link">Signup</a></p>
+                              <p>Already have an account? <a href="login.html" class="btn btn-link btn-red-link">Login</a></p>
                             </div>
                           </div>
                         </div>
@@ -175,9 +201,24 @@
 <script>
     
   $(document).ready(function () {
-    
-    $('#show_password01').on('click', function () {
-      var passwordField2 = $('#password01');
+    $('#show_password02').on('click', function () {
+      var passwordField2 = $('#password02');
+      var passwordFieldType2 = passwordField2.attr('type');
+
+      if (passwordField2.val() != '') {
+        if (passwordFieldType2 == 'password') {
+          passwordField2.attr('type', 'html');
+          $(this).html('<span class="pass-custom-icon material-icons password-hide"> visibility_off </span>');
+        }
+        else {
+          passwordField2.attr('type', 'password');
+          $(this).html('<span class="pass-custom-icon material-icons password-view"> visibility </span>');
+        }
+      }
+    });
+
+    $('#show_password03').on('click', function () {
+      var passwordField2 = $('#password03');
       var passwordFieldType2 = passwordField2.attr('type');
 
       if (passwordField2.val() != '') {

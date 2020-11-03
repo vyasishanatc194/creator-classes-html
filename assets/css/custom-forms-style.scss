@@ -245,11 +245,12 @@
     display: block;
     min-height: 1.5rem;
     padding-left: 0;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
-    color: #8e98a0;
+    color: rgba(255, 255, 255, 0.4);
     letter-spacing: 0;
     line-height: 24px;
+    margin: 0 0 16px 0;
 
     .custom-control-label {
       margin-bottom: 0;
@@ -257,8 +258,8 @@
       padding: 0 0 0 24px;
 
       &::before {
-        background-color: #fff;
-        border: 1px solid #8e98a0;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.4);
       }
     }
 
@@ -267,12 +268,12 @@
     }
 
     .custom-control-input:focus ~ .custom-control-label::before {
-      box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(142, 152, 160, 0.25);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4), 0 0 0 0.2rem rgba(142, 152, 160, 0);
     }
-  }
 
-  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: #8e98a0;
+    .custom-control-input:checked ~ .custom-control-label::before {
+      background-color: #ff5f00;
+    }
   }
 
   /* End of checkbox */
