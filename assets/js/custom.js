@@ -1,5 +1,3 @@
-/* Set navigation */
-
 function openNav() {
   $("#mySidenav").addClass("width80");
   $("#nav-res").addClass("opacityon");
@@ -14,20 +12,21 @@ function closeNav() {
   $(".cd-shadow-layer").removeClass("displayblock");
   $(".wrapper").removeClass("position-fixed-custom");
   $("body").removeClass("overflow-fixed");
-} 
+}
 
-$(document).ready(function(){ 
-
-  $(".cd-shadow-layer").click(function(){
-    closeNav(); 
+$(document).ready(function () {
+  $(".cd-shadow-layer").click(function () {
+    closeNav();
   });
 
-  $(window).scroll(function(){
+  $(window).scroll(function () {
     var sticky = $(".header-div"),
-        scroll = $(window).scrollTop();
+      scroll = $(window).scrollTop();
 
-      if (scroll >= 190) sticky.addClass("header-bgcolor slideInDown animated");
-      else sticky.removeClass("header-bgcolor slideInDown animated");
-
+    if (scroll >= 190) {
+      sticky.addClass("header-bgcolor slideInDown animated");
+    } else {
+      sticky.removeClass("header-bgcolor slideInDown animated");
+    }
   });
 });
