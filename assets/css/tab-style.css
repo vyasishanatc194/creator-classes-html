@@ -70,4 +70,18 @@
   position: relative;
   display: block;
 }
+
+@media (max-width: 767px) {
+  .tabs-root-custom .tabs-header .nav-tabs .nav-link {
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tabs-root-custom .tabs-header .nav-tabs .nav-link {
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=tab-style.css.map */
