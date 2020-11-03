@@ -50,7 +50,7 @@ $(document).ready(function () {
     }
   });
 
-  $('#testimonials-owl').owlCarousel({
+  $("#testimonials-owl").owlCarousel({
     loop:false,
     nav:true,
     navText: ['<span class="span-roundcircle left-roundcircle"><i class="fe fe-chevron-left left-arrow"></span>','<span class="span-roundcircle right-roundcircle"><i class="fe fe-chevron-right right-arrow"></span>'],
