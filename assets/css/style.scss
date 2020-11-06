@@ -146,6 +146,37 @@
   }
 }
 
+.btn.btn-common-white {
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #191919;
+  letter-spacing: 0;
+  min-height: 50px;
+  padding: 6px 30px 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s;
+
+  &:hover,
+  &:focus {
+    background: #000;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    box-shadow: 0 5px 10px 0 rgba(19, 19, 19, 0.3);
+  }
+
+  &.disable {
+    background: #848484;
+    color: #fff;
+    border-color: #848484;
+  }
+}
+
 .btn.btn-common-primary2 {
   background: #ebebeb;
   border: 1px solid #ebebeb;
@@ -296,6 +327,10 @@
         }
       }
     }
+
+    &.mb-15 {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -306,7 +341,6 @@
 }
 
 /* general card */
-
 .filter-category-root-div {
   padding: 0;
   margin: 0 0 20px 0;

@@ -157,6 +157,10 @@
   display: block;
 }
 
+.modal.right .common-modal-body .common-header-div .title-heading-div.nt-heading-div {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 767px) {
   .modal.right .modal-header {
     padding: 20px 20px 10px 20px;

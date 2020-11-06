@@ -279,6 +279,149 @@
   /* End of checkbox */
 }
 
+.form-general-root {
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+
+    .form-control {
+      font-size: 14px;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 30px;
+      min-height: 60px;
+      font-size: 18px;
+      padding: 8px 25px 8px 35px;
+      line-height: 24px;
+      margin: 0 0 5px 0;
+      font-weight: 400;
+      background: transparent;
+
+      &::-webkit-input-placeholder {
+        color: #6c6c6c;
+      }
+
+      &::-moz-placeholder {
+        color: #6c6c6c;
+      }
+
+      &:-ms-input-placeholder {
+        color: #6c6c6c;
+      }
+
+      &:-moz-placeholder {
+        color: #6c6c6c;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: rgba(255, 255, 255, 0.74);
+        box-shadow: none;
+        outline: none;
+      }
+    }
+
+    input[type="password"].form-control {
+      padding-right: 50px;
+    }
+
+    .custom-icon {
+      position: absolute;
+      top: 1px;
+      left: 9px;
+      height: 38px;
+      width: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #d5d5d5;
+
+      .user-rounded-icon {
+        font-size: 21px;
+        padding: 2px 0 0 0;
+      }
+
+      .pass-key-icon {
+        font-size: 20px;
+        transform: rotate(-45deg);
+      }
+    }
+
+    .icon-group {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+    }
+
+    .pass-hide {
+      height: 40px;
+      width: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: none;
+      color: rgba(111, 111, 111, 0.49);
+      cursor: pointer;
+      outline: none;
+    }
+
+    &.credit-card-form-group {
+      .icon-div {
+        position: absolute;
+        top: 19px;
+        right: 30px;
+      }
+
+      .form-control {
+        padding-right: 80px;
+      }
+    }
+  }
+
+  /* checkbox */
+  .custom-checkbox {
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0;
+    line-height: 24px;
+    margin: 0 0 16px 0;
+
+    .custom-control-label {
+      margin-bottom: 0;
+      cursor: pointer;
+      padding: 0 0 0 26px;
+
+      &::before {
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 1px;
+      }
+    }
+
+    .custom-control-input:checked ~ .custom-control-label::after {
+      background-size: 10px;
+    }
+
+    .custom-control-input:focus ~ .custom-control-label::before {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4), 0 0 0 0.2rem rgba(142, 152, 160, 0);
+    }
+
+    .custom-control-input:checked ~ .custom-control-label::before {
+      background-color: #ff5f00;
+      border: 1px solid #ff5f00;
+    }
+  }
+
+  /* End of checkbox */
+}
+
 @media (max-width: 767px) {
   .form-ls-root {
     .social-button-div {
@@ -291,6 +434,33 @@
 
         .btn.btn-blck-sb {
           font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .form-general-root {
+    .form-group {
+      .form-control {
+        font-size: 14px;
+        min-height: 50px;
+        font-size: 14px;
+        padding: 8px 20px 8px 20px;
+      }
+
+      &.credit-card-form-group {
+        .icon-div {
+          top: 16px;
+          right: 18px;
+
+          .credit-card-icon {
+            width: 24px;
+            height: 20px;
+          }
+        }
+
+        .form-control {
+          padding-right: 50px;
         }
       }
     }
@@ -309,6 +479,33 @@
 
         .btn.btn-blck-sb {
           font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .form-general-root {
+    .form-group {
+      .form-control {
+        font-size: 14px;
+        min-height: 50px;
+        font-size: 14px;
+        padding: 8px 20px 8px 20px;
+      }
+
+      &.credit-card-form-group {
+        .icon-div {
+          top: 16px;
+          right: 18px;
+
+          .credit-card-icon {
+            width: 24px;
+            height: 20px;
+          }
+        }
+
+        .form-control {
+          padding-right: 50px;
         }
       }
     }
