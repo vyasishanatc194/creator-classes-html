@@ -986,10 +986,10 @@ header .header-div2 .nav-div .row-nav-div .right-side .right-nf-icon-div .user-d
   header .header-div2 .nav-div .row-nav-div .right-side .user-drop-down .dropdown .dropdown-menu {
     max-width: 190px;
     min-width: auto;
-    -webkit-transform: none !important;
-            transform: none !important;
+    -webkit-transform: translate3d(0, -65px, 0) !important;
+            transform: translate3d(0, -65px, 0) !important;
     top: auto !important;
-    bottom: 70px;
+    bottom: 0;
     right: 10px;
   }
   header .header-div2 .nav-div .row-nav-div .right-side .user-drop-down .dropdown .dropdown-menu::before {
@@ -1226,10 +1226,10 @@ header .header-div2 .nav-div .row-nav-div .right-side .right-nf-icon-div .user-d
   header .header-div2 .nav-div .row-nav-div .right-side .user-drop-down .dropdown .dropdown-menu {
     max-width: 190px;
     min-width: auto;
-    -webkit-transform: none !important;
-            transform: none !important;
+    -webkit-transform: translate3d(0, -65px, 0) !important;
+            transform: translate3d(0, -65px, 0) !important;
     top: auto !important;
-    bottom: 70px;
+    bottom: 0;
     right: 10px;
   }
   header .header-div2 .nav-div .row-nav-div .right-side .user-drop-down .dropdown .dropdown-menu::before {

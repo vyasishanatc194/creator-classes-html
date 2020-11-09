@@ -822,9 +822,9 @@ header {
                 .dropdown-menu {
                   max-width: 190px;
                   min-width: auto;
-                  transform: none !important;
+                  transform: translate3d(0, -65px, 0) !important;
                   top: auto !important;
-                  bottom: 70px;
+                  bottom: 0;
                   right: 10px;
 
                   &::before {
@@ -1082,9 +1082,9 @@ header {
                 .dropdown-menu {
                   max-width: 190px;
                   min-width: auto;
-                  transform: none !important;
+                  transform: translate3d(0, -65px, 0) !important;
                   top: auto !important;
-                  bottom: 70px;
+                  bottom: 0;
                   right: 10px;
 
                   &::before {
