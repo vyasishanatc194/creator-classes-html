@@ -41,6 +41,7 @@
   padding: 0 0;
   margin: 0 0 60px 0;
   position: relative;
+  min-height: calc(100vh - 650px);
 }
 
 .general-payment-section .general-payment-div .general-payment-root .general-bottom {
@@ -111,6 +112,9 @@
   }
   .general-payment-section .general-payment-div .heading-div .heading-inner-div h1 {
     font-size: 42px;
+  }
+  .general-payment-section .general-payment-div .general-payment-root .general-top {
+    min-height: auto;
   }
   .general-payment-section .general-payment-div .general-payment-root .general-bottom .general-btn-div .btn.btn-common-black {
     min-width: 120px;

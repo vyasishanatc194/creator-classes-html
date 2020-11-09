@@ -251,7 +251,7 @@
       box-shadow: none;
     }
 
-    .catagory-control-row {
+    .category-control-row {
       .category-inner {
         padding: 0;
         margin: 0;
@@ -290,38 +290,55 @@
               justify-content: center;
               transition: all 0.8s;
 
+              .calendar-time-icon {
+                width: 17px;
+                height: 17px;
+                margin: 0 10px 0 0;
+              }
+
               .cancel-icon-span {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #fff;
-                color: #191919;
+                background: rgba(255, 255, 255, 0.14);
+                color: #fff;
                 border-radius: 100px;
                 font-size: 14px;
                 height: 20px;
                 width: 20px;
                 position: absolute;
-                top: -5px;
-                right: -5px;
+                top: 6px;
+                right: 5px;
+                transform: scale(0);
+                transition: all 0.8s;
               }
             }
 
             &.active {
               .filter-link {
-                color: #fff;
-                background: #ef4443;
-                background-image: linear-gradient(121deg, #ef4443 2%, #ef6b18 100%);
-                border: 1px solid #ef4443;
+                color: rgba(255, 255, 255, 0.6);
+                background: #191919;
+                border: 1px solid #191919;
+
+                .cancel-icon-span {
+                  transform: scale(1);
+                }
               }
             }
 
             &:hover {
               .filter-link {
-                color: #fff;
-                background: #ef4443;
-                background-image: linear-gradient(121deg, #ef4443 2%, #ef6b18 100%);
-                border: 1px solid #ef4443;
+                color: rgba(255, 255, 255, 0.6);
+                background: #191919;
               }
+            }
+          }
+        }
+
+        .slot-category-list-ul {
+          li {
+            .filter-link {
+              color: rgba(255, 255, 255, 0.6);
             }
           }
         }
@@ -622,7 +639,7 @@
         font-size: 16px;
       }
 
-      .catagory-control-row {
+      .category-control-row {
         .category-inner {
           .category-list-ul {
             li {
@@ -630,7 +647,15 @@
                 font-size: 13px;
                 line-height: 21px;
                 min-height: 34px;
-                padding: 6px 20px 5px 20px;
+                padding: 6px 28px 5px 28px;
+
+                .cancel-icon-span {
+                  font-size: 10px;
+                  height: 16px;
+                  width: 16px;
+                  padding: 1px 0 1px 0;
+                  top: 8px;
+                }
               }
             }
           }
