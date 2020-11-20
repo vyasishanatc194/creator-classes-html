@@ -306,6 +306,12 @@ body {
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='24px' height='17px' viewBox='0 0 24 17' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Etelevision-icon%3C/title%3E%3Cg id='Page-2' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='television-icon' fill='%23191919'%3E%3Cpath d='M22.9000985,0.0331775962 L0.6928588,0.0331775962 C0.310210524,0.0331775962 0,0.34338812 0,0.726036396 L0,13.4852183 C0,13.8678666 0.310210524,14.1780771 0.6928588,14.1780771 L9.35331732,14.1780771 L9.35331732,15.4463368 L7.48412841,15.4463368 C7.10148014,15.4463368 6.79126961,15.7565473 6.79126961,16.1391956 C6.79126961,16.5218438 7.10148014,16.8320544 7.48412841,16.8320544 L16.1087828,16.8320544 C16.491431,16.8320544 16.8016416,16.5218438 16.8016416,16.1391956 C16.8016416,15.7565473 16.491431,15.4463368 16.1087828,15.4463368 L14.2396399,15.4463368 L14.2396399,14.1780771 L22.9000985,14.1780771 C23.2827467,14.1780771 23.5929573,13.8678666 23.5929573,13.4852183 L23.5929573,0.726036396 C23.5929573,0.34338812 23.2827467,0.0331775962 22.9000985,0.0331775962 Z M12.8539224,15.4463828 L10.7390349,15.4463828 L10.7390349,14.1781232 L12.8539224,14.1781232 L12.8539224,15.4463828 Z M22.2072397,12.7924056 L1.3857176,12.7924056 L1.3857176,1.41894128 L22.2072397,1.41894128 L22.2072397,12.7924056 Z' id='XMLID_1988_'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.sort-down-icon {
+  width: 22px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='22px' height='20px' viewBox='0 0 22 20' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Esort-down%3C/title%3E%3Cg id='Page-2' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='sort-down' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M1.21690487,5.70819099 L13.4800488,5.70819099 L13.4800488,3.27433363 L1.21690487,3.27433363 C0.544857192,3.27433363 0,3.81919082 0,4.4912385 C0,5.16328618 0.544857192,5.70819099 1.21690487,5.70819099 Z' id='Path'%3E%3C/path%3E%3Cpath d='M1.21690487,10.5918581 L13.4800488,10.5918581 L13.4800488,8.15800073 L1.21690487,8.15800073 C0.544857192,8.15800073 0,8.70285792 0,9.37495322 C0,10.0470485 0.544857192,10.5918581 1.21690487,10.5918581 Z' id='Path'%3E%3C/path%3E%3Cpath d='M1.21690487,13.0416202 L1.21690487,13.0416678 C0.544857192,13.0416678 0,13.5864774 0,14.2585727 C0,14.930668 0.544857192,15.4754776 1.21690487,15.4754776 L9.73642944,15.4754776 C9.64019134,15.1790966 9.58938181,14.8664775 9.58938181,14.5458108 C9.58938181,14.0088108 9.73019135,13.4937155 9.99319137,13.0416202 L1.21690487,13.0416202 L1.21690487,13.0416202 Z' id='Path'%3E%3C/path%3E%3Cpath d='M21.45824,13.4576679 C20.8572876,12.8566678 19.8828589,12.8566678 19.2818589,13.4576679 L18.0182873,14.7212394 L18.0182873,1.5679049 C18.0182873,0.717952445 17.3292873,0.0290000026 16.4793348,0.0290000026 C15.6293823,0.0290000026 14.9403823,0.718000064 14.9403823,1.5679049 L14.9403823,14.7212394 L13.6768107,13.4576679 C13.0758107,12.8567154 12.1014297,12.8566678 11.5004296,13.4576679 C10.8994295,14.0586679 10.8994295,15.033049 11.5004296,15.634049 L15.3909061,19.5244779 C15.9907157,20.124478 16.9663349,20.1265256 17.5677635,19.5244779 L21.45824,15.634049 C22.0591924,15.033049 22.0592401,14.0586679 21.45824,13.4576679 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
 /* customs general css */
 .display_show {
   display: block;
@@ -880,6 +886,151 @@ body {
   width: 80px;
 }
 
+.drop-select-custom .btn-transaparent {
+  background: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  min-height: 30px;
+  font-weight: 400;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.drop-select-custom .btn-transaparent .dropdown-label {
+  margin: 0 0 0 10px;
+  width: calc(100% - 32px);
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-word;
+  max-width: 180px;
+  text-overflow: ellipsis;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.drop-select-custom .btn-transaparent .dropdown-label .text-hidden {
+  display: none;
+}
+
+.drop-select-custom .btn-transaparent.dropdown-toggle::after {
+  display: none;
+}
+
+.drop-select-custom .dropdown-menu {
+  background: #fff;
+  -webkit-box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 6px 6px;
+  right: 0;
+  margin-top: 0;
+  left: auto !important;
+  min-width: 170px;
+  border: 0 solid #f1f1f1;
+  padding: 0;
+}
+
+.drop-select-custom .dropdown-menu::before {
+  content: "";
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+
+.drop-select-custom .dropdown-menu a.dropdown-item {
+  font-weight: 400;
+  padding: 5px 20px;
+  font-size: 14px;
+  color: #071c2e;
+  letter-spacing: 0;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.drop-select-custom .dropdown-menu a.dropdown-item:hover, .drop-select-custom .dropdown-menu a.dropdown-item:focus, .drop-select-custom .dropdown-menu a.dropdown-item:active {
+  color: #071c2e;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.drop-select-custom .dropdown-menu a.dropdown-item.active {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+.drop-select-custom .dropdown-menu a.dropdown-item .bg-custom-icon {
+  font-size: 24px;
+  margin: 0 10px 0 0;
+}
+
+.drop-select-custom .dropdown-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.drop-select-custom .dropdown-menu ul li {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.drop-select-custom .dropdown-menu ul li a {
+  text-align: left;
+  display: block;
+}
+
+.drop-select-custom .dropdown-menu ul li [data-selected="selected"] {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ff5f00;
+  font-weight: 500;
+}
+
+.drop-select-custom .dropdown-menu ul li [data-selected="selected"]:hover, .drop-select-custom .dropdown-menu ul li [data-selected="selected"]:focus, .drop-select-custom .dropdown-menu ul li [data-selected="selected"]:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ff5f00;
+}
+
+.drop-select-custom .dropdown-menu ul li:first-child a {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.drop-select-custom .dropdown-menu ul li:last-child {
+  border-bottom: 0 solid #e6e6e6;
+}
+
+.drop-select-custom .dropdown-menu ul li:last-child a {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
 @media (min-width: 1025px) {
   .max-md-1920 {
     margin: 0 auto;
@@ -995,6 +1146,39 @@ body {
     width: 16px;
     padding: 1px 0 1px 0;
     top: 8px;
+  }
+  .classes-list-section .classes-list-div .heading-div .heading-title-row .heading-title-left h2 {
+    font-size: 20px;
+  }
+  .drop-select-custom .btn-transaparent {
+    font-size: 14px;
+    min-height: 26px;
+  }
+  .drop-select-custom .btn-transaparent .sort-down-icon {
+    width: 18px;
+    height: 16px;
+  }
+  .drop-select-custom .btn-transaparent .dropdown-label {
+    margin: 0 0 0 6px;
+    width: calc(100% - 24px);
+  }
+  .drop-select-custom .dropdown-menu {
+    min-width: 140px;
+    -webkit-transform: translate3d(8px, 40px, 0) !important;
+            transform: translate3d(8px, 40px, 0) !important;
+  }
+  .drop-select-custom .dropdown-menu::before {
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+    top: -16px;
+    right: 16px;
+  }
+  .drop-select-custom .dropdown-menu a.dropdown-item {
+    padding: 2px 15px;
+    font-size: 12px;
+    line-height: 32px;
   }
 }
 

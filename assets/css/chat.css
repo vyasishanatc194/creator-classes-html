@@ -75,10 +75,23 @@
   padding: 0;
   margin: 0;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .general-chat-section .container-general-video-div .general-video-root .general-video-content .general-video-top .general-video-top-row .general-video-left .btn-common-primary {
   min-height: 40px;
+}
+
+.general-chat-section .container-general-video-div .general-video-root .general-video-content .general-video-top .general-video-top-row .general-video-left .btn-common-primary.no-cursor {
+  cursor: default;
+  pointer-events: none;
 }
 
 .general-chat-section .container-general-video-div .general-video-root .general-video-content .general-video-top .general-video-top-row2 .disc-div {

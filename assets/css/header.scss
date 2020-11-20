@@ -545,6 +545,14 @@ header {
         }
       }
     }
+
+    &.header-color-2 {
+      background-color: #212121;
+
+      &.header-bgcolor {
+        background-color: #191919;
+      }
+    }
   }
 }
 

@@ -70,9 +70,17 @@
               padding: 0;
               margin: 0;
               position: relative;
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
 
               .btn-common-primary {
                 min-height: 40px;
+
+                &.no-cursor {
+                  cursor: default;
+                  pointer-events: none;
+                }
               }
             }
           }
@@ -622,7 +630,7 @@
       .chat-progress-group-inner {
         right: -810px;
         max-width: 290px;
-        
+
         .chat-progress-group-header {
           padding: 15px 50px 9px 30px;
           min-height: 80px;
