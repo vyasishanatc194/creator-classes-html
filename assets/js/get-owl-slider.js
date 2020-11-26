@@ -129,4 +129,34 @@ $(document).ready(function () {
       }
     }
   });
+
+  $("#materials-creators-owl").owlCarousel({
+    loop: true,
+    nav: false,
+    dots: false,
+    stagePadding: 0,
+    margin: 15,
+    autoplay: false,
+    autoWidth:true,
+    smartSpeed: 2000,
+    responsive: {
+      0: {
+        items: 1.2,
+        margin: 5,
+        autoWidth:false,
+        autoplay: true,
+      },
+      600: {
+        items: 2.3,
+        autoWidth:false,
+        autoplay: true,
+      },
+      1200: {
+        items: 3.1,
+      },
+      1600: {
+        items: 3.15,
+      }
+    }
+  });
 });
