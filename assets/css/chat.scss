@@ -82,6 +82,15 @@
                   pointer-events: none;
                 }
               }
+
+              .mr-10 {
+                margin-right: 10px;
+              }
+
+              .white-black-primary {
+                color: #000;
+                background: #fff;
+              }
             }
           }
 
@@ -472,6 +481,15 @@
                 .btn-common-primary {
                   padding: 6px 20px 5px 20px;
                 }
+
+                .white-black-primary {
+                  font-size: 13px;
+                  padding: 6px 15px 5px 15px;
+                }
+
+                .mr-10 {
+                  margin-right: 8px;
+                }
               }
             }
 
@@ -568,6 +586,33 @@
             .round-span {
               .arrow {
                 padding: 0 4px 0px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 340px) {
+    .general-chat-section {
+      .container-general-video-div {
+        .general-video-root {
+          .general-video-content {
+            .general-video-top {
+              .general-video-top-row {
+                .general-video-left {
+                  .btn-common-primary {
+                    padding: 6px 15px 5px 15px;
+                    font-size: 12px;
+
+                    .bg-custom-icon {
+                      margin: 0 8px 0 0;
+                      width: 14px;
+                      height: 8px;
+                    }
+                  }
+                }
               }
             }
           }

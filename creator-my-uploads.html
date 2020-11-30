@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>Creator | Creator classes</title>
+<title>My Uploads | Creator classes</title>
 <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
 <meta name="theme-color" content="#191919">
 <meta name="msapplication-navbutton-color" content="#191919">
@@ -20,7 +20,8 @@
 <link href="assets/css/header.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/tab-style.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/creator/creator-home-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/back-banner-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/creator/creator-my-upload-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/creator/creator-popup-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/notifications-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
@@ -60,8 +61,8 @@
                             <div class="row-nav-div">
                               <div class="left-side">
                                 <ul class="nav ullist-inline" id="nav-res">
-                                  <li class="active"><a href="creator-home.html" class="nav-link">Home</a></li>
-                                  <li><a href="creator-my-uploads.html" class="nav-link">My Uploads</a></li>
+                                  <li><a href="creator-home.html" class="nav-link">Home</a></li>
+                                  <li class="active"><a href="creator-my-uploads.html" class="nav-link">My Uploads</a></li>
                                   <li><a href="creator-my-earnings.html" class="nav-link">My Earnings</a></li>
                                   <li><a href="creator-transfer-funds.html" class="nav-link">Transfer funds</a></li>
                                 </ul>
@@ -108,250 +109,405 @@
 
   <div class="main-middle-area creator-main-middle-area">
     
-    <section class="schedule-main-creator-section" id="schedule-main-creator-section">
-      <div class="schedule-main-creator-div">
+    <section class="back-with-title-section">
+      <div class="back-with-title-div">
+        <div class="container container-1000">
+          <div class="back-with-title-root-div">
+
+            <div class="back-div-row">
+              <div class="back-div-box">
+                <a href="creator-home.html" class="back-link"> < Back </a>
+              </div>
+
+              <div class="title-div-box">
+                <h1>My Uploads</h1>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-uploads-section" id="my-uploads-section">
+      <div class="my-uploads-div">
 
         <div class="container container-1000">
-          <div class="row mlr-10">
 
-            <div class="col-lg-12 col-md-12 plr-10">
-              <div class="heading-inner-div">
-                <div class="content-root"> 
-                  <h1>Hello John,</h1>
-                  <p>Let’s schedule your next stream</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-12 col-md-12 plr-10">
-              <div class="button-tab-div">
-                <div class="row mlr-10">
-
-                  <div class="col-lg-4 col-md-4 plr-10">
-                    <div class="button-tab-box">
-                      <a href="creator-schedule-a-stream.html" class="btn btn-big-black active">
-                        <span class="text">+Schedule a Stream</span>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-4 plr-10">
-                    <div class="button-tab-box">
-                      <a href="creator-add-a-class.html" class="btn btn-big-black">
-                        <span class="text">+Add a Class</span>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-4 plr-10">
-                    <div class="button-tab-box">
-                      <a href="creator-add-material.html" class="btn btn-big-black">
-                        <span class="text">+ Add Materials</span>
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
+          <div class="my-uploads-root-div">
             
-          </div>
-        </div>
+            <div class="tabs-root-common">
 
-      </div>
-    </section>
-
-    <section class="general-oto-streams-section" id="general-oto-streams-section">
-      <div class="general-oto-streams-div">
-        <div class="container container-1000">
-
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="general-oto-heading-div">
-                <p>Your scheduled live streams</p>
+              <div class="tabs-header-common">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active show" data-toggle="tab" href="#my-upload-tab-01">Classes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#my-upload-tab-02">Materials</a>
+                  </li>
+                </ul>
               </div>
-            </div>
-          </div>
 
-          <div class="general-oto-streams-common-div">
-            <div class="row">
-              <div class="col-lg-12 col-md-12">
+              <div class="tabs-body-common">
+                <div class="tab-content">
 
-                <div class="tabs-root-common">
+                  <div id="my-upload-tab-01" class="tab-pane fade active show">
 
-                  <div class="tabs-header-common">
-                    <ul class="nav nav-tabs">
-                      <li class="nav-item">
-                        <a class="nav-link active show" data-toggle="tab" href="#general-tab-01">General</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#oto-tab-02">One-To-One</a>
-                      </li>
-                    </ul>
-                  </div>
-    
-                  <div class="tabs-body-common">
-                    <div class="tab-content">
-    
-                      <div id="general-tab-01" class="tab-pane fade active show">
-    
-                        <div class="tab-pane-inner">
-                          
-                          <div class="general-list-common-div">
-                            <div class="general-list-panel-div">
-                              <div class="row mlr-8">
-  
-                                <div class="col-lg-12 col-md-12 plr-8">
+                    <div class="tab-pane-inner">
 
-                                  <div class="general-common-cre-box">
-                                    <div class="general-common-cre-row">
+                      <div class="uploads-list-panel-div">
+                        <div class="container container-800">
+                          <div class="row mlr-8">
 
-                                      <div class="general-video-img-cre-thumb">
-                                        <div class="img-thumb"> <img src="assets/images/user-home/img-01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                                        <div class="action-box-abs"> <button class="action-button delete-button"><span class="material-icons">delete</span></button> </div>
-                                        <!-- <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div> -->
-                                      </div>
-
-                                      <div class="general-content-cre-div">
-                                        <div class="general-cre-content-row">
-                                          <div class="general-cre-content-top-row">
-
-                                            <div class="time-row">
-                                              <div class="time-box">
-                                                <span class="icon-span"><i class="bg-custom-icon calendar-time-icon white-color-icon"></i></span>
-                                                <span class="text">Sept 12, 9:00 PM EST </span>
-                                              </div>
+                            <div class="col-lg-12 col-md-12 plr-8">
+                              <div class="uploads-common-row-box">
+                                <div class="uploads-common-row">
+                                  <div class="our-video-img-thumb">
+                                    <div class="img-thumb"> <img src="assets/images/user-home/img-01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                                    <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div>
+                                  </div>
+                                  <div class="our-content-div">
+                                    <div class="our-content-row">
+                                      <div class="our-content-top-row">
+                                        <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
+                                        <div class="text-div-with-star">
+                                          <div class="text-content-prag">
+                                            <h4>Lorem ipsum</h4>
+                                          </div>
+                                          <div class="star-row-div">
+                                            <div class="star-left-div">
+                                              <ul class="star-rating-ul">
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                              </ul>
                                             </div>
-                                            <p>Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</p>
-                                            <div class="link-div">
-                                              <a href="#" data-toggle="modal" data-target="#list-of-seat-holders-modal" class="link link-color">View seat holders list</a>
+                                            <div class="star-right-div">
+                                              <span class="text">(99)</span>
                                             </div>
-                                            <div class="general-btn-div">
-                                              <a href="#" class="btn btn-common-primary btn-edit mr-10"> Edit </a>
-                                              <a href="#" data-toggle="modal" data-target="#general-view-details-modal" class="btn btn-common-black btn-view"> View </a>
-                                            </div>
-                                            
                                           </div>
                                         </div>
-                                      </div>
-
-                                    </div>
-                                  </div>
-
-                                  <div class="general-common-cre-box">
-                                    <div class="general-common-cre-row">
-
-                                      <div class="general-video-img-cre-thumb">
-                                        <div class="img-thumb"> <img src="assets/images/user-home/img-02.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                                        <div class="action-box-abs"> <button class="action-button delete-button"><span class="material-icons">delete</span></button> </div>
-                                        <!-- <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div> -->
-                                      </div>
-
-                                      <div class="general-content-cre-div">
-                                        <div class="general-cre-content-row">
-                                          <div class="general-cre-content-top-row">
-
-                                            <div class="time-row">
-                                              <div class="time-box">
-                                                <span class="icon-span"><i class="bg-custom-icon calendar-time-icon white-color-icon"></i></span>
-                                                <span class="text">Sept 12, 9:00 PM EST </span>
-                                              </div>
-                                            </div>
-                                            <p>Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</p>
-                                            <div class="link-div">
-                                              <a href="#" data-toggle="modal" data-target="#list-of-seat-holders-modal" class="link link-color">View seat holders list</a>
-                                            </div>
-                                            <div class="general-btn-div">
-                                              <a href="#" class="btn btn-common-primary btn-edit mr-10"> Edit </a>
-                                              <a href="#" data-toggle="modal" data-target="#general-view-details-modal" class="btn btn-common-black btn-view"> View </a>
-                                            </div>
-                                            
-                                          </div>
+                                        <div class="general-btn-div">
+                                          <a href="#" class="btn btn-common-primary btn-edit mr-10"> Edit </a>
+                                          <a href="#" class="btn btn-common-black btn-delete"> Delete </a>
                                         </div>
                                       </div>
-
                                     </div>
                                   </div>
-  
                                 </div>
-  
+                              </div>
+
+                              <div class="uploads-common-row-box">
+                                <div class="uploads-common-row">
+                                  <div class="our-video-img-thumb">
+                                    <div class="img-thumb"> <img src="assets/images/user-home/img-02.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                                    <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div>
+                                  </div>
+                                  <div class="our-content-div">
+                                    <div class="our-content-row">
+                                      <div class="our-content-top-row">
+                                        <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
+                                        <div class="text-div-with-star">
+                                          <div class="text-content-prag">
+                                            <h4>Lorem ipsum</h4>
+                                          </div>
+                                          <div class="star-row-div">
+                                            <div class="star-left-div">
+                                              <ul class="star-rating-ul">
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                              </ul>
+                                            </div>
+                                            <div class="star-right-div">
+                                              <span class="text">(99)</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="general-btn-div">
+                                          <a href="#" class="btn btn-common-primary btn-edit mr-10"> Edit </a>
+                                          <a href="#" class="btn btn-common-black btn-delete"> Delete </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="uploads-common-row-box">
+                                <div class="uploads-common-row">
+                                  <div class="our-video-img-thumb">
+                                    <div class="img-thumb"> <img src="assets/images/user-home/img-03.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                                    <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div>
+                                  </div>
+                                  <div class="our-content-div">
+                                    <div class="our-content-row">
+                                      <div class="our-content-top-row">
+                                        <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
+                                        <div class="text-div-with-star">
+                                          <div class="text-content-prag">
+                                            <h4>Lorem ipsum</h4>
+                                          </div>
+                                          <div class="star-row-div">
+                                            <div class="star-left-div">
+                                              <ul class="star-rating-ul">
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                              </ul>
+                                            </div>
+                                            <div class="star-right-div">
+                                              <span class="text">(99)</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="general-btn-div">
+                                          <a href="#" class="btn btn-common-primary btn-edit mr-10"> Edit </a>
+                                          <a href="#" class="btn btn-common-black btn-delete"> Delete </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="uploads-common-row-box">
+                                <div class="uploads-common-row">
+                                  <div class="our-video-img-thumb">
+                                    <div class="img-thumb"> <img src="assets/images/user-home/img-04.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                                    <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div>
+                                  </div>
+                                  <div class="our-content-div">
+                                    <div class="our-content-row">
+                                      <div class="our-content-top-row">
+                                        <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
+                                        <div class="text-div-with-star">
+                                          <div class="text-content-prag">
+                                            <h4>Lorem ipsum</h4>
+                                          </div>
+                                          <div class="star-row-div">
+                                            <div class="star-left-div">
+                                              <ul class="star-rating-ul">
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                              </ul>
+                                            </div>
+                                            <div class="star-right-div">
+                                              <span class="text">(99)</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="general-btn-div">
+                                          <a href="#" class="btn btn-common-primary btn-edit mr-10"> Edit </a>
+                                          <a href="#" class="btn btn-common-black btn-delete"> Delete </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
+
                           </div>
-    
                         </div>
-    
                       </div>
-    
-                      <div id="oto-tab-02" class="tab-pane fade">
-    
-                        <div class="tab-pane-inner">
-    
-                          <div class="general-list-common-div">
-                            <div class="general-list-panel-div">
-                              <div class="row mlr-8">
-  
-                                <div class="col-lg-12 col-md-12 plr-8">
 
-                                  <div class="general-common-cre-box">
-                                    <div class="general-common-cre-row">
-
-                                      <div class="general-video-img-cre-thumb">
-                                        <div class="img-thumb"> <img src="assets/images/user-home/img-03.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                                        <div class="action-box-abs"> <button class="action-button delete-button"><span class="material-icons">delete</span></button> </div>
-                                        <!-- <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div> -->
-                                      </div>
-
-                                      <div class="general-content-cre-div">
-                                        <div class="general-cre-content-row">
-                                          <div class="general-cre-content-top-row">
-
-                                            <div class="time-row">
-                                              <div class="time-box">
-                                                <span class="icon-span"><i class="bg-custom-icon calendar-time-icon white-color-icon"></i></span>
-                                                <span class="text">Sept 12, 9:00 PM EST </span>
-                                              </div>
-                                            </div>
-                                            <p>Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</p>
-                                            <div class="link-div">
-                                              <a href="#" data-toggle="modal" data-target="#seat-holder-oto-details-modal" class="link link-color">View seat holder details</a>
-                                            </div>
-                                            <div class="general-btn-div">
-                                              <a href="#" class="btn btn-common-primary btn-edit mr-10"> Edit </a>
-                                              <a href="#" data-toggle="modal" data-target="#general-view-details-modal" class="btn btn-common-black btn-view"> View </a>
-                                            </div>
-                                            
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                  </div>
-  
-                                </div>
-  
-                              </div>
-                            </div>
-                          </div>
-    
-                        </div>
-    
-                      </div>
-    
                     </div>
-                  </div>
-    
-                </div>
 
+                  </div>
+
+                  <div id="my-upload-tab-02" class="tab-pane fade ">
+
+                    <div class="tab-pane-inner">
+
+                      <div class="uploads-list-panel-div">
+                        <div class="container container-800">
+                          <div class="row mlr-8">
+
+                            <div class="col-lg-12 col-md-12 plr-8">
+                              <div class="uploads-common-row-box">
+                                <div class="uploads-common-row">
+                                  <div class="our-video-img-thumb">
+                                    <div class="img-thumb"> <img src="assets/images/user-home/img-05.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                                  </div>
+                                  <div class="our-content-div">
+                                    <div class="our-content-row">
+                                      <div class="our-content-top-row">
+                                        <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
+                                        <div class="text-div-with-star">
+                                          <div class="text-content-prag">
+                                            <h4>Lorem ipsum</h4>
+                                          </div>
+                                          <div class="star-row-div">
+                                            <div class="star-left-div">
+                                              <ul class="star-rating-ul">
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                              </ul>
+                                            </div>
+                                            <div class="star-right-div">
+                                              <span class="text">(99)</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="general-btn-div">
+                                          <a href="#" class="btn btn-common-primary btn-edit mr-10"> Edit </a>
+                                          <a href="#" class="btn btn-common-black btn-delete"> Delete </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="uploads-common-row-box">
+                                <div class="uploads-common-row">
+                                  <div class="our-video-img-thumb">
+                                    <div class="img-thumb"> <img src="assets/images/user-home/img-06.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                                  </div>
+                                  <div class="our-content-div">
+                                    <div class="our-content-row">
+                                      <div class="our-content-top-row">
+                                        <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
+                                        <div class="text-div-with-star">
+                                          <div class="text-content-prag">
+                                            <h4>Lorem ipsum</h4>
+                                          </div>
+                                          <div class="star-row-div">
+                                            <div class="star-left-div">
+                                              <ul class="star-rating-ul">
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                              </ul>
+                                            </div>
+                                            <div class="star-right-div">
+                                              <span class="text">(99)</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="general-btn-div">
+                                          <a href="#" class="btn btn-common-primary btn-edit mr-10"> Edit </a>
+                                          <a href="#" class="btn btn-common-black btn-delete"> Delete </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="uploads-common-row-box">
+                                <div class="uploads-common-row">
+                                  <div class="our-video-img-thumb">
+                                    <div class="img-thumb"> <img src="assets/images/user-home/img-07.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                                  </div>
+                                  <div class="our-content-div">
+                                    <div class="our-content-row">
+                                      <div class="our-content-top-row">
+                                        <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
+                                        <div class="text-div-with-star">
+                                          <div class="text-content-prag">
+                                            <h4>Lorem ipsum</h4>
+                                          </div>
+                                          <div class="star-row-div">
+                                            <div class="star-left-div">
+                                              <ul class="star-rating-ul">
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                              </ul>
+                                            </div>
+                                            <div class="star-right-div">
+                                              <span class="text">(99)</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="general-btn-div">
+                                          <a href="#" class="btn btn-common-primary btn-edit mr-10"> Edit </a>
+                                          <a href="#" class="btn btn-common-black btn-delete"> Delete </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="uploads-common-row-box">
+                                <div class="uploads-common-row">
+                                  <div class="our-video-img-thumb">
+                                    <div class="img-thumb"> <img src="assets/images/user-home/img-08.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                                  </div>
+                                  <div class="our-content-div">
+                                    <div class="our-content-row">
+                                      <div class="our-content-top-row">
+                                        <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
+                                        <div class="text-div-with-star">
+                                          <div class="text-content-prag">
+                                            <h4>Lorem ipsum</h4>
+                                          </div>
+                                          <div class="star-row-div">
+                                            <div class="star-left-div">
+                                              <ul class="star-rating-ul">
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                                <li><span class="material-icons star-custom-icon active">star</span></li>
+                                              </ul>
+                                            </div>
+                                            <div class="star-right-div">
+                                              <span class="text">(99)</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="general-btn-div">
+                                          <a href="#" class="btn btn-common-primary btn-edit mr-10"> Edit </a>
+                                          <a href="#" class="btn btn-common-black btn-delete"> Delete </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
               </div>
+
             </div>
+
           </div>
 
         </div>
 
       </div>
     </section>
-    
+
   </div>
 
 </div><!-- end of wrapper -->

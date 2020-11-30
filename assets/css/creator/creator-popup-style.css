@@ -403,6 +403,93 @@
   color: white;
 }
 
+.messages-modal .modal-content {
+  border-radius: 32px;
+}
+
+.messages-modal .modal-dialog {
+  max-width: 605px;
+}
+
+.messages-modal .modal-body {
+  padding: 0;
+  border: none;
+}
+
+.messages-modal .messages-stream-div {
+  padding: 15px;
+  margin: 0;
+  position: relative;
+  background: url(../../images/background/gradient-card-popup.svg) no-repeat;
+  border-radius: 32px;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.messages-modal .messages-stream-div .messages-stream-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.messages-modal .messages-stream-div .messages-stream-row .heading-div {
+  padding: 0;
+  margin: 0 0 30px 0;
+  position: relative;
+}
+
+.messages-modal .messages-stream-div .messages-stream-row .heading-div h2 {
+  font-weight: 800;
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 0;
+  font-family: "Moderat Extended", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.messages-modal .messages-stream-div .messages-stream-row .heading-div h2::after {
+  content: attr(data-outline-text);
+  color: rgba(255, 255, 255, 0.34);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.34);
+  font-family: "Moderat Extended", sans-serif;
+  top: 19px;
+  left: 15px;
+  position: absolute;
+}
+
+.messages-modal .messages-stream-div .messages-stream-row .desc-text-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.messages-modal .messages-stream-div .messages-stream-row .desc-text-div p {
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 0;
+  text-align: center;
+}
+
 @media (min-width: 1025px) {
   .list-seat-holders-div .list-seat-holders-inner::-webkit-scrollbar-track {
     border-radius: 0;
@@ -486,6 +573,22 @@
   }
   .list-seat-holders-div .list-seat-holders-inner .seat-listing-div .seat-user-listing-box .seat-user-listing-row .nt-right .user-link .link.link-color {
     font-size: 12px;
+  }
+  .messages-modal .messages-stream-div {
+    min-height: 220px;
+  }
+  .messages-modal .messages-stream-div .messages-stream-row .heading-div {
+    margin: 0 0 20px 0;
+  }
+  .messages-modal .messages-stream-div .messages-stream-row .heading-div h2 {
+    font-size: 28px;
+  }
+  .messages-modal .messages-stream-div .messages-stream-row .heading-div h2::after {
+    top: 10px;
+    left: 10px;
+  }
+  .messages-modal .messages-stream-div .messages-stream-row .desc-text-div p {
+    font-size: 14px;
   }
 }
 

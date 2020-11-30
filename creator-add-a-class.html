@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Add a Class | Creator classes</title>
+  <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+  <meta name="theme-color" content="#191919">
+  <meta name="msapplication-navbutton-color" content="#191919">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#191919">
+  <link href='assets/images/favicon.png' rel='shortcut icon'>
+  <link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/fonts/gilroy/gilroy-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/fonts/moderat/moderat-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/all.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+  <link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/header.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/tab-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/select2.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/select-custom.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/select2-custom.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/date/bootstrap-datetimepicker.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/date/custom-timepicker.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/drag-and-drop/dropzone.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/drag-and-drop/dropzone-custom.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/creator/creator-step-main-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/creator/creator-popup-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/notifications-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+  <div id="wrapper" class="wrapper creator-home-wrapper">
+
+    <header>
+      <div class="header-div header-div2 header-color-2 clearfix">
+        <div class="inner-top-header-div clearfix">
+          <div class="container container-1000">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="header-container">
+
+                  <div class="logo-div">
+                    <a class="logo_link clearfix" href="index.html">
+                      <img src="assets/images/white-icon-logo.svg" class="img-fluid logo_img main-logo-icon"
+                        alt="logo" />
+                    </a>
+                  </div>
+
+                  <nav class="nav-center-div">
+                    <div class="top-nav1">
+                      <div class="cd-shadow-layer"></div>
+                      <div class="nav-m-bar">
+                        <a onclick="openNav()" class="opennav" data-placement="bottom" title=""
+                          data-original-title="Menu">
+                          <i class="menu-bars menu-icon"></i>
+                        </a>
+                      </div>
+
+                      <div class="nav-div clearfix" id="mySidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <div class="row-nav-div">
+                          <div class="left-side">
+                            <ul class="nav ullist-inline" id="nav-res">
+                              <li class="active"><a href="creator-home.html" class="nav-link">Home</a></li>
+                              <li><a href="creator-my-uploads.html" class="nav-link">My Uploads</a></li>
+                              <li><a href="creator-my-earnings.html" class="nav-link">My Earnings</a></li>
+                              <li><a href="creator-transfer-funds.html" class="nav-link">Transfer funds</a></li>
+                            </ul>
+                          </div>
+
+                          <div class="right-side creator-right-side">
+                            <div class="right-nf-icon-div">
+                              <div class="icon-row-nf">
+                                <div class="icon-box-nf">
+                                  <a href="#" class="link" data-toggle="modal"
+                                    data-target="#creator-notifications-modal"> <span
+                                      class="material-icons">notifications</span> <span class="text-count-n">1</span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="user-drop-down">
+                              <div class="dropdown drop-left dropdown-custom-top">
+                                <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <div class="user-profile">
+                                    <div class="user-img">
+                                      <img src="assets/images/profile.png" class="user-top-image" alt="user image" />
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <ul>
+                                    <li><a class="dropdown-item" href="creator-profile-settings.html"> <span class="bg-custom-icon user-icon"></span> Profile Settings</a></li>
+                                    <li class="logout-li"><a class="dropdown-item" href="login.html"> <span class="bg-custom-icon logout-icon"></span> Logout</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--  End of header with navigation div  -->
+    </header>
+
+    <div class="main-middle-area creator-main-middle-area">
+
+      <section class="step-main-creator-section" id="add-a-class-section">
+        <div class="step-main-creator-div">
+
+          <div class="container container-1000">
+            <div class="row mlr-10">
+
+              <div class="col-lg-12 col-md-12 plr-10">
+                <div class="back-single-root-div">
+                  <div class="back-single-div-row">
+                    <div class="back-single-div-box">
+                      <a href="creator-home.html" class="back-link"> &lt; Back </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12 plr-10">
+
+                <div class="step-black-root-div step-add-a-class-div">
+                  <div class="step-black-root-row">
+
+                    <div class="step-black-heading-div">
+                      <div class="step-black-heading-row">
+                        <h2>Add a Class</h2>
+                      </div>
+                    </div>
+
+                    <div class="step-black-tabs-root-common">
+
+                      <div class="step-tabs-header-common step-ss-01">
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item step1 active">
+                            <a class="nav-link active show" data-toggle="tab" data-step="1" href="#step-ss-tab-01">
+                              <span class="root-span">
+                                <span class="text"> Add Details </span>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="step-tabs-body-common">
+                        <div class="tab-content step-tab-content">
+
+                          <div id="step-ss-tab-01" class="tab-pane fade active show">
+
+                            <div class="step-tab-pane-inner">
+
+                              <div class="tab-form-div">
+                                <div class="tab-form-body">
+
+                                  <div class="center-area-div">
+                                    <div class="container container-800 plr-8 plr-xs-0">
+
+                                      <div class="common-form-div common-form-updated-div">
+                                        <div class="row mlr-8">
+                                          <div class="col-lg-6 col-md-6 plr-8">
+                                            <div class="dropzone-root-group" id="dropzone">
+                                              <form class="dropzone needsclick" id="my-awesome-dropzone"
+                                                action="assets/images">
+                                                <div class="dz-message needsclick">
+                                                  <div class="icon-div"><img
+                                                      src="assets/images/icons/custom/upload-drag-icon.svg"
+                                                      class="img-fluid img-upload-icon" alt="plus"></div>
+                                                  <p> <span class="block"> Drag and drop file you</span> <span
+                                                      class="block"> want to upload for thumbnail</span></p>
+                                                  <div class="or-div"> <span class="text">or</span> </div>
+                                                  <div class="button-center-div"><span
+                                                      class="btn btn-common-primary">Choose</span></div>
+                                                </div>
+                                                <div class="change-btn-div" id="change-file-div">
+                                                  <span class="btn btn-common-primary">Change</span>
+                                                </div>
+                                              </form>
+                                            </div>
+                                          </div>
+
+                                          <div class="col-lg-6 col-md-6 plr-8">
+                                            <div class="dropzone-root-group" id="dropzone">
+                                              <form class="dropzone needsclick" id="my-awesome-dropzone"
+                                                action="assets/images">
+                                                <div class="dz-message needsclick">
+                                                  <div class="icon-div"><img
+                                                      src="assets/images/icons/custom/upload-drag-icon.svg"
+                                                      class="img-fluid img-upload-icon" alt="plus"></div>
+                                                  <p> <span class="block"> Drag and drop MP4 file </span> <span
+                                                      class="block"> for the class</span></p>
+                                                  <div class="or-div"> <span class="text">or</span> </div>
+                                                  <div class="button-center-div"><span class="btn btn-common-primary"
+                                                      id="choose-file-div">Choose</span></div>
+                                                </div>
+                                                <div class="change-btn-div" id="change-file-div">
+                                                  <span class="btn btn-common-primary">Change</span>
+                                                </div>
+                                              </form>
+                                            </div>
+                                          </div>
+
+                                          <div class="col-lg-12 col-md-12 plr-8">
+                                            <div class="form-group mb-40">
+                                              <label class="font-weight-700">
+                                                <span class="text">Add Title<span class="color-span">*</span></span>
+                                              </label>
+                                              <div class="input-control-row">
+                                                <input type="text" class="form-control" placeholder="Enter the title" />
+                                              </div>
+                                            </div>    
+                                          </div>
+
+                                          <div class="col-lg-12 col-md-12 plr-8">
+                                            <div class="form-group mb-30">
+                                              <label class="font-weight-700">
+                                                <span class="text">Keywords<span class="color-span">*</span></span>
+                                              </label>
+                                              <div class="category-control-row">
+                                                <div class="category-inner">
+                                                  <ul class="category-list-ul">
+                                                    <li class="active"><a href="#" class="filter-link">Photography <span class="cancel-icon-span"> <i class="fe fe-x cross-icon"></i> </span> </a></li>
+                                                    <li class="active"><a href="#" class="filter-link">Filmmaking <span class="cancel-icon-span"> <i class="fe fe-x cross-icon"></i> </span></a></li>
+                                                    <li><a href="#" class="filter-link">VFX <span class="cancel-icon-span"> <i class="fe fe-x cross-icon"></i> </span></a></li>
+                                                    <li><a href="#" class="filter-link">Graphic Design <span class="cancel-icon-span"> <i class="fe fe-x cross-icon"></i> </span></a></li>
+                                                    <li><a href="#" class="filter-link">Underwater <span class="cancel-icon-span"> <i class="fe fe-x cross-icon"></i> </span></a></li>
+                                                    <li><a href="#" class="filter-link">+Add new </span></a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="col-lg-12 col-md-12 plr-8">
+                                            <div class="form-group form-group-with-btn mb-30">
+                                              <label class="font-weight-700">
+                                                <span class="text">What your stream will cover?<span class="color-span">*</span></span>
+                                              </label>
+                                              <div class="input-control-row">
+                                                <input type="text" class="form-control" placeholder="Suggestion : Understanding Composition" />
+                                                <div class="abs-right-top"><button class="btn btn-common-primary btn-add">+Add</button></div>
+                                              </div>
+                                              <div class="category-control-row add-category-row-control">
+                                                <div class="category-inner">
+                                                  <ul class="category-list-ul">
+                                                    <li class="active"><a href="#" class="filter-link">Color, Light, and Design Techniques <span class="cancel-icon-span"> <i class="fe fe-x cross-icon"></i> </span> </a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>    
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                                <div class="tab-form-bottom">
+
+                                  <div class="tab-cre-btn-div">
+                                    <a href="#" class="btn btn-common-black btn-black-back mr-20"> Back </a>
+                                    <a href="#" class="btn btn-common-white btn-next disable"> Next </a>
+                                  </div>
+
+                                </div>
+
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+  </div><!-- end of wrapper -->
+
+  <div class="modal right right-slider-modal fade" id="creator-notifications-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> <i
+                class="fe fe-x close-icon-x"></i> </span></button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="common-modal-body login-to-book-body">
+            <div class="common-header-div">
+              <div class="title-heading-div nt-heading-div">
+                <h2>Notifications</h2>
+              </div>
+            </div>
+            <div class="common-body-div">
+
+              <div class="common-body-inner-div">
+
+                <div class="notifications-common-div creator-ntf-common-div">
+                  <div class="notifications-common-inner">
+
+                    <div class="ntf-tabs-root-common">
+
+                      <div class="ntf-tabs-header-common">
+                        <ul class="nav nav-tabs">
+                          <li class="nav-item">
+                            <a class="nav-link active show" data-toggle="tab" href="#notifications-tab-01">Other</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#notifications-tab-02">Booking</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="ntf-tabs-body-common">
+                        <div class="tab-content">
+
+                          <div id="notifications-tab-01" class="tab-pane fade active show">
+
+                            <div class="notifications-listing-div">
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                          <div id="notifications-tab-02" class="tab-pane fade ">
+
+                            <div class="notifications-listing-div">
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="notifications-box">
+                                <div class="notifications-row">
+                                  <div class="nt-left">
+                                    <div class="thumb-div">
+                                      <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                    </div>
+                                  </div>
+                                  <div class="nt-right">
+                                    <div class="text-desc">
+                                      <h3> <a href="#" class="link">Your seat for michael gray’s stream has been
+                                          booked</a></h3>
+                                      <span class="time-span">17:05</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal messages-modal fade" id="congratulations-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+
+          <div class="messages-stream-div">
+            <div class="messages-stream-row">
+              <div class="heading-div">
+                <h2 data-outline-text="Congratulations">Congratulations</h2>
+              </div>
+              <div class="desc-text-div">
+                <p>Your stream is scheduled!!</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/drag-and-drop/dropzone.js"></script>
+  <script src="assets/js/drag-and-drop/get-dropzone.js"></script>
+  <script src="assets/js/custom.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      $('.step-tabs-header-common ul li a').click(function () { $(this).parent().addClass('active'); });
+
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        //update progress
+        var step = $(e.target).data('step');
+        var percent = (parseInt(step) / 4) * 100;
+
+        // $('.progress-bar').css({width: percent + '%'});
+        $(this).parent().addClass("step" + step);
+        //e.relatedTarget // previous tab
+      });
+    });
+  </script>
+
+</body>
+
+</html>
