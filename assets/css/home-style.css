@@ -853,7 +853,7 @@
 }
 
 .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div {
-  padding: 20px 50px;
+  padding: 40px 50px;
   margin: 0;
   position: relative;
   display: -webkit-box;
@@ -869,16 +869,16 @@
 
 .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .center-content-row {
   width: 100%;
-  max-width: 500px;
+  max-width: 530px;
 }
 
 .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div h2 {
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
   position: relative;
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 800;
-  line-height: 1.3;
+  line-height: 54px;
   display: block;
   color: #ff5f00;
   font-family: "Moderat Extended", sans-serif;
@@ -888,16 +888,77 @@
   display: block;
 }
 
+.block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .desc-div {
+  margin: 0 0 30px 0;
+}
+
 .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .desc-div p {
   padding: 0;
-  margin: 0;
+  margin: 0 0 10px 0;
   position: relative;
   color: rgba(255, 255, 255, 0.53);
   display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
-  max-width: 330px;
+  max-width: 100%;
+}
+
+.block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  width: 100%;
+}
+
+.block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box {
+  padding: 12px 15px 16px 15px;
+  width: 100%;
+  margin: 0 0 20px 0;
+  background: #191919;
+  border: 1px solid rgba(113, 113, 113, 0.24);
+  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box h4 {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0 0 8px 0;
+  font-family: "Moderat Extended", sans-serif;
+}
+
+.block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+  display: block;
+}
+
+.block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box p span.color-text01 {
+  margin: 2px 0 0 0;
+  display: block;
+  font-size: 16px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .button-group-div {
+  max-width: 415px;
+}
+
+.block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .button-group-div .btn-common-primary {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 6px 30px 4px 30px;
 }
 
 .block-banner-classes-section01 .block-banner-classes-div01 .img-thumb-div {
@@ -952,7 +1013,7 @@
 }
 
 .block-banner-classes-section02 .block-banner-classes-div02 .center-content-div {
-  padding: 20px 100px;
+  padding: 30px 100px;
   margin: 0;
   position: relative;
   display: -webkit-box;
@@ -968,22 +1029,37 @@
 
 .block-banner-classes-section02 .block-banner-classes-div02 .center-content-div .center-content-row {
   width: 100%;
-  max-width: 500px;
+  max-width: 530px;
 }
 
 .block-banner-classes-section02 .block-banner-classes-div02 .center-content-div h2 {
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
   position: relative;
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 800;
-  line-height: 1.3;
+  line-height: 54px;
   display: block;
   color: #ff5f00;
   font-family: "Moderat Extended", sans-serif;
 }
 
 .block-banner-classes-section02 .block-banner-classes-div02 .center-content-div h2 .block {
+  display: block;
+}
+
+.block-banner-classes-section02 .block-banner-classes-div02 .center-content-div h3 {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.3;
+  display: block;
+  color: #fff;
+}
+
+.block-banner-classes-section02 .block-banner-classes-div02 .center-content-div h3 .block {
   display: block;
 }
 
@@ -1065,7 +1141,8 @@
 }
 
 .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div .center-content-row {
-  max-width: 700px;
+  max-width: 530px;
+  width: 100%;
 }
 
 .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h1 {
@@ -1081,6 +1158,37 @@
 }
 
 .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h1 .block {
+  display: block;
+}
+
+.block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h2 {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 54px;
+  display: block;
+  color: #ff5f00;
+  font-family: "Moderat Extended", sans-serif;
+}
+
+.block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h2 .block {
+  display: block;
+}
+
+.block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h3 {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.3;
+  display: block;
+  color: #fff;
+}
+
+.block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h3 .block {
   display: block;
 }
 
@@ -1106,6 +1214,134 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 3;
+}
+
+.block-banner-classes-section04 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: #0f0f0f;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04::before {
+  content: "";
+  background: url(../images/icons/pattern-square-01.svg) no-repeat;
+  background-size: cover;
+  background-position: left;
+  position: absolute;
+  display: inline-block;
+  height: 120px;
+  width: 105px;
+  opacity: 0.6;
+  bottom: 120px;
+  right: 0;
+  z-index: 2;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .align-items-center-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .center-content-div {
+  padding: 30px 100px;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 3;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .center-content-div .center-content-row {
+  width: 100%;
+  max-width: 530px;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .center-content-div h2 {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 54px;
+  display: block;
+  color: #ff5f00;
+  font-family: "Moderat Extended", sans-serif;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .center-content-div h2 .block {
+  display: block;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .center-content-div h3 {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.3;
+  display: block;
+  color: #fff;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .center-content-div h3 .block {
+  display: block;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .center-content-div .desc-div {
+  margin: 0 0 40px 0;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .center-content-div .desc-div p {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  color: rgba(255, 255, 255, 0.53);
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  max-width: 330px;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .center-content-div .button-group-div {
+  max-width: 240px;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .center-content-div .button-group-div .btn-common-primary {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 6px 30px 4px 30px;
+}
+
+.block-banner-classes-section04 .block-banner-classes-div04 .img-thumb-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   z-index: 3;
@@ -1228,10 +1464,29 @@
   }
   .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div h2 {
     font-size: 28px;
+    line-height: 1.2;
     margin: 0 0 20px 0;
   }
   .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .desc-div p {
     font-size: 14px;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box {
+    margin: 0 0 10px 0;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box h4 {
+    font-size: 30px;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box p {
+    font-size: 14px;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box p span.color-text01 {
+    font-size: 12px;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .button-group-div .btn-common-primary {
+    font-size: 14px;
+    line-height: 22px;
+    min-height: 44px;
+    padding: 6px 20px 4px 20px;
   }
   .block-banner-classes-section02 .block-banner-classes-div02::before {
     display: none;
@@ -1241,7 +1496,13 @@
   }
   .block-banner-classes-section02 .block-banner-classes-div02 .center-content-div h2 {
     font-size: 28px;
+    line-height: 1.2;
     margin: 0 0 20px 0;
+  }
+  .block-banner-classes-section02 .block-banner-classes-div02 .center-content-div h3 {
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
   }
   .block-banner-classes-section02 .block-banner-classes-div02 .center-content-div .desc-div p {
     font-size: 14px;
@@ -1252,12 +1513,43 @@
   .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div {
     padding: 40px 20px 20px 20px;
   }
-  .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h1 {
-    font-size: 40px;
+  .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h2 {
+    font-size: 28px;
+    line-height: 1.2;
     margin: 0 0 20px 0;
+  }
+  .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h3 {
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
   }
   .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div .desc-div p {
     font-size: 14px;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04::before {
+    display: none;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04 .center-content-div {
+    padding: 20px 20px 60px 20px;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04 .center-content-div h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04 .center-content-div h3 {
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04 .center-content-div .desc-div p {
+    font-size: 14px;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04 .center-content-div .button-group-div .btn-common-primary {
+    font-size: 14px;
+    min-height: 44px;
+    line-height: 22px;
+    padding: 6px 20px 4px 20px;
   }
   .block-classes-common-pattern-root::before {
     display: none;
@@ -1364,10 +1656,35 @@
   }
   .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div h2 {
     font-size: 28px;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .desc-div {
     margin: 0 0 20px 0;
   }
   .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .desc-div p {
     font-size: 14px;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow {
+    margin: 0 0 10px 0;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box {
+    margin: 0 0 10px 0;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box h4 {
+    font-size: 24px;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box p {
+    font-size: 14px;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .card-black-number-shadow .card-black-shadow-box p span.color-text01 {
+    font-size: 12px;
+  }
+  .block-banner-classes-section01 .block-banner-classes-div01 .center-content-div .button-group-div .btn-common-primary {
+    font-size: 14px;
+    line-height: 22px;
+    min-height: 44px;
+    padding: 6px 20px 4px 20px;
   }
   .block-banner-classes-section02 .block-banner-classes-div02::before {
     height: 55px;
@@ -1379,6 +1696,15 @@
   }
   .block-banner-classes-section02 .block-banner-classes-div02 .center-content-div h2 {
     font-size: 28px;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+  }
+  .block-banner-classes-section02 .block-banner-classes-div02 .center-content-div h3 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+  }
+  .block-banner-classes-section02 .block-banner-classes-div02 .center-content-div .desc-div {
     margin: 0 0 20px 0;
   }
   .block-banner-classes-section02 .block-banner-classes-div02 .center-content-div .desc-div p {
@@ -1392,12 +1718,51 @@
   .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div {
     padding: 40px 20px;
   }
-  .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h1 {
-    font-size: 40px;
+  .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+  }
+  .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div h3 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+  }
+  .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div .desc-div {
     margin: 0 0 20px 0;
   }
   .block-banner-classes-section03 .block-banner-classes-div03 .center-content-div .desc-div p {
     font-size: 14px;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04::before {
+    height: 55px;
+    width: 48px;
+    bottom: 80px;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04 .center-content-div {
+    padding: 40px 20px;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04 .center-content-div h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04 .center-content-div h3 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04 .center-content-div .desc-div {
+    margin: 0 0 20px 0;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04 .center-content-div .desc-div p {
+    font-size: 14px;
+  }
+  .block-banner-classes-section04 .block-banner-classes-div04 .center-content-div .button-group-div .btn-common-primary {
+    font-size: 14px;
+    min-height: 44px;
+    line-height: 22px;
+    padding: 6px 20px 4px 20px;
   }
 }
 /*# sourceMappingURL=home-style.css.map */
