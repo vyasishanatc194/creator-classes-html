@@ -158,6 +158,12 @@
   padding: 0 5px;
   color: #fff;
   font-size: 26px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.main-inner-banner-section .content-banner-root .social-banner-div .social-list-ul li .link:hover {
+  color: #ff5f00;
 }
 
 .classes-by-creator-section {

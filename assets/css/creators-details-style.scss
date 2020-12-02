@@ -128,6 +128,11 @@
             padding: 0 5px;
             color: #fff;
             font-size: 26px;
+            transition: all 0.8s;
+
+            &:hover {
+              color: #ff5f00;
+            }
           }
         }
       }

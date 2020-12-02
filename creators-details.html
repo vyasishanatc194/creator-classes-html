@@ -868,7 +868,7 @@
                                 <div class="col-xl-12 col-lg-12 col-md-12 plr-8">
                                   <div class="bottom-row">
                                     <div class="link-box text-center-reg-side">
-                                      <p>Don’t have an account? <a href="#" class="btn btn-link btn-red-link">Register now</a></p>
+                                      <p>Don’t have an account? <a class="btn btn-link btn-red-link" id="register-data-tab-link" href="#signup-tab-02">Register now</a></p>
                                     </div>
                                     <div class="link-box text-right-side">
                                       <a href="#" class="btn btn-link btn-forgot">Forgot Password?</a>
@@ -981,7 +981,7 @@
                                 <div class="col-xl-12 col-lg-12 col-md-12 plr-8">
                                   <div class="bottom-row">
                                     <div class="link-box text-center-reg-side">
-                                      <p>Have an account? <a href="#" class="btn btn-link btn-red-link">Login</a></p>
+                                      <p>Have an account? <a href="#login-tab-01" id="login-data-tab-link" class="btn btn-link btn-red-link">Login</a></p>
                                     </div>
                                   </div>
 
@@ -1200,6 +1200,14 @@
       $(this).tab('show');
       $(".ltb-h2").removeClass("hide-h2");
       $(".ltp-h2").addClass("hide-h2");
+    });
+
+    $('#register-data-tab-link').click(function(){
+      $('.nav-tabs a[href="#signup-tab-02"]').tab('show')
+    });
+
+    $('#login-data-tab-link').click(function(){
+      $('.nav-tabs a[href="#login-tab-01"]').tab('show')
     });
     /* End of tab login */
     
