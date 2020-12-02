@@ -275,12 +275,12 @@
       position: relative;
       width: 100%;
       max-width: 390px;
-  
+
       .creators-img-mask-thumb {
         padding: 0;
         margin: 0 0 20px 0;
         position: relative;
-  
+
         .img-responsive {
           margin: 0 auto;
           display: block;
@@ -314,10 +314,10 @@
           }
         }
       }
-  
+
       .creators-img-link {
         display: flex;
-  
+
         .view-details-text {
           position: absolute;
           top: 0;
@@ -330,7 +330,7 @@
           background: url(../images/mask/mask02.svg) no-repeat;
           transition: all 0.8s;
           transform: scale(0);
-  
+
           p {
             font-weight: 400;
             font-size: 14px;
@@ -338,19 +338,19 @@
             color: #fff;
             letter-spacing: 0;
             text-align: center;
-  
+
             span.block {
               display: block;
             }
           }
         }
       }
-  
+
       .creators-content-div {
         .link {
           color: inherit;
         }
-  
+
         h3 {
           font-weight: 800;
           line-height: 1.3;
@@ -363,7 +363,7 @@
           font-family: "Moderat Extended", sans-serif;
           word-break: break-word;
         }
-  
+
         h4 {
           font-weight: 400;
           font-size: 18px;
@@ -374,7 +374,7 @@
           text-align: center;
           letter-spacing: 0;
         }
-  
+
         .star-row-div {
           display: flex;
           align-items: center;
@@ -382,37 +382,37 @@
           flex-wrap: wrap;
           width: 100%;
           margin: 0 0 20px 0;
-  
+
           .star-left-div {
             padding: 0 5px 0 0;
             margin: 0;
           }
-  
+
           .star-right-div {
             padding: 0;
             margin: 0;
           }
-  
+
           ul.star-rating-ul {
             display: flex;
             flex-wrap: wrap;
             list-style: none;
-  
+
             li {
               display: flex;
             }
-  
+
             .star-custom-icon {
               color: #9b9b9b;
               font-size: 16px;
               margin: 0 0 0 0;
-  
+
               &.active {
                 color: #ff5f00;
               }
             }
           }
-  
+
           span.text {
             font-weight: 400;
             font-size: 14px;
@@ -459,7 +459,7 @@
           h3 {
             font-size: 20px;
           }
-  
+
           h4 {
             font-size: 14px;
             margin: 0 0 10px 0;
@@ -493,18 +493,18 @@
       .creators-slider-box {
         padding: 0;
         margin: 0 0 30px 0;
-  
+
         .creators-img-mask-thumb {
           .img-responsive {
             height: 230px;
           }
         }
-  
+
         .creators-content-div {
           h3 {
             font-size: 20px;
           }
-  
+
           h4 {
             font-size: 14px;
             margin: 0 0 10px 0;

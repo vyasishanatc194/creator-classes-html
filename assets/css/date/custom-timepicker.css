@@ -243,7 +243,8 @@
     width: 120px;
     font-size: 14px;
   }
-  .time-picker-custom-div .bootstrap-datetimepicker-widget table td .timepicker-hour, .time-picker-custom-div .bootstrap-datetimepicker-widget table td .timepicker-minute {
+  .time-picker-custom-div .bootstrap-datetimepicker-widget table td .timepicker-hour,
+  .time-picker-custom-div .bootstrap-datetimepicker-widget table td .timepicker-minute {
     font-size: 14px;
   }
   .time-picker-custom-div .bootstrap-datetimepicker-widget table td.time-btn {

@@ -276,8 +276,6 @@
             padding: 0;
             margin: 0;
             position: relative;
-            // height: calc(100vh - 110px - 61px);
-            // overflow-y: auto;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -452,16 +450,6 @@
       .chat-progress-group-inner {
         right: 0;
       }
-
-      // .backdrop-progress {
-      //   position: fixed;
-      //   width: 100vw;
-      //   height: 100vh;
-      //   background-color: transparent;
-      //   display: flex;
-      //   left: 0;
-      //   z-index: 99;
-      // }
     }
   }
 }
@@ -585,7 +573,7 @@
           .btn-arrow-bar {
             .round-span {
               .arrow {
-                padding: 0 4px 0px 0;
+                padding: 0 4px 0 0;
               }
             }
           }
@@ -730,7 +718,7 @@
           .btn-arrow-bar {
             .round-span {
               .arrow {
-                padding: 0 4px 0px 0;
+                padding: 0 4px 0 0;
               }
             }
           }

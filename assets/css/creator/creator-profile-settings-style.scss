@@ -403,7 +403,8 @@
         line-height: 1.3;
         transition: all 0.8s;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           background-color: #fff;
           color: #191919;
         }

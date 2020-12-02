@@ -587,7 +587,7 @@
     top: 10px;
   }
   .general-chat-section .chatting-general-div.active .arrow-group-box .btn-arrow-bar .round-span .arrow {
-    padding: 0 4px 0px 0;
+    padding: 0 4px 0 0;
   }
 }
 
@@ -661,7 +661,7 @@
     right: 272px;
   }
   .general-chat-section .chatting-general-div.active .arrow-group-box .btn-arrow-bar .round-span .arrow {
-    padding: 0 4px 0px 0;
+    padding: 0 4px 0 0;
   }
 }
 /*# sourceMappingURL=chat.css.map */

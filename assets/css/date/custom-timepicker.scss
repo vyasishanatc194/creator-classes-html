@@ -226,13 +226,14 @@
       .row {
         flex-wrap: wrap;
       }
-      
+
       table {
         td {
           width: 120px;
           font-size: 14px;
 
-          .timepicker-hour, .timepicker-minute {
+          .timepicker-hour,
+          .timepicker-minute {
             font-size: 14px;
           }
 
@@ -274,5 +275,5 @@
       margin: 10px 15px 0 15px;
       padding: 0 15px;
     }
-  }  
+  }
 }
