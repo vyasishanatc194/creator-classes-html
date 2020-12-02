@@ -179,7 +179,6 @@
 .me-graph-view-div .me-graph-view-body .graph-thumb-div .img-graph {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 auto 20px auto;

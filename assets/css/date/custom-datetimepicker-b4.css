@@ -46,7 +46,7 @@
   line-height: 36px;
 }
 
-.bootstrap-datetimepicker-widget table td.active.today:before {
+.bootstrap-datetimepicker-widget table td.active.today::before {
   display: none;
 }
 
@@ -158,6 +158,10 @@
   background: transparent;
 }
 
+.form-group-lock .input-group.date .input-group-addon {
+  display: none;
+}
+
 .date-picker-form-group .input-group.date {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,16 +196,12 @@
   z-index: 9;
 }
 
-.form-group-lock .input-group.date .input-group-addon {
-  display: none;
-}
-
 .date-picker-form-group .bootstrap-datetimepicker-widget table td {
   height: 20px;
   line-height: normal;
 }
 
-.date-picker-form-group .bootstrap-datetimepicker-widget table td.today:before {
+.date-picker-form-group .bootstrap-datetimepicker-widget table td.today::before {
   display: none;
 }
 
