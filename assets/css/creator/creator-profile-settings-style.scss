@@ -337,6 +337,14 @@
     }
 
     &.form-group-slots {
+      .form-date-time-row-div {
+        margin: 0 0 10px 0;
+      }
+
+      .form-group {
+        margin: 0 0 6px 0;
+      }
+
       .date-input-box {
         margin: 0 0 10px 0;
       }
@@ -366,8 +374,10 @@
       }
 
       .abs-top-right {
-        top: 0;
         height: 50px;
+        position: relative;
+        top: auto;
+        right: auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -387,6 +397,10 @@
         outline: none;
         transition: all 0.8s;
         cursor: pointer;
+
+        .text-hidden {
+          display: none;
+        }
       }
 
       .btn.btn-block-add {
@@ -678,14 +692,23 @@
           font-size: 14px;
         }
 
+        .form-date-time-row-div {
+          margin: 0 0 20px 0;
+        }
+
         .cancel-btn-icon {
-          font-size: 16px;
-          height: 24px;
-          width: 24px;
+          font-size: 14px;
+          height: 36px;
+          width: 100%;
+
+          .text-hidden {
+            display: inline-block;
+            margin: 0 0 0 10px;
+          }
         }
 
         .abs-top-right {
-          height: 46px;
+          height: auto;
         }
 
         .btn.btn-block-add {

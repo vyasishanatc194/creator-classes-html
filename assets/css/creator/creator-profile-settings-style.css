@@ -372,6 +372,14 @@
   padding: 0 0 0 5px;
 }
 
+.creator-edit-common-form-div .form-group.form-group-slots .form-date-time-row-div {
+  margin: 0 0 10px 0;
+}
+
+.creator-edit-common-form-div .form-group.form-group-slots .form-group {
+  margin: 0 0 6px 0;
+}
+
 .creator-edit-common-form-div .form-group.form-group-slots .date-input-box {
   margin: 0 0 10px 0;
 }
@@ -407,8 +415,10 @@
 }
 
 .creator-edit-common-form-div .form-group.form-group-slots .abs-top-right {
-  top: 0;
   height: 50px;
+  position: relative;
+  top: auto;
+  right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,6 +451,10 @@
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
   cursor: pointer;
+}
+
+.creator-edit-common-form-div .form-group.form-group-slots .cancel-btn-icon .text-hidden {
+  display: none;
 }
 
 .creator-edit-common-form-div .form-group.form-group-slots .btn.btn-block-add {
@@ -697,13 +711,20 @@
     padding-right: 44px;
     font-size: 14px;
   }
+  .creator-edit-common-form-div .form-group.form-group-slots .form-date-time-row-div {
+    margin: 0 0 20px 0;
+  }
   .creator-edit-common-form-div .form-group.form-group-slots .cancel-btn-icon {
-    font-size: 16px;
-    height: 24px;
-    width: 24px;
+    font-size: 14px;
+    height: 36px;
+    width: 100%;
+  }
+  .creator-edit-common-form-div .form-group.form-group-slots .cancel-btn-icon .text-hidden {
+    display: inline-block;
+    margin: 0 0 0 10px;
   }
   .creator-edit-common-form-div .form-group.form-group-slots .abs-top-right {
-    height: 46px;
+    height: auto;
   }
   .creator-edit-common-form-div .form-group.form-group-slots .btn.btn-block-add {
     min-height: 46px;

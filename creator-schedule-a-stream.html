@@ -24,8 +24,10 @@
   <link href="assets/css/select2.min.css" media="all" rel="stylesheet" type="text/css" />
   <link href="assets/css/select-custom.css" media="all" rel="stylesheet" type="text/css" />
   <link href="assets/css/select2-custom.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="assets/css/date/bootstrap-datetimepicker.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="assets/css/date/custom-timepicker.css" media="all" rel="stylesheet" type="text/css" />
+  <!-- <link href="assets/css/date/bootstrap-datetimepicker.css" media="all" rel="stylesheet" type="text/css" /> -->
+  <!-- <link href="assets/css/date/custom-timepicker.css" media="all" rel="stylesheet" type="text/css" /> -->
+  <link href="assets/css/date/flatpickr.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/date/flatpickr-dark.css" media="all" rel="stylesheet" type="text/css" />
   <link href="assets/css/drag-and-drop/dropzone.css" media="all" rel="stylesheet" type="text/css" />
   <link href="assets/css/drag-and-drop/dropzone-custom.css" media="all" rel="stylesheet" type="text/css" />
   <link href="assets/css/creator/creator-step-main-style.css" media="all" rel="stylesheet" type="text/css" />
@@ -107,6 +109,7 @@
                               </div>
                             </div>
                           </div>
+
                         </div>
                       </div>
                     </div>
@@ -191,7 +194,7 @@
                       <div class="step-tabs-body-common">
                         <div class="tab-content step-tab-content">
 
-                          <div id="step-ss-tab-01" class="tab-pane fade active show">
+                          <div id="step-ss-tab-01" class="tab-pane fade ">
 
                             <div class="step-tab-pane-inner">
 
@@ -317,7 +320,7 @@
 
                           </div>
 
-                          <div id="step-ss-tab-02" class="tab-pane fade">
+                          <div id="step-ss-tab-02" class="tab-pane fade active show">
 
                             <div class="step-tab-pane-inner">
 
@@ -372,9 +375,44 @@
                                               </div>
                                               <div class="input-control-row">
                                                 
-                                                <div class="time-picker-custom-div">
+                                                <div class="time-picker-custom-div d-none">
                                                   <div id="time-picker01"></div>
                                                 </div>
+
+                                                <div class="form-date-time-root-block">
+
+                                                  <div class="form-date-time-row-block">
+                                                    <div class="row mlr-10">
+          
+                                                      <div class="col-lg-8 col-md-8 date-col-6 plr-10">
+                                                        <div class="date-input-box">
+                                                          <div class="input-control-row">
+                                                            <div class="input-group">
+                                                              <input id="datetime-picker1" type='text' class="form-control custom-form-control" placeholder="Select a day and time" />
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+          
+                                                      <div class="col-lg-4 col-md-4 timezone-col-4 plr-10">
+                                                        <div class="form-group select2-form-group select2-form-group-cs1">
+                                                          <div class="select-box select-custom2 select-custom2-general">
+                                                            <select class="js-select2" id="select-timezone">
+                                                              <option>EST </option>
+                                                              <option>GMT </option>
+                                                              <option>IST</option>
+                                                              <option>CST </option>
+                                                              <option>PT </option>
+                                                              <option>MST </option>
+                                                            </select>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+
+                                                    </div>
+                                                  </div>
+          
+                                                </div>  
 
                                               </div>
                                             </div>    
@@ -866,8 +904,9 @@
   <script src="assets/js/drag-and-drop/dropzone.js"></script>
   <script src="assets/js/drag-and-drop/get-dropzone.js"></script>
   <script src="assets/js/select2.full.js"></script>
-  <script src="assets/js/date/moment-with-locales.js" ></script>
-  <script src="assets/js/date/bootstrap-datetimepicker.js"></script>
+  <!-- <script src="assets/js/date/moment-with-locales.js" ></script>
+  <script src="assets/js/date/bootstrap-datetimepicker.js"></script> -->
+  <script src="assets/js/date/flatpickr.min.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/date-js.js"></script>
 
@@ -900,12 +939,13 @@
       /* End of select 2 */
 
       /* time picker */
-      $('#time-picker01').datetimepicker({ 
+      /* $('#time-picker01').datetimepicker({ 
         inline: true,
         sideBySide: true,
       });
 
       $("#time-picker01 .timepicker.col-md-6").after('<div class="time-zone-custom-div"><ul><li><label class="btn-tizone">PST</label></li><li class="active"><label class="btn-tizone ">EST</label></li><li><label class="btn-tizone">MST</label></li> </ul></div>');
+      */
       /*  End of time picker */
 
       /* select seat number */
@@ -943,7 +983,16 @@
       duplicate();
       /* End of select seat number */
 
-      // $("#congratulations-modal").modal("show");
+      /* flat picker */
+      var startdate;
+      startdate = flatpickr("#datetime-picker1", {
+        altInput: true,
+        disableMobile: "true",
+        enableTime: true,
+        altInput: true,
+        // altFormat: "j F Y",
+        dateFormat: "Y-m-d H:i",
+      });
     });
   </script>
 

@@ -874,6 +874,15 @@ body {
   margin-right: 10px;
 }
 
+.form-date-time-root-block .form-date-time-row-block {
+  max-width: 560px;
+}
+
+.form-date-time-root-block .form-date-time-row-block .flatpickr-input {
+  font-size: 18px;
+  padding-left: 30px;
+}
+
 /* End of general css */
 .main-middle-area {
   padding: 90px 0 0 0;
@@ -1385,6 +1394,14 @@ body {
   .common-form-updated-div .form-group.select-date-form-group .input-control-row .select-box.mr-10 {
     margin-right: 0;
   }
+  .form-date-time-root-block .form-date-time-row-block .flatpickr-input {
+    font-size: 16px;
+    padding-left: 30px;
+    min-height: 50px;
+  }
+  .form-date-time-root-block .form-date-time-row-block .date-input-box {
+    margin: 0 0 5px 0;
+  }
 }
 
 .animated {
@@ -1495,6 +1512,14 @@ body {
     min-width: 90px;
     min-height: 44px;
     padding: 6px 15px 5px 15px;
+  }
+  .form-date-time-root-block .form-date-time-row-block .flatpickr-input {
+    font-size: 16px;
+    padding-left: 30px;
+    min-height: 50px;
+  }
+  .form-date-time-root-block .form-date-time-row-block .date-input-box {
+    margin: 0 0 5px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

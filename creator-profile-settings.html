@@ -24,8 +24,10 @@
 <link href="assets/css/select-custom.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/select2-custom.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/back-banner-style.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/date/bootstrap-datetimepicker.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/date/custom-datetimepicker-b4.css" media="all" rel="stylesheet" type="text/css" />
+<!-- <link href="assets/css/date/bootstrap-datetimepicker.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/date/custom-datetimepicker-b4.css" media="all" rel="stylesheet" type="text/css" /> -->
+<link href="assets/css/date/flatpickr.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/date/flatpickr-dark.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/creator/creator-profile-settings-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/creator/creator-popup-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/notifications-style.css" media="all" rel="stylesheet" type="text/css" />
@@ -157,7 +159,7 @@
               <div class="tabs-body-common">
                 <div class="tab-content">
 
-                  <div id="creator-profile-settings-tab-01" class="tab-pane fade active show">
+                  <div id="creator-profile-settings-tab-01" class="tab-pane fade ">
 
                     <div class="tab-pane-inner">
 
@@ -318,7 +320,7 @@
 
                   </div>
 
-                  <div id="creator-profile-settings-tab-02" class="tab-pane fade">
+                  <div id="creator-profile-settings-tab-02" class="tab-pane fade active show">
 
                     <div class="tab-pane-inner">
 
@@ -328,7 +330,8 @@
                             <div class="container container-800">
                               <div class="row mlr-10">
 
-                                <div class="min-height-oto-top-div">
+                                <div class="min-height-oto-top-div w-100">
+
                                   <div class="col-lg-6 col-md-6 plr-10">
                                     <div class="form-group select2-form-group select2-form-group-cs1 mb-30">
                                       <label>Edit Amount</label>
@@ -348,57 +351,132 @@
                                     <div class="form-group date-picker-form-group form-group-slots">
                                       <label class="font-weight-500 mb-15">Available Slots</label>
   
-                                      <div class="row mlr-10">
-  
-                                        <div class="col-lg-6 col-md-6 plr-10">
-                                          <div class="date-input-box">
-                                            <div class="input-control-row">
-                                              <div class="input-group">
-                                                <span class="icon-box"> <i class="bg-custom-icon calendar-time-icon"></i> </span>
-                                                <input id="datetime-picker1" type='text' class="form-control custom-form-control" placeholder="Select a day and time" />
+                                      <div class="form-date-time-root-div">
+
+                                        <div class="form-date-time-row-div">
+                                          <div class="row mlr-10">
+
+                                            <div class="col-lg-6 col-md-6 date-col-5 plr-10">
+                                              <div class="date-input-box">
+                                                <div class="input-control-row">
+                                                  <div class="input-group">
+                                                    <span class="icon-box"> <i class="bg-custom-icon calendar-time-icon"></i> </span>
+                                                    <input id="datetime-picker1" type='text' class="form-control custom-form-control" placeholder="Select a day and time" />
+                                                  </div>
+                                                </div>
                                               </div>
-                                              <div class="abs-top-right"> <button class="cancel-btn-icon"> <i class="fe fe-x cross-icon"></i> </button> </div>
                                             </div>
-                                          </div>
-  
-                                        </div>
-  
-                                        <div class="col-lg-6 col-md-6 plr-10">
-                                          <div class="date-input-box">
-                                            <div class="input-control-row">
-                                              <div class="input-group">
-                                                <span class="icon-box"> <i class="bg-custom-icon calendar-time-icon"></i> </span>
-                                                <input id="datetime-picker2" type='text' class="form-control custom-form-control" placeholder="Select a day and time" />
+
+                                            <div class="col-lg-5 col-md-5 timezone-col-5 plr-10">
+                                              <div class="form-group select2-form-group select2-form-group-cs1">
+                                                <div class="select-box select-custom2 select-custom2-general">
+                                                  <select class="js-select2" id="select-timezone">
+                                                    <option>EST </option>
+                                                    <option>GMT </option>
+                                                    <option>IST</option>
+                                                    <option>CST </option>
+                                                    <option>PT </option>
+                                                    <option>MST </option>
+                                                  </select>
+                                                </div>
                                               </div>
-                                              <div class="abs-top-right"> <button class="cancel-btn-icon"> <i class="fe fe-x cross-icon"></i> </button> </div>
                                             </div>
+
+                                            <div class="col-lg-1 col-md-1 cancel-col plr-10">
+                                              <div class="abs-top-right"> <button class="cancel-btn-icon"> <i class="fe fe-x cross-icon"></i> <span class="text-hidden">Remove</span> </button> </div>
+                                            </div>
+
                                           </div>
-  
                                         </div>
-  
-                                        <div class="col-lg-6 col-md-6 plr-10">
-                                          <div class="date-input-box">
-                                            <div class="input-control-row">
-                                              <div class="input-group">
-                                                <span class="icon-box"> <i class="bg-custom-icon calendar-time-icon"></i> </span>
-                                                <input id="datetime-picker3" type='text' class="form-control custom-form-control" placeholder="Select a day and time" />
+
+                                        <div class="form-date-time-row-div">
+                                          <div class="row mlr-10">
+
+                                            <div class="col-lg-6 col-md-6 date-col-5 plr-10">
+                                              <div class="date-input-box">
+                                                <div class="input-control-row">
+                                                  <div class="input-group">
+                                                    <span class="icon-box"> <i class="bg-custom-icon calendar-time-icon"></i> </span>
+                                                    <input id="datetime-picker1" type='text' class="form-control custom-form-control" placeholder="Select a day and time" />
+                                                  </div>
+                                                </div>
                                               </div>
-                                              <div class="abs-top-right"> <button class="cancel-btn-icon"> <i class="fe fe-x cross-icon"></i> </button> </div>
+                                            </div>
+
+                                            <div class="col-lg-5 col-md-5 timezone-col-5 plr-10">
+                                              <div class="form-group select2-form-group select2-form-group-cs1">
+                                                <div class="select-box select-custom2 select-custom2-general">
+                                                  <select class="js-select2" id="select-timezone">
+                                                    <option>EST </option>
+                                                    <option>GMT </option>
+                                                    <option>IST</option>
+                                                    <option>CST </option>
+                                                    <option>PT </option>
+                                                    <option>MST </option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-lg-1 col-md-1 cancel-col plr-10">
+                                              <div class="abs-top-right"> <button class="cancel-btn-icon"> <i class="fe fe-x cross-icon"></i> <span class="text-hidden">Remove</span> </button> </div>
+                                            </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="form-date-time-row-div">
+                                          <div class="row mlr-10">
+
+                                            <div class="col-lg-6 col-md-6 date-col-5 plr-10">
+                                              <div class="date-input-box">
+                                                <div class="input-control-row">
+                                                  <div class="input-group">
+                                                    <span class="icon-box"> <i class="bg-custom-icon calendar-time-icon"></i> </span>
+                                                    <input id="datetime-picker1" type='text' class="form-control custom-form-control" placeholder="Select a day and time" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-lg-5 col-md-5 timezone-col-5 plr-10">
+                                              <div class="form-group select2-form-group select2-form-group-cs1">
+                                                <div class="select-box select-custom2 select-custom2-general">
+                                                  <select class="js-select2" id="select-timezone">
+                                                    <option>EST </option>
+                                                    <option>GMT </option>
+                                                    <option>IST</option>
+                                                    <option>CST </option>
+                                                    <option>PT </option>
+                                                    <option>MST </option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-lg-1 col-md-1 cancel-col plr-10">
+                                              <div class="abs-top-right"> <button class="cancel-btn-icon"> <i class="fe fe-x cross-icon"></i> <span class="text-hidden">Remove</span> </button> </div>
+                                            </div>
+
+                                          </div>
+                                        </div>
+
+                                        <div class="slot-btn-add-row">
+                                          <div class="row mlr-10">
+                                            <div class="col-lg-6 col-md-6 plr-10">
+                                              
+                                              <div class="date-input-box">
+                                                <div class="input-control-row">
+                                                  <button class="btn btn-block-add">+Add Slot</button>
+                                                </div>
+                                              </div>
+      
                                             </div>
                                           </div>
-  
                                         </div>
-  
-                                        <div class="col-lg-6 col-md-6 plr-10">
-                                          <div class="date-input-box">
-                                            <div class="input-control-row">
-                                              <button class="btn btn-block-add">+Add Slot</button>
-                                            </div>
-                                          </div>
-  
-                                        </div>
-                                        
-                                      </div>
+
+                                      </div>  
+
                                     </div>
                                   </div>
                                 </div>
@@ -724,8 +802,9 @@
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/select2.full.js"></script>
-<script src="assets/js/date/moment-with-locales.js"></script>
-<script src="assets/js/date/bootstrap-datetimepicker.js"></script>
+<!-- <script src="assets/js/date/moment-with-locales.js"></script>
+<script src="assets/js/date/bootstrap-datetimepicker.js"></script> -->
+<script src="assets/js/date/flatpickr.min.js"></script>
 <script src="assets/js/creator-profile-setting.js"></script>
 <script src="assets/js/custom.js"></script>
 
@@ -745,15 +824,28 @@
     });
     /* End of select 2 */
 
-    $("#datetime-picker1, #datetime-picker2, #datetime-picker3").datetimepicker({
-      format: 'MMM DD, LT',
-      sideBySide: true,
-      // debug: true,
-    });
+    // $("#datetime-picker1, #datetime-picker2, #datetime-picker3").datetimepicker({
+    //   format: 'MMM DD, LT',
+    //   sideBySide: true,
+    //   // debug: true,
+    // });
 
-    $("#datetime-picker1, #datetime-picker2, #datetime-picker3").click(function(){
-      $(".bootstrap-datetimepicker-widget.dropdown-menu .timepicker.col-md-6").after('<div class="time-zone-div col-md-12"><ul><li><label class="btn-tizone">PST</label></li><li><label class="btn-tizone">EST</label></li><li><label class="btn-tizone">MST</label></li> </ul></div>');
+    // $("#datetime-picker1, #datetime-picker2, #datetime-picker3").click(function(){
+    //   $(".bootstrap-datetimepicker-widget.dropdown-menu .timepicker.col-md-6").after('<div class="time-zone-div col-md-12"><ul><li><label class="btn-tizone">PST</label></li><li><label class="btn-tizone">EST</label></li><li><label class="btn-tizone">MST</label></li> </ul></div>');
+    // });
+
+    var startdate;
+    startdate = flatpickr("#datetime-picker1",{
+      altInput: true,
+        disableMobile: "true",
+        enableTime: true,
+        altInput: true,
+        // altFormat: "j F Y",
+        dateFormat: "Y-m-d H:i",
     });
+    //  $("#plandate").click(function() {
+    //   startdate.toggle()
+    // }); 
   });
 </script>
 </body>
