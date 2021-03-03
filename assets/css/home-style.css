@@ -346,12 +346,14 @@
   position: relative;
   background: #1e1e27;
   border-radius: 8px;
+  border: 2px solid #1e1e27;
 }
 
 .creators-owl-slider-main-div .creators-owl-slider-main-slider .creators-img-mask-slider-box .creators-img-mask-thumb {
   padding: 0;
   margin: 0;
   position: relative;
+  overflow: hidden;
 }
 
 .creators-owl-slider-main-div .creators-owl-slider-main-slider .creators-img-mask-slider-box .creators-img-mask-thumb .img-responsive {
@@ -362,6 +364,8 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px 8px 0 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .creators-owl-slider-main-div .creators-owl-slider-main-slider .creators-img-mask-slider-box .creators-img-link {
@@ -431,6 +435,19 @@
   display: block;
   color: #808191;
   letter-spacing: 0;
+}
+
+.creators-owl-slider-main-div .creators-owl-slider-main-slider .creators-img-mask-slider-box:hover {
+  border: 2px solid #ff5f00;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.creators-owl-slider-main-div .creators-owl-slider-main-slider .creators-img-mask-slider-box:hover .creators-img-mask-thumb .img-responsive {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .the-ultimate-online-section {
