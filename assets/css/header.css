@@ -225,6 +225,7 @@ header .header-div .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 header .header-div .logo_img {
@@ -365,8 +366,8 @@ header .header-div .ullist-inline li .nav-link.login-in-btn {
   padding: 8px 20px 6px 20px;
   font-size: 14px;
   line-height: 24px;
-  color: #191919;
-  background-color: #fff;
+  color: #fff;
+  background-color: transparent;
   border-radius: 28px;
   letter-spacing: 0;
   font-weight: 600;
@@ -375,16 +376,44 @@ header .header-div .ullist-inline li .nav-link.login-in-btn {
   margin-bottom: -5px;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+  position: relative;
+}
+
+header .header-div .ullist-inline li .nav-link.login-in-btn::before {
+  border: 2px solid;
+  background-image: none;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(271.84deg, #ef6b18 12.5%, #ef4443 123.33%);
+  background-image: linear-gradient(271.84deg, #ef6b18 12.5%, #ef4443 123.33%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  -webkit-transform: none;
+          transform: none;
+  border-radius: 28px;
+}
+
+header .header-div .ullist-inline li .nav-link.login-in-btn::after {
+  content: "";
+  background-color: #111117;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  position: absolute;
+  z-index: -1;
+  border-radius: 100px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  left: 1px;
+  top: 1px;
 }
 
 header .header-div .ullist-inline li .nav-link.login-in-btn:hover {
-  background-color: #ef4443;
-  background-image: linear-gradient(121deg, #ef4443 2%, #ef5630 46%, #ef6b18 100%);
   color: #fff;
 }
 
-header .header-div .ullist-inline li .nav-link.login-in-btn::before, header .header-div .ullist-inline li .nav-link.login-in-btn::after {
-  display: none;
+header .header-div .ullist-inline li .nav-link.login-in-btn:hover::after {
+  height: auto;
 }
 
 header .header-div .ullist-inline li .nav-link.login-in-btn.login-color2 {
@@ -512,6 +541,7 @@ header .header-div.header-bgcolor .logo_img.text-logo {
 header .header-div.header-bgcolor .header-container {
   padding-top: 0;
   padding-bottom: 0;
+  border-bottom: 0;
 }
 
 header .header-div .dropdown-menu {

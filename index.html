@@ -20,20 +20,24 @@
 <link href="assets/css/owl.carousel.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/header.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/footer.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/select2.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/select-custom.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/select2-custom.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/owl-slider-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/home-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/loader-style7.css" media="all" rel="stylesheet" type="text/css" />
-<script src="assets/js/page-preloading-effect/modernizr.custom.js"></script>
+<!-- <script src="assets/js/page-preloading-effect/modernizr.custom.js"></script> -->
 <!-- <script src="assets/js/modernizr.js"></script> -->
 </head>
 
-<body class="demo-1">
+<body>
+  <!-- For loader <body class="demo-1"> -->
 
   <div id="ip-container" class="ip-container">
     <!-- Loader 07 -->
-    <div class="ip-header">
+    <!-- <div class="ip-header">
       <h1 class="ip-logo">
         <img src="assets/images/cc-animation.svg" class="img-fluid" alt="img" />
       </h1>
@@ -43,10 +47,10 @@
           <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
         </svg>
       </div>
-    </div>
+    </div> -->
     <!-- End of Loader 07 -->
 
-    <div id="wrapper" class="wrapper home-wrapper">
+    <div id="wrapper" class="wrapper home-wrapper main-bg-color">
 
       <header>
         <div class="header-div clearfix" >
@@ -95,31 +99,47 @@
         <section class="main-banner-section" id="main-banner-section">
           <div class="banner-div">
 
-            <div class="banner-image-div">
-              <div class="banner-image-group">
-                <div class="video-div">
-                  <a href="#" class="video-button"> <i class="bg-custom-icon play-icon"></i> </a>
-                </div>
-              </div>  
-            </div>
-
             <div class="content-banner-root">
               <div class="container container-1000">
                 <div class="row">
-                  <div class="col-lg-12 col-md-12">
+                  <div class="col-lg-6 col-md-6">
                   
                     <div class="content-banner">
                       <div class="text-content">
-                        <h1><span class="block">Exclusive</span> <span class="block">Tutorials</span></h1>
-                        <h2> <span class="block">From your</span> <span class="block">Favourite Creators</span> </h2>
+                        <h1><span class="block">Build Your Future Right Here</span></h1>
+                        <p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec.</p>
                         <div class="button-group-div">
-                          <a href="signup.html" class="btn btn-common btn-get-started min-width-280"> <span class="text">Get Started</span> </a>
+                          <!-- <a href="signup.html" class="btn btn-common btn-get-started min-width-280"> <span class="text">Get Started Now</span> </a> -->
+                          <a href="signup.html" class="btn btn-primary-all">
+                            <span class="text">Get Started Now</span> <span class="span-rounded"><span class="material-icons"> keyboard_arrow_right </span></span>
+                          </a>
                         </div>
                       </div>
                     </div>
                     
                   </div>  
+                  <div class="col-lg-6 col-md-6">
+                    <div class="banner-right-image-div">
+                      <img src="assets/images/latest/header-graphic.png" class="img-fluid" alt="image" />
+                    </div>
+                  </div>
                 </div>        
+              </div>
+            </div>
+
+            <div class="bottom-arrow-root">
+              <div class="container container-1000">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+
+                    <div class="center-bottom-arrow-div">
+                      <a href="#our-classes-section" class="rounded-arrow-icon-btn">
+                        <span class="material-icons"> keyboard_arrow_down </span>
+                      </a>
+                    </div>
+                  
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -134,109 +154,192 @@
                 <div class="row">
                   <div class="col-lg-12 col-md-12">
                     <div class="heading-inner-div">
-                      <h2>Our Classes</h2>
-
-                      <div class="filter-category-root-div">
-                        <div class="filter-category-inner">
-                          <ul class="filter-list-ul">
-                            <li class="active"><a href="#" class="filter-link">All <span class="cancel-icon-span"> <i class="fe fe-x cross-icon"></i> </span> </a></li>
-                            <li><a href="#" class="filter-link">Photography</a></li>
-                            <li><a href="#" class="filter-link">Filmmaking</a></li>
-                            <li><a href="#" class="filter-link">VFX</a></li>
-                            <li><a href="#" class="filter-link">Graphic Design</a></li>
-                            <li><a href="#" class="filter-link">Underwater</a></li>
-                          </ul>
+                      <div class="heading-title-row">
+                        <div class="heading-title-left">
+                          <h2>Our Classes</h2>
+                        </div>
+                        <div class="heading-title-right">
+                          <div class="form-group select2-form-group select2-new-group">
+                            <div class="select-box select-custom2 select-custom2-general round-12">
+                              <select class="js-select2" id="select-filter">
+                                <option>I'm yet to think...</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="owl-slider-main-div">
+            <div class="owl-slider-new-main-div">
               <div class="container container-1000">
                 <div class="row">
                   <div class="col-lg-12 col-md-12">
 
-                    <div class="owl-slider-main-slider">
+                    <div class="owl-slider-new-main-slider">
                       <div class="owl-carousel owl-theme our-classes-owl" id="our-classes-owl">
 
                         <div class="item">  
-                          <div class="our-video-img-slider-box">
+                          <div class="our-video-common-slider-box">
                             <div class="our-video-img-thumb">
-                              <div class="img-thumb"> <img src="assets/images/slider-img/img-01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                              <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div>
+                              <div class="img-thumb"> <img src="assets/images/user-home/img-01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                              <div class="like-box-abs"> <button class="like-button"><span class="like-icon "> </span></button> </div>
+                              <div class="time-box-abs"> <button class="time-button"> 13:47 </button> </div>
                             </div>
                             <div class="our-content-div">
-                              <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
-                              <h4>Michael Gray</h4>
+                              <div class="our-content-row">
+                                <div class="our-content-full">
+                                  <h4><a href="">How to learn photography in an efficient way</a> </h4>
+                                </div>
+
+                                <div class="our-content-left">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user" />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="our-content-right">
+                                  <h3><a href="#" class="link">Mike Visuals <span class="icon-rounded-span check-icon-rounded"><span class="material-icons">done</span> </a></h3>
+                                  <p>Visual Expert</p>
+                                </div>
+                              </div>
+
+                              <div class="our-content-bottom-row">
+                                <div class="our-content-bottom-left">
+                                  <div class="label-div">
+                                    <span class="txt-label">Popular</span>
+                                  </div>
+                                </div>
+                                <div class="our-content-bottom-right">
+                                  <h4><span class="material-icons">schedule</span> <span class="txt">Posted 10 hours ago</span>  </h4>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
 
                         <div class="item">  
-                          <div class="our-video-img-slider-box">
+                          <div class="our-video-common-slider-box">
                             <div class="our-video-img-thumb">
-                              <div class="img-thumb"> <img src="assets/images/slider-img/img-02.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                              <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div>
+                              <div class="img-thumb"> <img src="assets/images/user-home/img-01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                              <div class="like-box-abs"> <button class="like-button"><span class="like-icon "> </span></button> </div>
+                              <div class="time-box-abs"> <button class="time-button"> 13:47 </button> </div>
                             </div>
                             <div class="our-content-div">
-                              <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
-                              <h4>Michael Gray</h4>
+                              <div class="our-content-row">
+                                <div class="our-content-full">
+                                  <h4><a href="">How to learn photography in an efficient way</a> </h4>
+                                </div>
+
+                                <div class="our-content-left">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user" />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="our-content-right">
+                                  <h3><a href="#" class="link">Mike Visuals <span class="icon-rounded-span check-icon-rounded"><span class="material-icons">done</span> </a></h3>
+                                  <p>Visual Expert</p>
+                                </div>
+                              </div>
+
+                              <div class="our-content-bottom-row">
+                                <div class="our-content-bottom-left">
+                                  <div class="label-div">
+                                    <span class="txt-label">Popular</span>
+                                  </div>
+                                </div>
+                                <div class="our-content-bottom-right">
+                                  <h4><span class="material-icons">schedule</span> <span class="txt">Posted 10 hours ago</span>  </h4>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
 
                         <div class="item">  
-                          <div class="our-video-img-slider-box">
+                          <div class="our-video-common-slider-box">
                             <div class="our-video-img-thumb">
-                              <div class="img-thumb"> <img src="assets/images/slider-img/img-03.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                              <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div>
+                              <div class="img-thumb"> <img src="assets/images/user-home/img-01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                              <div class="like-box-abs"> <button class="like-button"><span class="like-icon "> </span></button> </div>
+                              <div class="time-box-abs"> <button class="time-button"> 13:47 </button> </div>
                             </div>
                             <div class="our-content-div">
-                              <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
-                              <h4>Michael Gray</h4>
+                              <div class="our-content-row">
+                                <div class="our-content-full">
+                                  <h4><a href="">How to learn photography in an efficient way</a> </h4>
+                                </div>
+
+                                <div class="our-content-left">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user" />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="our-content-right">
+                                  <h3><a href="#" class="link">Mike Visuals <span class="icon-rounded-span check-icon-rounded"><span class="material-icons">done</span> </a></h3>
+                                  <p>Visual Expert</p>
+                                </div>
+                              </div>
+
+                              <div class="our-content-bottom-row">
+                                <div class="our-content-bottom-left">
+                                  <div class="label-div">
+                                    <span class="txt-label">Popular</span>
+                                  </div>
+                                </div>
+                                <div class="our-content-bottom-right">
+                                  <h4><span class="material-icons">schedule</span> <span class="txt">Posted 10 hours ago</span>  </h4>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
 
                         <div class="item">  
-                          <div class="our-video-img-slider-box">
+                          <div class="our-video-common-slider-box">
                             <div class="our-video-img-thumb">
-                              <div class="img-thumb"> <img src="assets/images/slider-img/img-04.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                              <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div>
+                              <div class="img-thumb"> <img src="assets/images/user-home/img-01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                              <div class="like-box-abs"> <button class="like-button"><span class="like-icon "> </span></button> </div>
+                              <div class="time-box-abs"> <button class="time-button"> 13:47 </button> </div>
                             </div>
                             <div class="our-content-div">
-                              <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
-                              <h4>Michael Gray</h4>
-                            </div>
-                          </div>
-                        </div>
+                              <div class="our-content-row">
+                                <div class="our-content-full">
+                                  <h4><a href="">How to learn photography in an efficient way</a> </h4>
+                                </div>
 
-                        <div class="item">  
-                          <div class="our-video-img-slider-box">
-                            <div class="our-video-img-thumb">
-                              <div class="img-thumb"> <img src="assets/images/slider-img/img-05.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                              <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div>
-                            </div>
-                            <div class="our-content-div">
-                              <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
-                              <h4>Michael Gray</h4>
-                            </div>
-                          </div>
-                        </div>
+                                <div class="our-content-left">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user" />
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="our-content-right">
+                                  <h3><a href="#" class="link">Mike Visuals <span class="icon-rounded-span check-icon-rounded"><span class="material-icons">done</span> </a></h3>
+                                  <p>Visual Expert</p>
+                                </div>
+                              </div>
 
-                        <div class="item">  
-                          <div class="our-video-img-slider-box">
-                            <div class="our-video-img-thumb">
-                              <div class="img-thumb"> <img src="assets/images/slider-img/img-01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                              <div class="video-button-div"> <a href="#" class="video-button-link"><i class="fa fa-play"></i></a> </div>
-                            </div>
-                            <div class="our-content-div">
-                              <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</a></h3>
-                              <h4>Michael Gray</h4>
+                              <div class="our-content-bottom-row">
+                                <div class="our-content-bottom-left">
+                                  <div class="label-div">
+                                    <span class="txt-label">Popular</span>
+                                  </div>
+                                </div>
+                                <div class="our-content-bottom-right">
+                                  <h4><span class="material-icons">schedule</span> <span class="txt">Posted 10 hours ago</span>  </h4>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -253,47 +356,36 @@
         </section>
 
         <div class="block-classes-common-pattern-root">
-          <section class="block-banner-classes-section01 block-banner-classes-01">
-            <div class="block-banner-classes-div01">
+          <section class="block-banner-new-classes-section block-banner-classes-01">
+            <div class="block-banner-new-classes-div">
 
               <div class="block-banner-classes-root">
-                <div class="container-fluid">
+                <div class="container">
                   <div class="row align-items-center-row">
 
-                    <div class="col-lg-6 col-md-6 p-0">
+                    <div class="col-lg-5 col-md-6 order-lg-2">
                       <div class="center-content-div">
                         <div class="center-content-row">
                           <h2> <span class="block">Hundreds of </span> <span class="block">Classes</span> </h2>
-                          <div class="desc-div"> 
-                            <p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit.Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit.  </p>
+                          <div class="title-line-div">
+                            <h4>30+ creators added weekly</h4>
                           </div>
-                          <div class="card-black-number-shadow">
-                            <div class="row mlr-5">
-                              <div class="col-lg-6 col-md-6 plr-5">
-                                <div class="card-black-shadow-box">
-                                  <h4>100+</h4>
-                                  <p>Classes <span class="color-text01 block">and counting</span> </p>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 col-md-6 plr-5">
-                                <div class="card-black-shadow-box">
-                                  <h4>30+</h4>
-                                  <p>Creators <span class="color-text01 block">added weekly</span> </p>
-                                </div>
-                              </div>
-                            </div>
+                          <div class="desc-div"> 
+                            <p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, pura egestas non nisi. Curabitur aliquet quam id dui posuere blandit.Donec sollicitudin molestie khet malesuada Praesent sapien massa.</p>
                           </div>
                           <div class="button-group-div">
-                            <a href="login.html" class="btn btn-common-primary btn-cc"> <span class="text">Start Your Creative Career</span> </a>
+                            <a href="#" class="btn btn-primary-outline btn-primary-outline-big"> 
+                              <span class="text">Start Watching</span> 
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 p-0">
+                    <div class="col-lg-7 col-md-6 order-lg-1">
                       <div class="img-thumb-div">
                         <div class="img-thumb-inner">
-                          <img src="assets/images/home-block-banner/home-block-banner-01.png" class="img-fluid img-responsive" alt="img" />
+                          <img src="assets/images/latest/hundreds-of-classes-graphic.png" class="img-fluid img-responsive" alt="img" />
                         </div>
                       </div>
                     </div>
@@ -305,29 +397,36 @@
             </div>
           </section>
 
-          <section class="block-banner-classes-section02 block-banner-classes-02">
-            <div class="block-banner-classes-div02">
+          <section class="block-banner-new-classes-section block-banner-classes-02">
+            <div class="block-banner-new-classes-div">
 
               <div class="block-banner-classes-root">
-                <div class="container-fluid">
+                <div class="container">
                   <div class="row align-items-center-row">
 
-                    <div class="col-lg-6 col-md-6 order-2 p-0">
+                    <div class="col-lg-5 col-md-6">
                       <div class="center-content-div">
                         <div class="center-content-row">
-                          <h2> <span class="block">New Way to </span> <span class="block">Learn Live</span>  </h2>
-                          <h3>Time to learn the new way</h3>
+                          <h2> <span class="block">New Way </span> <span class="block">to Learn Live</span> </h2>
+                          <div class="title-line-div">
+                            <h4>Time to learn the new way</h4>
+                          </div>
                           <div class="desc-div"> 
-                            <p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit. </p>
+                            <p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit.</p>
+                          </div>
+                          <div class="button-group-div">
+                            <a href="#" class="btn btn-primary-outline btn-primary-outline-big"> 
+                              <span class="text">Get Started Now</span> 
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 order-1 p-0">
+                    <div class="col-lg-7 col-md-6">
                       <div class="img-thumb-div">
                         <div class="img-thumb-inner">
-                          <img src="assets/images/home-block-banner/home-block-banner-02.png" class="img-fluid img-responsive" alt="img" />
+                          <img src="assets/images/latest/hundreds-of-classes-graphic.png" class="img-fluid img-responsive" alt="img" />
                         </div>
                       </div>
                     </div>
@@ -339,29 +438,36 @@
             </div>
           </section>
 
-          <section class="block-banner-classes-section03 block-banner-classes-03">
-            <div class="block-banner-classes-div03">
+          <section class="block-banner-new-classes-section block-banner-classes-03">
+            <div class="block-banner-new-classes-div">
 
               <div class="block-banner-classes-root">
-                <div class="container-fluid">
+                <div class="container">
                   <div class="row align-items-center-row">
 
-                    <div class="col-lg-6 col-md-6 p-0">
+                    <div class="col-lg-5 col-md-6 order-lg-2">
                       <div class="center-content-div">
                         <div class="center-content-row">
-                          <h2> <span class="block">One To One </span> <span class="block">Sessions</span>  </h2>
-                          <h3>Time to learn the new way</h3>
+                          <h2> <span class="block">One To One </span> <span class="block">Sessions</span> </h2>
+                          <div class="title-line-div">
+                            <h4>Time to learn the new way</h4>
+                          </div>
                           <div class="desc-div"> 
-                            <p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit. </p>
+                            <p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit.</p>
+                          </div>
+                          <div class="button-group-div">
+                            <a href="#" class="btn btn-primary-outline btn-primary-outline-big"> 
+                              <span class="text">Book Now</span> 
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 p-0">
+                    <div class="col-lg-7 col-md-6 order-lg-1">
                       <div class="img-thumb-div">
                         <div class="img-thumb-inner">
-                          <img src="assets/images/home-block-banner/home-block-banner-03.png" class="img-fluid img-responsive" alt="img" />
+                          <img src="assets/images/latest/hundreds-of-classes-graphic.png" class="img-fluid img-responsive" alt="img" />
                         </div>
                       </div>
                     </div>
@@ -373,32 +479,36 @@
             </div>
           </section>
 
-          <section class="block-banner-classes-section04 block-banner-classes-04">
-            <div class="block-banner-classes-div04">
+          <section class="block-banner-new-classes-section block-banner-classes-04">
+            <div class="block-banner-new-classes-div">
 
               <div class="block-banner-classes-root">
-                <div class="container-fluid">
+                <div class="container">
                   <div class="row align-items-center-row">
 
-                    <div class="col-lg-6 col-md-6 order-2 p-0">
+                    <div class="col-lg-5 col-md-6">
                       <div class="center-content-div">
                         <div class="center-content-row">
                           <h2> <span class="block">Materials </span> </h2>
-                          <h3>Level up your work with our vast library</h3>
+                          <div class="title-line-div">
+                            <h4>Level up your work with our vast library</h4>
+                          </div>
                           <div class="desc-div"> 
-                            <p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit. </p>
+                            <p>Donec sollicitudin molestie malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit.</p>
                           </div>
                           <div class="button-group-div">
-                            <a href="#" class="btn btn-common-primary btn-cc"> <span class="text">Learn More</span> </a>
+                            <a href="#" class="btn btn-primary-outline btn-primary-outline-big"> 
+                              <span class="text">Learn More</span> 
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 order-1 p-0">
+                    <div class="col-lg-7 col-md-6">
                       <div class="img-thumb-div">
                         <div class="img-thumb-inner">
-                          <img src="assets/images/home-block-banner/home-block-banner-04.png" class="img-fluid img-responsive" alt="img" />
+                          <img src="assets/images/latest/hundreds-of-classes-graphic.png" class="img-fluid img-responsive" alt="img" />
                         </div>
                       </div>
                     </div>
@@ -409,6 +519,7 @@
 
             </div>
           </section>
+          
         </div>
         
         <section class="meet-the-creators-section" id="meet-the-creators-section">
@@ -427,7 +538,7 @@
             </div>
 
             <div class="creators-owl-slider-main-div">
-              <div class="container container-1000">
+              <div class="container-fluid">
                 <div class="row">
                   <div class="col-lg-12 col-md-12">
 
@@ -447,9 +558,7 @@
                               <h4>Photographer</h4>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="item">
                           <div class="creators-img-mask-slider-box">
                             <a href="creators-details.html" class="creators-img-link">
                               <div class="creators-img-mask-thumb">
@@ -477,9 +586,7 @@
                               <h4>Photographer</h4>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="item">
                           <div class="creators-img-mask-slider-box">
                             <a href="creators-details.html" class="creators-img-link">
                               <div class="creators-img-mask-thumb">
@@ -507,9 +614,7 @@
                               <h4>Photographer</h4>
                             </div>
                           </div>
-                        </div>
 
-                        <div class="item">
                           <div class="creators-img-mask-slider-box">
                             <a href="creators-details.html" class="creators-img-link">
                               <div class="creators-img-mask-thumb">
@@ -535,83 +640,6 @@
           </div>
         </section>
 
-        <section class="the-ultimate-online-section" id="the-ultimate-online-section">
-          <div class="the-ultimate-online-div">
-
-            <div class="heading-div">
-              <div class="container container-1000">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12">
-                    <div class="heading-inner-div">
-                      <h2>The Ultimate Online Course for Creators</h2>                 
-                      <p>Play to watch a video</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="ultimate-video-listing-root">
-              <div class="container container-1000">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12">
-                    <div class="video-box-play">
-                      <div class="video-button-div"> <a href="#" data-toggle="modal" data-target="#ultimate-video-modal" class="video-button-link"><i class="fa fa-play"></i></a> </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="ultimate-video-list-row">
-                  <div class="row mlr-8">
-
-                    <div class="col-lg-4 col-md-4 plr-8">
-                      <div class="ultimate-video-box active">
-                        <div class="ultimate-video-thumb">
-                          <div class="img-thumb"> <img src="assets/images/ultimate-online-course/ultimate-img01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                          <div class="video-button-div"> <a href="#" class="video-link"><i class="fa fa-play"></i></a> </div>
-                        </div>
-                        <div class="our-content-div">
-                          <span class="black-text-label"> <span class="text">10:00</span> </span>
-                          <h3><a href="#" class="link">The Ultimate Online Course for Creators</a></h3>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 plr-8">
-                      <div class="ultimate-video-box">
-                        <div class="ultimate-video-thumb">
-                          <div class="img-thumb"> <img src="assets/images/ultimate-online-course/ultimate-img02.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                          <div class="video-button-div"> <a href="#" class="video-link"><i class="fa fa-play"></i></a> </div>
-                        </div>
-                        <div class="our-content-div">
-                          <span class="black-text-label"> <span class="text">08:00</span> </span>
-                          <h3><a href="#" class="link">The Ultimate Online Course for Creators</a></h3>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 plr-8">
-                      <div class="ultimate-video-box">
-                        <div class="ultimate-video-thumb">
-                          <div class="img-thumb"> <img src="assets/images/ultimate-online-course/ultimate-img03.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                          <div class="video-button-div"> <a href="#" class="video-link"><i class="fa fa-play"></i></a> </div>
-                        </div>
-                        <div class="our-content-div">
-                          <span class="black-text-label"> <span class="text">11:00</span> </span>
-                          <h3><a href="#" class="link">The Ultimate Online Course for Creators</a></h3>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </section>
-        
         <section class="testimonials-section" id="testimonials-section">
           <div class="testimonials-div">
 
@@ -823,10 +851,23 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/get-owl-slider.js"></script>
-<script src="assets/js/page-preloading-effect/classie.js"></script>
+<script src="assets/js/select2.full.js"></script>
+<!-- <script src="assets/js/page-preloading-effect/classie.js"></script>
 <script src="assets/js/page-preloading-effect/pathLoader.js"></script>
-<script src="assets/js/page-preloading-effect/main.js"></script>
-<script src="assets/js/custom.js"></script> 
+<script src="assets/js/page-preloading-effect/main.js"></script> -->
+<script src="assets/js/custom.js"></script>
+
+<script>
+  $(document).ready(function() {
+    /* select 2 */
+    $(".js-select2").select2({
+      placeholder: "Select here",
+      dropdownPosition: 'below',
+      minimumResultsForSearch: -1,
+    });
+    /* End of select 2 */
+  });
+</script>
 
 </body>
 </html>

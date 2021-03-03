@@ -36,6 +36,7 @@ header {
     .header-container {
       padding: 10px 0;
       display: flex;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .logo_img {
@@ -154,8 +155,8 @@ header {
           padding: 8px 20px 6px 20px;
           font-size: 14px;
           line-height: 24px;
-          color: #191919;
-          background-color: #fff;
+          color: #fff;
+          background-color: transparent;
           border-radius: 28px;
           letter-spacing: 0;
           font-weight: 600;
@@ -163,16 +164,42 @@ header {
           text-align: center;
           margin-bottom: -5px;
           transition: all 0.8s;
+          position: relative;
 
-          &:hover {
-            background-color: #ef4443;
-            background-image: linear-gradient(121deg, #ef4443 2%, #ef5630 46%, #ef6b18 100%);
-            color: #fff;
+          &::before {
+            border: 2px solid;
+            background-image: none;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(271.84deg, #ef6b18 12.5%, #ef4443 123.33%);
+            background-image: linear-gradient(271.84deg, #ef6b18 12.5%, #ef4443 123.33%);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            transform: none;
+            border-radius: 28px;
           }
 
-          &::before,
           &::after {
-            display: none;
+            content: "";
+            background-color: #111117;
+            height: calc(100% - 2px);
+            width: calc(100% - 2px);
+            position: absolute;
+            z-index: -1;
+            border-radius: 100px;
+            -webkit-transition: all 0.8s;
+            transition: all 0.8s;
+            left: 1px;
+            top: 1px;
+          }
+
+          &:hover {
+            color: #fff;
+
+            &::after {
+              height: auto;
+            }
           }
 
           &.login-color2 {
@@ -296,6 +323,7 @@ header {
       .header-container {
         padding-top: 0;
         padding-bottom: 0;
+        border-bottom: 0;
       }
     }
 

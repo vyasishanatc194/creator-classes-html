@@ -5,7 +5,7 @@ $(document).ready(function () {
     dots: false,
     stagePadding: 0,
     margin: 15,
-    autoplay: false,
+    autoplay: true,
     smartSpeed: 2000,
     responsive: {
       0: {
@@ -19,7 +19,7 @@ $(document).ready(function () {
         items: 3.1,
       },
       1600: {
-        items: 3.15,
+        items: 4,
       }
     }
   });
@@ -33,6 +33,7 @@ $(document).ready(function () {
     autoplay: false,
     autoWidth:true,
     smartSpeed: 2000,
+    center: true,
     responsive: {
       0: {
         items: 1,
@@ -45,7 +46,7 @@ $(document).ready(function () {
         items: 3.1,
       },
       1600: {
-        items: 3.15,
+        items: 4,
       }
     }
   });
