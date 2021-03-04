@@ -9,8 +9,9 @@ $(document).ready(function () {
     smartSpeed: 2000,
     responsive: {
       0: {
-        items: 1,
+        items: 1.3,
         autoplay: true,
+        dots: true, 
       },
       600: {
         items: 2.3,
@@ -36,8 +37,10 @@ $(document).ready(function () {
     center: true,
     responsive: {
       0: {
-        items: 1,
+        items: 2,
         autoplay: true,
+        center: true,
+        margin: 8, 
       },
       600: {
         items: 2.3,
@@ -201,7 +204,15 @@ $(document).ready(function() {
           smartSpeed: 2000,
           // slideSpeed: 5000,
           slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
-          responsiveRefreshRate: 200
+          responsiveRefreshRate: 200,
+          responsive:{
+                  0:{
+                      items:4
+                  },
+                  600:{
+                      items:4
+                  },
+                }
       }).on('changed.owl.carousel', syncPosition2);
 
   function syncPosition(el) {

@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=custom.css.map */
+.m-none {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .m-none {
+    display: none !important;
+  }
+  .banner-right-image-div.d-none {
+    display: block !important;
+    margin-bottom: 30px;
+  }
+  .img-thumb-div.d-none {
+    display: block !important;
+    margin-bottom: 40px !important;
+  }
+}
+/*# sourceMappingURL=custom.css.map */
