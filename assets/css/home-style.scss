@@ -611,7 +611,7 @@
       position: relative;
 
       h2 {
-        padding: 0;
+        padding: 0 0 0 30px;
         margin: 0 0 20px 0;
         display: block;
         width: 100%;
@@ -631,6 +631,7 @@
           left: calc(-100vw - 150px);
           width: 100vw;
           top: 28px;
+          display: none;
         }
       }
     }
@@ -643,9 +644,30 @@
   position: relative;
 
   .testimonials-card-box {
-    padding: 0;
+    padding: 50px;
     margin: 0;
     position: relative;
+    background-color: #1E1E27;
+    border-radius: 15px;
+    border: 2px solid #282A33;
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 302px;
+
+    &::after {
+      content: '';
+      display: block;
+      align-items: center;
+      justify-content: center;
+      background-image: url(../images/quote.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 64px;
+      width: 64px;
+      position: absolute;
+      bottom: -32px;
+      right: 100px;
+    }
 
     .user-top-row {
       padding: 0 150px 0 0;
@@ -735,7 +757,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      display: flex;
+      display: none;
 
       button.owl-next,
       button.owl-prev,
@@ -774,6 +796,53 @@
         margin-left: 20px;
       }
     }
+  }
+
+  .testimonial-info {
+    margin-bottom: 40px;
+
+    h3 {
+      font-size: 16px;
+      line-height: 19px;
+      color: #fff;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 19px;
+      color: #fff;
+      margin-bottom: 12px;
+      font-weight: 400;
+    }
+  }
+
+ 
+}
+
+.testimonial-profile {
+  height: 86px;
+  width: 86px;
+  min-width: 86px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-left: 10px !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  &::after {
+    content: '';
+    height: 100px;
+    width: 100px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    border-radius: 100px;
+  }
+
+  img {
+    width: 100%;
   }
 }
 
