@@ -688,7 +688,7 @@
 }
 
 .testimonials-section .testimonials-div .heading-div h2 {
-  padding: 0;
+  padding: 0 0 0 30px;
   margin: 0 0 20px 0;
   display: block;
   width: 100%;
@@ -709,6 +709,7 @@
   left: calc(-100vw - 150px);
   width: 100vw;
   top: 28px;
+  display: none;
 }
 
 .testimonials-slider-slider-root {
@@ -718,9 +719,34 @@
 }
 
 .testimonials-slider-slider-root .testimonials-card-box {
-  padding: 0;
+  padding: 50px;
   margin: 0;
   position: relative;
+  background-color: #1E1E27;
+  border-radius: 15px;
+  border: 2px solid #282A33;
+  position: relative;
+  margin-bottom: 30px;
+  min-height: 302px;
+}
+
+.testimonials-slider-slider-root .testimonials-card-box::after {
+  content: '';
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../images/quote.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  bottom: -32px;
+  right: 100px;
 }
 
 .testimonials-slider-slider-root .testimonials-card-box .user-top-row {
@@ -818,9 +844,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .testimonials-slider-slider-root .testimonials-owl-div .owl-nav button.owl-next,
@@ -872,6 +896,52 @@
 
 .testimonials-slider-slider-root .testimonials-owl-div .owl-nav button.owl-next {
   margin-left: 20px;
+}
+
+.testimonials-slider-slider-root .testimonial-info {
+  margin-bottom: 40px;
+}
+
+.testimonials-slider-slider-root .testimonial-info h3 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.testimonials-slider-slider-root .testimonial-info p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.testimonial-profile {
+  height: 86px;
+  width: 86px;
+  min-width: 86px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-left: 10px !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.testimonial-profile::after {
+  content: '';
+  height: 100px;
+  width: 100px;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 100px;
+}
+
+.testimonial-profile img {
+  width: 100%;
 }
 
 .block-banner-new-classes-section {
