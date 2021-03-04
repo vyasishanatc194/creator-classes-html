@@ -2,6 +2,36 @@
   display: block;
 }
 
+.img-thumb-div.blur-bg {
+  position: relative;
+}
+
+.img-thumb-div.blur-bg .img-thumb-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.img-thumb-div.blur-bg::before {
+  content: "";
+  background: #ef4443;
+  background: linear-gradient(113deg, #ef4443 8.09%, #ef6b18 93.47%);
+  opacity: 0.19;
+  -webkit-filter: blur(250px);
+          filter: blur(250px);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  height: 274px;
+  max-height: 274px;
+  display: block;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
 @media (max-width: 767px) {
   .m-none {
     display: none !important;

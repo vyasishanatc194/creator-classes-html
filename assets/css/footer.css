@@ -48,6 +48,7 @@ footer {
   margin: 0;
   position: relative;
   background-color: var(--bg-color01);
+  overflow: hidden;
 }
 
 .footer-div.footer-bg2 {
@@ -60,11 +61,19 @@ footer {
 
 .footer-div::before {
   content: "";
-  background: linear-gradient(114.74deg, #ef4443 8.09%, #ef6b18 93.47%);
-  opacity: 0.46;
-  -webkit-filter: blur(500px);
-          filter: blur(500px);
+  background: #ef4443;
+  background: linear-gradient(113deg, #ef4443 8.09%, #ef6b18 93.47%);
+  opacity: 0.30;
+  -webkit-filter: blur(250px);
+          filter: blur(250px);
   border-radius: 10px;
+  position: absolute;
+  bottom: -240px;
+  height: 274px;
+  max-height: 274px;
+  display: block;
+  left: 0;
+  width: 100%;
 }
 
 .footer-div .content-footer-div .logo-img {

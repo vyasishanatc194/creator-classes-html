@@ -3,6 +3,35 @@
     display: block;
 }
 
+.img-thumb-div.blur-bg {
+    position: relative;
+
+    .img-thumb-inner {
+        position: relative;
+        z-index: 2;
+    }
+    
+    &::before {
+        content: "";
+        background: rgb(239,68,67);
+        background: linear-gradient(113deg, rgba(239,68,67,1) 8.09%, rgba(239,107,24,1) 93.47%);
+        opacity: 0.19;
+        filter: blur(250px);
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        height: 274px;
+        max-height: 274px;
+        display: block;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+      }
+}
+
 @media (max-width: 767px) {
     .m-none {
         display: none !important;

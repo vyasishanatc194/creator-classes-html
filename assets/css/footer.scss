@@ -43,6 +43,7 @@ footer {
   margin: 0;
   position: relative;
   background-color: var(--bg-color01);
+  overflow: hidden;
 
   &.footer-bg2 {
     background-color: #212121;
@@ -54,10 +55,19 @@ footer {
 
   &::before {
     content: "";
-    background: linear-gradient(114.74deg, #ef4443 8.09%, #ef6b18 93.47%);
-    opacity: 0.46;
-    filter: blur(500px);
+    // background: linear-gradient(114.74deg, #EF4443 8.09%, #EF6B18 93.47%);
+    background: rgb(239,68,67);
+      background: linear-gradient(113deg, rgba(239,68,67,1) 8.09%, rgba(239,107,24,1) 93.47%);
+    opacity: 0.30;
+    filter: blur(250px);
     border-radius: 10px;
+    position: absolute;
+    bottom: -240px;
+    height: 274px;
+    max-height: 274px;
+    display: block;
+    left: 0;
+    width: 100%;
   }
 
   .content-footer-div {
