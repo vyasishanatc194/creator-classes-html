@@ -63,7 +63,7 @@ footer {
   content: "";
   background: #ef4443;
   background: linear-gradient(113deg, #ef4443 8.09%, #ef6b18 93.47%);
-  opacity: 0.30;
+  opacity: 0.3;
   -webkit-filter: blur(250px);
           filter: blur(250px);
   border-radius: 10px;
@@ -88,7 +88,44 @@ footer {
 }
 
 .footer-div .content-footer-div .logo-footer {
-  margin: 0 0 30px 0;
+  margin: 0 0 40px 0;
+}
+
+.footer-div .content-footer-div .logo-footer .logo_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer-div .content-footer-div .logo-footer .logo_link .main-logo {
+  width: 35px;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.footer-div .content-footer-div .logo-footer .logo_link h1.text-logo {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Moderat Extended", sans-serif;
+  display: block;
+  padding: 0 0 0 10px;
 }
 
 .footer-div .content-footer-div .social-row {
@@ -385,6 +422,22 @@ footer {
   }
   .footer-div .footer-content-row .content-footer-div .logo-footer {
     text-align: center;
+    margin: 0 0 34px 0;
+  }
+  .footer-div .footer-content-row .content-footer-div .logo-footer .logo_link {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-div .footer-content-row .content-footer-div .logo-footer .logo_link .main-logo {
+    width: 25px;
+    height: 34px;
+  }
+  .footer-div .footer-content-row .content-footer-div .logo-footer .logo_link h1.text-logo {
+    padding: 11px 0 0 0;
+    font-size: 14px;
+    line-height: 1.5;
+    width: 100%;
   }
   .footer-div .footer-content-row .footer-nav-list-inner .footer-title-div h3 {
     font-size: 16px;
@@ -432,6 +485,14 @@ footer {
   .footer-div .footer-content-row {
     padding: 40px 5px 10px 5px;
     border-top: none;
+  }
+  .footer-div .footer-content-row .logo-footer .logo_link h1.text-logo {
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 0 0 0 6px;
+  }
+  .footer-div .footer-content-row .logo-footer .logo_link h1.text-logo .text-logo-span1 {
+    display: block;
   }
   .footer-div .footer-content-row .footer-nav-list-inner .footer-title-div h3 {
     font-size: 16px;

@@ -604,7 +604,7 @@
 
 /* End of general css */
 .main-middle-area {
-  padding: 90px 0 0 0;
+  padding: 108px 0 0 0;
   position: relative;
 }
 
@@ -907,7 +907,6 @@
   margin: 0;
   position: relative;
 
-  
   &::after {
     content: "";
     display: inline-block;
@@ -921,7 +920,6 @@
     left: 0;
     height: 100%;
   }
-
 
   .our-pricing-plan-div {
     z-index: 99;
@@ -1170,6 +1168,36 @@
         }
       }
     }
+  }
+}
+
+.pattern-inner-div {
+  position: relative;
+  background: #111117;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background: url(../images/latest/map.png) no-repeat;
+    background-size: contain;
+    background-position: center 158px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 874px;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    background: url(../images/shape-banner.svg) no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    height: 866px;
   }
 }
 

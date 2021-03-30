@@ -1,5 +1,5 @@
 .main-banner-section {
-  padding: 90px 0 0 0;
+  padding: 108px 0 0 0;
   margin: 0;
   position: relative;
   background-size: cover;
@@ -33,11 +33,11 @@
 }
 
 .main-banner-section .banner-div {
-  padding: 100px 0 155px 0;
+  padding: 108px 0 155px 0;
   margin: 0;
   position: relative;
   height: auto;
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 108px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1550,7 +1550,7 @@
   }
   .main-banner-section .content-banner-root h1 {
     font-size: 34px;
-    line-height: 36px;
+    line-height: 40px;
     text-align: center;
   }
   .main-banner-section .content-banner-root h1::before {

@@ -56,9 +56,9 @@ footer {
   &::before {
     content: "";
     // background: linear-gradient(114.74deg, #EF4443 8.09%, #EF6B18 93.47%);
-    background: rgb(239,68,67);
-      background: linear-gradient(113deg, rgba(239,68,67,1) 8.09%, rgba(239,107,24,1) 93.47%);
-    opacity: 0.30;
+    background: rgb(239, 68, 67);
+    background: linear-gradient(113deg, rgba(239, 68, 67, 1) 8.09%, rgba(239, 107, 24, 1) 93.47%);
+    opacity: 0.3;
     filter: blur(250px);
     border-radius: 10px;
     position: absolute;
@@ -80,7 +80,33 @@ footer {
     }
 
     .logo-footer {
-      margin: 0 0 30px 0;
+      margin: 0 0 40px 0;
+
+      .logo_link {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        .main-logo {
+          width: 35px;
+          height: 47px;
+          display: flex;
+          object-fit: contain;
+          object-position: left;
+        }
+
+        h1.text-logo {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          text-transform: uppercase;
+          color: #fff;
+          font-family: "Moderat Extended", sans-serif;
+          display: block;
+          padding: 0 0 0 10px;
+        }
+      }
     }
 
     .social-row {
@@ -358,6 +384,23 @@ footer {
       .content-footer-div {
         .logo-footer {
           text-align: center;
+          margin: 0 0 34px 0;
+
+          .logo_link {
+            justify-content: center;
+
+            .main-logo {
+              width: 25px;
+              height: 34px;
+            }
+
+            h1.text-logo {
+              padding: 11px 0 0 0;
+              font-size: 14px;
+              line-height: 1.5;
+              width: 100%;
+            }
+          }
         }
       }
 
@@ -433,6 +476,20 @@ footer {
     .footer-content-row {
       padding: 40px 5px 10px 5px;
       border-top: none;
+
+      .logo-footer {
+        .logo_link {
+          h1.text-logo {
+            font-size: 14px;
+            line-height: 1.2;
+            padding: 0 0 0 6px;
+
+            .text-logo-span1 {
+              display: block;
+            }
+          }
+        }
+      }
 
       .footer-nav-list-inner {
         .footer-title-div {
