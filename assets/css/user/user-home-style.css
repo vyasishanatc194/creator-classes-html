@@ -1,3 +1,49 @@
+.our-pop-classes-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.our-pop-classes-section .bordertop1 {
+  border-top: 1px solid #282a33;
+}
+
+.our-pop-classes-section .our-pop-classes-div {
+  padding: 55px 0 30px 0;
+  margin: 0;
+  position: relative;
+}
+
+.our-pop-classes-section .our-pop-classes-div .owl-slider-new-main-div {
+  overflow: visible;
+}
+
+.our-pop-classes-section .our-pop-classes-div .owl-slider-new-main-div .owl-slider-new-main-slider {
+  overflow: visible;
+}
+
+.our-pop-classes-section .our-pop-classes-div .owl-slider-new-main-div .owl-slider-new-main-slider .owl-carousel.our-pop-classes-owl .owl-stage-outer {
+  overflow: visible;
+}
+
+.our-card-classes-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.our-card-classes-section .bordertop1 {
+  border-top: 1px solid #282a33;
+}
+
+.our-card-classes-section .our-card-classes-div {
+  padding: 50px 0 30px 0;
+  margin: 0;
+  position: relative;
+}
+
 .our-popular-classes-section {
   padding: 40px 0;
   margin: 0;
@@ -134,6 +180,35 @@
   line-height: 1.4;
   color: #fff;
   letter-spacing: 0;
+}
+
+.upcoming-live-str-section-new {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.upcoming-live-str-section-new .bordertop1 {
+  border-top: 1px solid #282a33;
+}
+
+.upcoming-live-str-section-new .upcoming-live-str-div-new {
+  padding: 55px 0 30px 0;
+  margin: 0;
+  position: relative;
+}
+
+.upcoming-live-str-section-new .upcoming-live-str-div-new .owl-slider-new-main-div {
+  overflow: visible;
+}
+
+.upcoming-live-str-section-new .upcoming-live-str-div-new .owl-slider-new-main-div .owl-slider-new-main-slider {
+  overflow: visible;
+}
+
+.upcoming-live-str-section-new .upcoming-live-str-div-new .owl-slider-new-main-div .owl-slider-new-main-slider .owl-carousel.our-pop-classes-owl .owl-stage-outer {
+  overflow: visible;
 }
 
 @media (max-width: 767px) {

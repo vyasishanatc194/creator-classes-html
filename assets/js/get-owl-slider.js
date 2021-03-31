@@ -4,14 +4,15 @@ $(document).ready(function () {
     nav: false,
     dots: false,
     stagePadding: 0,
-    margin: 15,
+    margin: 30,
     autoplay: true,
     smartSpeed: 2000,
     responsive: {
       0: {
         items: 1.3,
         autoplay: true,
-        dots: true, 
+        dots: true,
+        margin: 15,
       },
       600: {
         items: 2.3,
@@ -163,8 +164,6 @@ $(document).ready(function () {
     }
   });
 });
-
-
 
 $(document).ready(function() {
 

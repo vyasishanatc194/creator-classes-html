@@ -1,3 +1,57 @@
+.our-pop-classes-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+
+  .bordertop1 {
+    border-top: 1px solid #282a33;
+  }
+
+  .our-pop-classes-div {
+    padding: 55px 0 30px 0;
+    margin: 0;
+    position: relative;
+
+    .owl-slider-new-main-div {
+      overflow: visible;
+
+      .owl-slider-new-main-slider {
+        overflow: visible;
+
+        .owl-carousel {
+          &.our-pop-classes-owl {
+            .owl-stage-outer {
+              overflow: visible;
+            }
+
+            .our-video-common-slider-box {
+              // max-width: 281px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.our-card-classes-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+
+  .bordertop1 {
+    border-top: 1px solid #282a33;
+  }
+
+  .our-card-classes-div {
+    padding: 50px 0 30px 0;
+    margin: 0;
+    position: relative;
+  }
+}
+
 .our-popular-classes-section {
   padding: 40px 0;
   margin: 0;
@@ -124,6 +178,43 @@
         line-height: 1.4;
         color: #fff;
         letter-spacing: 0;
+      }
+    }
+  }
+}
+
+.upcoming-live-str-section-new {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+
+  .bordertop1 {
+    border-top: 1px solid #282a33;
+  }
+
+  .upcoming-live-str-div-new {
+    padding: 55px 0 30px 0;
+    margin: 0;
+    position: relative;
+
+    .owl-slider-new-main-div {
+      overflow: visible;
+
+      .owl-slider-new-main-slider {
+        overflow: visible;
+
+        .owl-carousel {
+          &.our-pop-classes-owl {
+            .owl-stage-outer {
+              overflow: visible;
+            }
+
+            .our-video-common-slider-box {
+              // max-width: 281px;
+            }
+          }
+        }
       }
     }
   }
