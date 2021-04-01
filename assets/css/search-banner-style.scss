@@ -152,8 +152,14 @@
         .search-box-div {
           .search-group {
             .btn.btn-search-icon {
-              height: 40px;
+              height: 60px;
               width: 40px;
+              left: 10px;
+
+              .search-icon-new {
+                width: 24px;
+                height: 24px;
+              }
 
               .search-icon {
                 height: 15px;
@@ -161,9 +167,31 @@
             }
 
             .form-control {
-              min-height: 40px;
+              min-height: 60px;
               font-size: 16px;
-              padding: 5px 15px 5px 52px;
+              padding: 6px 15px 5px 55px;
+            }
+          }
+        }
+
+        .filter-category-root-div {
+          .filter-category-inner {
+            .filter-list-ul {
+              li {
+                margin: 0 8px 8px 0;
+
+                .filter-link {
+                  font-size: 12px;
+                  line-height: 21px;
+                  min-height: 28px;
+                  padding: 6px 15px 5px 15px;
+
+                  .img-fluid {
+                    width: 18px;
+                    object-fit: contain;
+                  }
+                }
+              }
             }
           }
         }
@@ -189,8 +217,14 @@
         .search-box-div {
           .search-group {
             .btn.btn-search-icon {
-              height: 40px;
+              height: 60px;
               width: 40px;
+              left: 10px;
+
+              .search-icon-new {
+                width: 24px;
+                height: 24px;
+              }
 
               .search-icon {
                 height: 15px;
@@ -198,9 +232,31 @@
             }
 
             .form-control {
-              min-height: 40px;
+              min-height: 60px;
               font-size: 16px;
-              padding: 5px 15px 5px 52px;
+              padding: 6px 15px 5px 55px;
+            }
+          }
+        }
+
+        .filter-category-root-div {
+          .filter-category-inner {
+            .filter-list-ul {
+              li {
+                margin: 0 8px 8px 0;
+
+                .filter-link {
+                  font-size: 12px;
+                  line-height: 21px;
+                  min-height: 28px;
+                  padding: 6px 15px 5px 15px;
+
+                  .img-fluid {
+                    width: 18px;
+                    object-fit: contain;
+                  }
+                }
+              }
             }
           }
         }

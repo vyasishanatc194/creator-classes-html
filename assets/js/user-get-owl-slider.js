@@ -24,7 +24,9 @@ $(document).ready(function () {
     },
   });
 
-  $("#classes-catagories-owl-01, #classes-catagories-owl-02, #classes-catagories-owl-03, #classes-catagories-owl-04").owlCarousel({
+  $(
+    "#classes-catagories-owl-01, #classes-catagories-owl-02, #classes-catagories-owl-03, #classes-catagories-owl-04"
+  ).owlCarousel({
     loop: true,
     nav: false,
     dots: false,
@@ -59,7 +61,7 @@ $(document).ready(function () {
     smartSpeed: 2000,
     responsive: {
       0: {
-        items: 1.3,
+        items: 1.2,
         autoplay: true,
         dots: true,
         margin: 15,
@@ -72,8 +74,8 @@ $(document).ready(function () {
       },
       1600: {
         items: 4,
-      }
-    }
+      },
+    },
   });
 
   $("#upcoming-owl-theme-new").owlCarousel({
@@ -86,7 +88,7 @@ $(document).ready(function () {
     smartSpeed: 2000,
     responsive: {
       0: {
-        items: 1.3,
+        items: 1.2,
         autoplay: true,
         dots: true,
         margin: 15,
@@ -99,7 +101,7 @@ $(document).ready(function () {
       },
       1600: {
         items: 3,
-      }
-    }
+      },
+    },
   });
 });

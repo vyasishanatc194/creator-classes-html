@@ -381,7 +381,7 @@ header {
         display: inline-block;
         position: absolute;
         top: -20px;
-        right: 20px;
+        right: 15px;
       }
 
       a.dropdown-item {
@@ -523,6 +523,32 @@ header {
       }
     }
 
+    .dropdown-notification-div {
+      .btn.dropdown-toggle.link {
+        padding: 0;
+        margin: 0;
+        outline: none;
+        border: none;
+        background: transparent;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      .dropdown-menu-nt-div {
+        background: #1E1E27;
+        border: 2px solid #282A33;
+        box-shadow: 0px 66px 95px rgba(0, 0, 0, 0.4);
+        border-radius: 15px;
+        min-width: 475px;
+        max-width: 475px;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
     /* End of main changes */
   }
 
@@ -667,6 +693,29 @@ header {
 
             ul {
               margin-right: 1px;
+            }
+          }
+        }
+      }
+    }
+
+    .header-div2 {
+      .nav-div {
+        .row-nav-div {
+          .right-side {
+            .right-nf-icon-div {
+              .icon-row-nf {
+                .icon-box-nf {
+                  .link {
+                    min-height: 70px;
+
+                    span.text-count-n {
+                      top: 10px;
+                      right: -14px;
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -951,6 +1000,7 @@ header {
           .left-side {
             align-items: flex-start;
             min-height: calc(100vh - 120px);
+            width: 100%;
           }
 
           .right-side {
@@ -958,15 +1008,17 @@ header {
             width: 100%;
 
             .right-nf-icon-div {
-              width: 50%;
+              width: 66.6%;
 
               .icon-row-nf {
                 justify-content: space-between;
+                padding-right: 10%;
               }
             }
 
             .user-drop-down {
-              width: calc(50% - 10px);
+              width: 33.3%;
+              margin: 0;
               display: flex;
               justify-content: flex-end;
 
@@ -1230,6 +1282,7 @@ header {
           .left-side {
             align-items: flex-start;
             min-height: calc(100vh - 120px);
+            width: 100%;
           }
 
           .right-side {
@@ -1237,15 +1290,17 @@ header {
             width: 100%;
 
             .right-nf-icon-div {
-              width: 50%;
+              width: 66.6%;
 
               .icon-row-nf {
                 justify-content: space-between;
+                padding-right: 10%;
               }
             }
 
             .user-drop-down {
-              width: calc(50% - 10px);
+              width: 33.3%;
+              margin: 0;
               display: flex;
               justify-content: flex-end;
 
