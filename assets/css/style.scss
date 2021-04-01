@@ -2185,6 +2185,7 @@ body {
       padding: 24px 40px;
       margin: 0;
       position: relative;
+      text-align: left;
 
       h2 {
         font-weight: 600;
@@ -2201,11 +2202,12 @@ body {
 
   .nts-dmenu-common-div {
     .nts-dmenu-common-inner {
-      max-height: calc(100vh - 185px);
-      overflow-y: auto;
-
       .nts-dmenu-listing-div {
         padding: 0 16px 24px 16px;
+        margin: 0 8px 0 0;
+        max-height: calc(100vh - 245px);
+        overflow-y: scroll;
+        width: calc(100% - 8px);
 
         .nts-dmenu-box {
           padding: 16px 24px;
@@ -2255,6 +2257,7 @@ body {
                 max-width: 285px;
                 font-size: 14px;
                 line-height: 20px;
+                text-align: left;
 
                 .bold-font {
                   color: #ef6b18;
@@ -2318,6 +2321,23 @@ body {
   }
 
   body {
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+      border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #808191;
+      border-radius: 50px;
+    }
+  }
+
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div {
     &::-webkit-scrollbar {
       width: 8px;
       height: 8px;
@@ -2721,6 +2741,64 @@ body {
       }
     }
   }
+
+  .dmenu-common-nt-root {
+    .common-header-div {
+      .title-heading-div {
+        padding: 20px 15px;
+
+        h2 {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .nts-dmenu-common-div {
+      .nts-dmenu-common-inner {
+        .nts-dmenu-listing-div {
+          padding: 0 5px 12px 5px;
+          margin: 0 8px 0 0;
+          max-height: calc(100vh - 245px);
+          overflow-y: auto;
+          width: 100%;
+
+          .nts-dmenu-box {
+            padding: 8px 15px;
+
+            .nts-dmenu-row {
+              .nt-left {
+                width: 36px;
+
+                img.img-fluid {
+                  height: 36px;
+                  width: 36px;
+                }
+              }
+
+              .nt-right {
+                width: calc(100% - 36px);
+                padding: 0 0 0 10px;
+
+                .text-desc {
+                  padding: 0 20px 0 0;
+
+                  h3 {
+                    font-size: 12px;
+                    line-height: 16px;
+                  }
+
+                  .time-span {
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // custom animation
@@ -2872,6 +2950,64 @@ body {
 
       .date-input-box {
         margin: 0 0 5px 0;
+      }
+    }
+  }
+
+  .dmenu-common-nt-root {
+    .common-header-div {
+      .title-heading-div {
+        padding: 20px 15px;
+
+        h2 {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .nts-dmenu-common-div {
+      .nts-dmenu-common-inner {
+        .nts-dmenu-listing-div {
+          padding: 0 5px 12px 5px;
+          margin: 0 8px 0 0;
+          max-height: calc(100vh - 245px);
+          overflow-y: auto;
+          width: 100%;
+
+          .nts-dmenu-box {
+            padding: 8px 15px;
+
+            .nts-dmenu-row {
+              .nt-left {
+                width: 36px;
+
+                img.img-fluid {
+                  height: 36px;
+                  width: 36px;
+                }
+              }
+
+              .nt-right {
+                width: calc(100% - 36px);
+                padding: 0 0 0 10px;
+
+                .text-desc {
+                  padding: 0 20px 0 0;
+
+                  h3 {
+                    font-size: 12px;
+                    line-height: 16px;
+                  }
+
+                  .time-span {
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

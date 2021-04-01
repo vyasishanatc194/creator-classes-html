@@ -2903,6 +2903,7 @@ body {
   padding: 24px 40px;
   margin: 0;
   position: relative;
+  text-align: left;
 }
 
 .dmenu-common-nt-root .common-header-div .title-heading-div h2 {
@@ -2916,13 +2917,12 @@ body {
   width: 100%;
 }
 
-.dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner {
-  max-height: calc(100vh - 185px);
-  overflow-y: auto;
-}
-
 .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div {
   padding: 0 16px 24px 16px;
+  margin: 0 8px 0 0;
+  max-height: calc(100vh - 245px);
+  overflow-y: scroll;
+  width: calc(100% - 8px);
 }
 
 .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box {
@@ -2988,6 +2988,7 @@ body {
   max-width: 285px;
   font-size: 14px;
   line-height: 20px;
+  text-align: left;
 }
 
 .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right h3 .bold-font {
@@ -3045,6 +3046,18 @@ body {
     border-radius: 50px;
   }
   body::-webkit-scrollbar-thumb {
+    background-color: #808191;
+    border-radius: 50px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 50px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div::-webkit-scrollbar-thumb {
     background-color: #808191;
     border-radius: 50px;
   }
@@ -3302,6 +3315,44 @@ body {
     width: 100%;
     padding: 30px 20px;
   }
+  .dmenu-common-nt-root .common-header-div .title-heading-div {
+    padding: 20px 15px;
+  }
+  .dmenu-common-nt-root .common-header-div .title-heading-div h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div {
+    padding: 0 5px 12px 5px;
+    margin: 0 8px 0 0;
+    max-height: calc(100vh - 245px);
+    overflow-y: auto;
+    width: 100%;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box {
+    padding: 8px 15px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-left {
+    width: 36px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-left img.img-fluid {
+    height: 36px;
+    width: 36px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right {
+    width: calc(100% - 36px);
+    padding: 0 0 0 10px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right .text-desc {
+    padding: 0 20px 0 0;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right .text-desc h3 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right .text-desc .time-span {
+    font-size: 10px;
+  }
 }
 
 .animated {
@@ -3420,6 +3471,44 @@ body {
   }
   .form-date-time-root-block .form-date-time-row-block .date-input-box {
     margin: 0 0 5px 0;
+  }
+  .dmenu-common-nt-root .common-header-div .title-heading-div {
+    padding: 20px 15px;
+  }
+  .dmenu-common-nt-root .common-header-div .title-heading-div h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div {
+    padding: 0 5px 12px 5px;
+    margin: 0 8px 0 0;
+    max-height: calc(100vh - 245px);
+    overflow-y: auto;
+    width: 100%;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box {
+    padding: 8px 15px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-left {
+    width: 36px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-left img.img-fluid {
+    height: 36px;
+    width: 36px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right {
+    width: calc(100% - 36px);
+    padding: 0 0 0 10px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right .text-desc {
+    padding: 0 20px 0 0;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right .text-desc h3 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right .text-desc .time-span {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
