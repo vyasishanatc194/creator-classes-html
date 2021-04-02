@@ -153,9 +153,10 @@
   color: #fff;
   letter-spacing: 0;
   font-family: "Moderat Extended", sans-serif;
-  background: linear-gradient(104.58deg, #ffd7bd 12.09%, #ef4443 72.26%);
+  background: linear-gradient(104deg, #ffd7bd 12%, #ef4443 72%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000;
 }
 
 .main-banner-section .content-banner-root h2 {
@@ -737,9 +738,9 @@
   padding: 50px 50px 45px 50px;
   margin: 0;
   position: relative;
-  background-color: #1E1E27;
+  background-color: #1e1e27;
   border-radius: 15px;
-  border: 2px solid #282A33;
+  border: 2px solid #282a33;
   position: relative;
   margin-bottom: 20px;
   min-height: 302px;
@@ -748,7 +749,7 @@
 }
 
 .testimonials-slider-slider-root .testimonials-card-box::after {
-  content: '';
+  content: "";
   display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -962,11 +963,11 @@
 }
 
 .current .testimonial-profile::after {
-  content: '';
+  content: "";
   height: 104px;
   width: 104px;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-image: url(../images/ring.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -1573,7 +1574,11 @@
   .creators-img-mask-slider-box {
     max-width: 200px !important;
   }
-  .creators-owl-slider-main-div .creators-owl-slider-main-slider .creators-img-mask-slider-box .creators-img-mask-thumb .img-responsive {
+  .creators-owl-slider-main-div
+.creators-owl-slider-main-slider
+.creators-img-mask-slider-box
+.creators-img-mask-thumb
+.img-responsive {
     height: 200px;
   }
   .our-classes-section .owl-theme .owl-dots {
@@ -1591,7 +1596,7 @@
     height: 10px;
     width: 10px;
     border-radius: 100px;
-    background-color: #282A33;
+    background-color: #282a33;
     margin: 5px 10px;
     border: 0;
     outline: 0;
@@ -1599,8 +1604,8 @@
             box-shadow: none;
   }
   .our-classes-section .owl-theme .owl-dots .active {
-    background: linear-gradient(114.74deg, #EF4443 8.09%, #EF6B18 93.47%);
-    background-color: #EF4443;
+    background: linear-gradient(114.74deg, #ef4443 8.09%, #ef6b18 93.47%);
+    background-color: #ef4443;
     border: 0;
   }
   .our-classes-section .heading-title-row {
@@ -1691,7 +1696,7 @@
     padding: 0;
   }
   .testimonials-slider-slider-root::after {
-    content: '';
+    content: "";
     display: block;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1762,11 +1767,11 @@
     margin-bottom: 10px;
   }
   .current .testimonial-profile::after {
-    content: '';
+    content: "";
     height: 70px;
     width: 70px;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-image: url(../images/ring.png);
     background-position: center;
     background-repeat: no-repeat;

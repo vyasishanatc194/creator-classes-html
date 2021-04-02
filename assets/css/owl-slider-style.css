@@ -1275,6 +1275,7 @@
   width: 100%;
   position: relative;
   padding: 16px 20px;
+  min-height: 57px;
 }
 
 .owl-slider-new-main-div .owl-slider-new-main-slider .our-video-common-slider-box .our-content-div .our-content-bottom-row .label-div span.txt-label {

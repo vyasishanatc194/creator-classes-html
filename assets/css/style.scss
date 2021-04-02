@@ -1359,7 +1359,7 @@ body {
 .common-card-class-feed-div {
   .common-feed-card-slider-bx {
     padding: 0;
-    margin: 0 0 20px 0;
+    margin: 0 0 40px 0;
     position: relative;
     background: #1e1e27;
     border-radius: 8px;
@@ -1497,6 +1497,7 @@ body {
         width: 100%;
         position: relative;
         padding: 20px;
+        min-height: 40px;
 
         .our-content-full {
           width: 100%;
@@ -1527,6 +1528,7 @@ body {
 
         .our-content-right {
           width: calc(100% - 46px);
+          padding: 3px 0 2px 0;
 
           .link {
             color: inherit;
@@ -1583,6 +1585,7 @@ body {
         width: 100%;
         position: relative;
         padding: 16px 20px;
+        min-height: 57px;
 
         .label-div {
           span.txt-label {
@@ -2162,6 +2165,26 @@ body {
             }
           }
         }
+      }
+    }
+  }
+}
+
+.search-feed-card-classes-section {
+  .mb-custom-bottom {
+    margin-bottom: 100px;
+  }
+
+  .common-bottom-div {
+    padding: 10px 0;
+    margin: 0 0 20px 0;
+
+    .btn.btn-primary-outline.btn-primary-outline-big {
+      min-width: 175px;
+      justify-content: center;
+
+      &::after {
+        background-color: #171418;
       }
     }
   }
@@ -2798,6 +2821,15 @@ body {
             }
           }
         }
+      }
+    }
+  }
+
+  .search-feed-card-classes-section {
+    .common-bottom-div {
+      .btn.btn-primary-outline.btn-primary-outline-big {
+        min-width: 130px;
+        justify-content: center;
       }
     }
   }

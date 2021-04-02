@@ -1915,7 +1915,7 @@ body {
 
 .common-card-class-feed-div .common-feed-card-slider-bx {
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 40px 0;
   position: relative;
   background: #1e1e27;
   border-radius: 8px;
@@ -2080,6 +2080,7 @@ body {
   width: 100%;
   position: relative;
   padding: 20px;
+  min-height: 40px;
 }
 
 .common-card-class-feed-div .common-feed-card-slider-bx .our-content-div .our-content-row .our-content-full {
@@ -2112,6 +2113,7 @@ body {
 
 .common-card-class-feed-div .common-feed-card-slider-bx .our-content-div .our-content-row .our-content-right {
   width: calc(100% - 46px);
+  padding: 3px 0 2px 0;
 }
 
 .common-card-class-feed-div .common-feed-card-slider-bx .our-content-div .our-content-row .our-content-right .link {
@@ -2185,6 +2187,7 @@ body {
   width: 100%;
   position: relative;
   padding: 16px 20px;
+  min-height: 57px;
 }
 
 .common-card-class-feed-div .common-feed-card-slider-bx .our-content-div .our-content-bottom-row .label-div span.txt-label {
@@ -2884,6 +2887,26 @@ body {
   font-size: 18px;
 }
 
+.search-feed-card-classes-section .mb-custom-bottom {
+  margin-bottom: 100px;
+}
+
+.search-feed-card-classes-section .common-bottom-div {
+  padding: 10px 0;
+  margin: 0 0 20px 0;
+}
+
+.search-feed-card-classes-section .common-bottom-div .btn.btn-primary-outline.btn-primary-outline-big {
+  min-width: 175px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-feed-card-classes-section .common-bottom-div .btn.btn-primary-outline.btn-primary-outline-big::after {
+  background-color: #171418;
+}
+
 .dmenu-common-nt-root {
   padding: 0;
   margin: 0 auto;
@@ -3352,6 +3375,12 @@ body {
   }
   .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right .text-desc .time-span {
     font-size: 10px;
+  }
+  .search-feed-card-classes-section .common-bottom-div .btn.btn-primary-outline.btn-primary-outline-big {
+    min-width: 130px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
