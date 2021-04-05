@@ -164,40 +164,12 @@
         white-space: nowrap;
         flex-wrap: nowrap;
         overflow-x: auto;
-
-        .nav-link {
-          padding: 10px 10px;
-          margin: 0 0 2px 0;
-          font-size: 12px;
-          line-height: 24px;
-          min-height: 48px;
-
-          &.active {
-            font-size: 14px;
-
-            &::before {
-              height: 2px;
-              bottom: -1.5px;
-            }
-          }
-        }
       }
     }
-  }
 
-  @media (max-width: 350px) {
-    .tabs-root-common {
-      .tabs-header-common {
-        .nav-tabs {
-          .nav-link {
-            padding: 10px 8px;
-            font-size: 10px;
-
-            &.active {
-              font-size: 12px;
-            }
-          }
-        }
+    .tabs-body-common {
+      .tab-pane-inner {
+        padding-top: 10px;
       }
     }
   }
@@ -216,24 +188,9 @@
   }
 
   .tabs-root-common {
-    .tabs-header-common {
-      .nav-tabs {
-        .nav-link {
-          padding: 10px 10px;
-          margin: 0 0 2px 0;
-          font-size: 14px;
-          line-height: 24px;
-          min-height: 54px;
-
-          &.active {
-            font-size: 17px;
-
-            &::before {
-              height: 2px;
-              bottom: -1.5px;
-            }
-          }
-        }
+    .tabs-body-common {
+      .tab-pane-inner {
+        padding-top: 10px;
       }
     }
   }

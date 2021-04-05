@@ -161,29 +161,8 @@
         flex-wrap: nowrap;
     overflow-x: auto;
   }
-  .tabs-root-common .tabs-header-common .nav-tabs .nav-link {
-    padding: 10px 10px;
-    margin: 0 0 2px 0;
-    font-size: 12px;
-    line-height: 24px;
-    min-height: 48px;
-  }
-  .tabs-root-common .tabs-header-common .nav-tabs .nav-link.active {
-    font-size: 14px;
-  }
-  .tabs-root-common .tabs-header-common .nav-tabs .nav-link.active::before {
-    height: 2px;
-    bottom: -1.5px;
-  }
-}
-
-@media (max-width: 767px) and (max-width: 350px) {
-  .tabs-root-common .tabs-header-common .nav-tabs .nav-link {
-    padding: 10px 8px;
-    font-size: 10px;
-  }
-  .tabs-root-common .tabs-header-common .nav-tabs .nav-link.active {
-    font-size: 12px;
+  .tabs-root-common .tabs-body-common .tab-pane-inner {
+    padding-top: 10px;
   }
 }
 
@@ -192,19 +171,8 @@
     padding: 10px 10px;
     font-size: 16px;
   }
-  .tabs-root-common .tabs-header-common .nav-tabs .nav-link {
-    padding: 10px 10px;
-    margin: 0 0 2px 0;
-    font-size: 14px;
-    line-height: 24px;
-    min-height: 54px;
-  }
-  .tabs-root-common .tabs-header-common .nav-tabs .nav-link.active {
-    font-size: 17px;
-  }
-  .tabs-root-common .tabs-header-common .nav-tabs .nav-link.active::before {
-    height: 2px;
-    bottom: -1.5px;
+  .tabs-root-common .tabs-body-common .tab-pane-inner {
+    padding-top: 10px;
   }
 }
 /*# sourceMappingURL=tab-style.css.map */
