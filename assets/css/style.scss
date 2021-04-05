@@ -29,6 +29,10 @@ body {
   min-height: calc(100vh - 200px);
 }
 
+.header-footer-with-min-height02 {
+  min-height: calc(100vh - 200px);
+}
+
 .mlr-5 {
   margin-right: -5px !important;
   margin-left: -5px !important;
@@ -1319,6 +1323,17 @@ body {
     z-index: 0;
     // animation-name: left_to_right_key_anime;
     // animation-duration: 2s;
+  }
+
+  &.pattern-upricing-inner-div {
+    &::before {
+      background-position: right 100px;
+    }
+
+    &::after {
+      top: 0;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+    }
   }
 
   @keyframes left_to_right_key_anime {
