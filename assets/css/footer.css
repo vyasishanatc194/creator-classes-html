@@ -418,6 +418,7 @@ footer {
   background-size: cover;
   z-index: 0;
   opacity: 0.5;
+  opacity: 0;
 }
 
 .footer-inner-div .footer-content-row {

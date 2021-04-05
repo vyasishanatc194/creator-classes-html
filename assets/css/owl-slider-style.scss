@@ -1522,6 +1522,14 @@
   }
 }
 
+@media (min-width: 1025px) {
+  .hide-overflow-slider {
+    .owl-stage-outer {
+      overflow: hidden !important;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .upcoming-live-streams-slider-div {
     .owl-slider-main-slider {
