@@ -154,6 +154,12 @@ body {
   &.mh-btn55 {
     min-height: 55px;
   }
+
+  &.disabled {
+    opacity: 1;
+    background: transparent;
+    border: 1px solid #808191;
+  }
 }
 
 .btn.btn-common-black {
@@ -473,12 +479,28 @@ body {
   .form-group {
     margin: 0 0 20px 0;
 
+    &.mb-40 {
+      margin-bottom: 40px;
+    }
+
+    &.mb-50 {
+      margin-bottom: 50px;
+    }
+
+    &.mb-60 {
+      margin-bottom: 50px;
+    }
+
+    .label-text {
+      margin: 0 0 20px 0;
+    }
+
     label {
-      font-weight: 400;
-      font-size: 18px;
       color: #fff;
       letter-spacing: 0;
-      margin: 0 0 10px 0;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
 
       &.oto-label {
         display: flex;
@@ -506,16 +528,47 @@ body {
     }
 
     textarea.form-control {
-      padding: 15px 20px;
-      border: 1px solid rgba(255, 255, 255, 0.34);
-      border-radius: 12px;
-      background-color: transparent;
-      font-weight: 400;
-      font-size: 18px;
-      color: #fff;
-      letter-spacing: 0;
-      line-height: 1.3;
+      background: rgba(45, 45, 57, 0.6);
+      border: 2px solid #282a33;
+      border-radius: 7px;
+      resize: none;
+      min-height: 140px;
+      padding: 20px 20px 20px 48px;
+      font-size: 14px;
+      line-height: 25px;
+      color: rgba(255, 255, 255, 0.7);
+      outline: none;
       box-shadow: none;
+
+      &::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      &::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      &:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      &:-moz-placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+
+    &.form-group-textarea-ct {
+      .input-control-row {
+        position: relative;
+      }
+
+      .tl-icon-span {
+        position: absolute;
+        top: 22px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+      }
     }
 
     .category-control-row {
@@ -529,37 +582,41 @@ body {
           margin: 0;
           display: flex;
           flex-wrap: wrap;
+          justify-content: flex-start;
           width: 100%;
           list-style: none;
 
           li {
             padding: 0;
-            margin: 0 10px 10px 0;
+            margin: 0 12px 10px 0;
             position: relative;
             transition: all 0.8s;
+
+            &:last-child {
+              margin-right: 0;
+            }
 
             .filter-link {
               margin: 0;
               position: relative;
-              background: transparent;
+              background: #1e1e27;
               border-radius: 20px;
               background-image: none;
-              border: 1px solid rgba(255, 255, 255, 0.2);
-              font-weight: 400;
-              font-size: 14px;
-              line-height: 21px;
-              color: rgba(255, 255, 255, 0.37);
+              border: 2px solid #282a33;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 20px;
+              color: #fff;
               letter-spacing: 0;
-              min-height: 34px;
-              padding: 4px 40px 4px 40px;
+              min-height: 40px;
+              padding: 6px 18px 5px 18px;
               display: flex;
               align-items: center;
               justify-content: center;
               transition: all 0.8s;
 
-              .calendar-time-icon {
-                width: 17px;
-                height: 17px;
+              .icon-img-span {
+                display: flex;
                 margin: 0 10px 0 0;
               }
 
@@ -567,36 +624,31 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: rgba(255, 255, 255, 0.14);
-                color: #fff;
+                background-color: #fff;
+                color: #191919;
                 border-radius: 100px;
                 font-size: 14px;
                 height: 20px;
                 width: 20px;
                 position: absolute;
-                top: 6px;
-                right: 5px;
-                transform: scale(0);
-                transition: all 0.8s;
+                top: -5px;
+                right: -5px;
               }
             }
 
             &.active {
               .filter-link {
-                color: rgba(255, 255, 255, 0.6);
-                background: #191919;
-                border: 1px solid #191919;
-
-                .cancel-icon-span {
-                  transform: scale(1);
-                }
+                background: #1e1e27;
+                background-image: none;
+                border-color: rgba(239, 107, 24, 1);
               }
             }
 
             &:hover {
               .filter-link {
-                color: rgba(255, 255, 255, 0.6);
-                background: #191919;
+                background: #1e1e27;
+                border-color: rgba(239, 107, 24, 1);
+                outline: none;
               }
             }
           }
@@ -605,10 +657,19 @@ body {
         .slot-category-list-ul {
           li {
             .filter-link {
-              color: rgba(255, 255, 255, 0.6);
+              padding-bottom: 6px;
             }
           }
         }
+      }
+    }
+
+    .h3-row {
+      h3 {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 37px;
+        color: #ef6b18;
       }
     }
 
@@ -1336,8 +1397,6 @@ body {
     left: 0;
     height: 866px;
     z-index: 0;
-    // animation-name: left_to_right_key_anime;
-    // animation-duration: 2s;
   }
 
   &.pattern-upricing-inner-div {
@@ -2541,6 +2600,10 @@ body {
 
   .common-form-div {
     .form-group {
+      .label-text {
+        margin: 0 0 15px 0;
+      }
+
       label {
         font-size: 14px;
       }
@@ -2562,19 +2625,33 @@ body {
       }
 
       textarea.form-control {
-        padding: 10px 15px;
-        font-size: 16px;
+        min-height: 130px;
+        padding: 10px 15px 20px 40px;
+      }
+
+      &.form-group-textarea-ct {
+        .tl-icon-span {
+          top: 15px;
+          left: 15px;
+        }
       }
 
       .category-control-row {
         .category-inner {
           .category-list-ul {
             li {
+              margin: 0 8px 8px 0;
+
               .filter-link {
-                font-size: 13px;
+                font-size: 12px;
                 line-height: 21px;
-                min-height: 34px;
-                padding: 6px 28px 5px 28px;
+                min-height: 28px;
+                padding: 6px 15px 5px 15px;
+
+                .img-fluid {
+                  width: 18px;
+                  object-fit: contain;
+                }
 
                 .cancel-icon-span {
                   font-size: 10px;
@@ -2582,6 +2659,11 @@ body {
                   width: 16px;
                   padding: 1px 0 1px 0;
                   top: 8px;
+                }
+
+                .calendar-time-icon-new {
+                  width: 20px;
+                  height: 21px;
                 }
               }
             }
