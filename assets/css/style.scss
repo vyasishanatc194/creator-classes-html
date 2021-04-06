@@ -152,7 +152,7 @@ body {
   }
 
   &.mh-btn55 {
-    min-height: 55px; 
+    min-height: 55px;
   }
 }
 
@@ -1348,6 +1348,12 @@ body {
     &::after {
       top: 0;
       transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+  }
+
+  &.mxh-100 {
+    &::before {
+      max-height: 100%;
     }
   }
 

@@ -1908,6 +1908,10 @@ body {
           transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
+.pattern-inner-div.mxh-100::before {
+  max-height: 100%;
+}
+
 @-webkit-keyframes left_to_right_key_anime {
   0% {
     left: -100px;
