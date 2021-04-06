@@ -2,6 +2,7 @@
   padding: 60px 0 10px 0;
   margin: 0;
   position: relative;
+  z-index: 2;
 
   .thanks-joining-ls-div {
     padding: 0;
@@ -10,38 +11,79 @@
   }
 
   .heading-div {
-    padding: 30px 0 25px 0;
+    padding: 10px 0 25px 0;
     margin: 0 0 50px 0;
     position: relative;
+
+    .user-content-img-bx-md {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      margin: 0 0 30px 0;
+
+      .img-div {
+        border: 2px solid #ef6b18;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+
+        .img-responsive {
+          width: 90px;
+          height: 90px;
+          object-fit: cover;
+          border-radius: 100px;
+          border: 3px solid #1e1e28;
+        }
+
+        .dot-span {
+          position: absolute;
+          top: 3px;
+          right: 10px;
+          width: 14px;
+          height: 14px;
+          background: #7fba7a;
+          border: 2px solid #fff;
+          border-radius: 100px;
+          box-sizing: border-box;
+        }
+      }
+    }
 
     .heading-inner-div {
       padding: 0;
 
       h3 {
-        font-weight: 800;
-        font-size: 42px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
         color: #fff;
         letter-spacing: 0;
         text-align: center;
-        max-width: 510px;
-        margin: 0 auto 30px auto;
+        max-width: 100%;
+        margin: 0 auto 15px auto;
         font-family: "Moderat Extended", sans-serif;
+      }
+
+      p {
+        padding: 0;
+        margin: 0 0 24px 0;
+        font-weight: 500;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 34px;
       }
 
       .experience-text-div {
         padding: 0;
         margin: 0;
         position: relative;
-
-        p {
-          padding: 0;
-          margin: 0 0 10px 0;
-          font-weight: 400;
-          font-size: 18px;
-          color: rgba(255, 255, 255, 0.7);
-          text-align: center;
-          letter-spacing: 0;
-        }
 
         .star-center-div {
           padding: 0 5px 0 0;
@@ -69,6 +111,143 @@
               }
             }
           }
+        }
+      }
+
+      .thank-you-div {
+        display: block;
+        text-align: center;
+        padding: 12px 0 0 0;
+
+        h4 {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 14px;
+          letter-spacing: 2.1px;
+          text-transform: uppercase;
+          color: #ef4443;
+        }
+      }
+    }
+
+    .center-ex-card-div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .experience-rating-card-div {
+      padding: 40px 30px;
+      background: #1e1e27;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 495px;
+      min-height: 189px;
+
+      .slider-review-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 30px;
+
+        .slider-review-left-div {
+          width: 47px;
+        }
+
+        .slider-review-center-div {
+          width: calc(100% - 79px);
+        }
+
+        .slider-review-right-div {
+          width: 32px;
+        }
+
+        .start-txt-div {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          top: -10px;
+          position: relative;
+
+          .number-span {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 34px;
+            color: #fff;
+            margin: 0 3px 0 0;
+          }
+
+          .star-material-icon {
+            color: #ffa500;
+          }
+        }
+
+        .slidecontainer {
+          width: 100%;
+
+          .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 10px;
+            border-radius: 5px;
+            background: #2d2d39;
+            outline: none;
+            opacity: 1;
+            -webkit-transition: 0.2s;
+            transition: opacity 0.2s;
+          }
+
+          .slider:hover {
+            opacity: 1;
+          }
+
+          .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 28px;
+            height: 28px;
+            border: 0;
+            background: url("../../images/icons/range-img.png");
+            cursor: pointer;
+          }
+
+          .slider::-moz-range-thumb {
+            width: 28px;
+            height: 28px;
+            border: 0;
+            background: url("../../images/icons/range-img.png");
+            cursor: pointer;
+          }
+        }
+      }
+
+      .experience-rating-card-footer {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+        .btn.btn-primary-outline.btn-primary-outline-n45 {
+          &::after {
+            background-color: #1e1e28;
+          }
+        }
+      }
+
+      .smile-span {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        top: -6px;
+        position: relative;
+        opacity: 0.2;
+
+        &.active {
+          opacity: 1;
+        }
+
+        .img-smile {
+          width: 24px;
+          object-fit: contain;
         }
       }
     }
@@ -210,6 +389,45 @@
           .btn-row {
             padding: 0;
             margin: 0 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.upcoming-live-str-section-new {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  width: 100%;
+
+  .bordertop1 {
+    border-top: 1px solid #282a33;
+  }
+
+  .upcoming-live-str-div-new {
+    padding: 55px 0 135px 0;
+    margin: 0;
+    position: relative;
+
+    .owl-slider-new-main-div {
+      overflow: visible;
+
+      .owl-slider-new-main-slider {
+        overflow: visible;
+
+        .owl-carousel {
+          &.our-pop-classes-owl {
+            .owl-stage-outer {
+              overflow: visible;
+            }
+
+            .our-video-common-slider-box {
+              // max-width: 281px;
+            }
           }
         }
       }
