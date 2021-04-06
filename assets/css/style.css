@@ -572,6 +572,10 @@ body {
   outline: none;
 }
 
+.btn-common-primary.mh-btn55 {
+  min-height: 55px;
+}
+
 .btn.btn-common-black {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.34);
@@ -808,6 +812,15 @@ body {
       flex-wrap: wrap;
   font-size: 14px;
   line-height: 24px;
+}
+
+.btn.btn-primary-outline.btn-primary-color-02::after {
+  background-color: #1e1e28;
+}
+
+.btn.btn-primary-outline.mh-btn55 {
+  min-height: 55px;
+  margin-bottom: 0;
 }
 
 .btn.btn-primary-outline-icon-text {

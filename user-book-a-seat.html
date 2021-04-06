@@ -22,29 +22,29 @@
   <link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
   <link href="assets/css/owl.carousel.min.css" media="all" rel="stylesheet" type="text/css" />
   <link href="assets/css/header.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="assets/css/notifications-style.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/footer.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link href="assets/css/custom-forms-style.css" media="all" rel="stylesheet" type="text/css" />
   <link href="assets/css/user/book-a-seat-style.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
   <script src="assets/js/modernizr.js"></script>
 </head>
 
 <body>
 
-  <div id="wrapper" class="wrapper home-wrapper">
+  <div id="wrapper" class="wrapper user-home-wrapper">
 
     <header>
       <div class="header-div header-div2 clearfix" >
         <div class="inner-top-header-div clearfix">
-          <div class="container container-1000">
+          <div class="container">
               <div class="row">
                   <div class="col-lg-12 col-md-12">
                       <div class="header-container">
   
                         <div class="logo-div">
                           <a class="logo_link clearfix" href="index.html">
-                            <img src="assets/images/white-icon-logo.svg" class="img-fluid logo_img main-logo-icon" alt="logo" />
+                            <img src="assets/images/white-icon-logo.svg" class="img-fluid logo_img main-logo" alt="logo" />
+                            <h1 class="text-logo"> <span class="text-logo-span1">Creator</span> <span class="text-logo-span2">classes</span></h1>
                           </a>
                         </div>
   
@@ -66,7 +66,7 @@
                                     <li class="active"><a href="user-home.html" class="nav-link">Home</a></li>
                                     <li><a href="user-live-streams.html" class="nav-link">Live streams</a></li>
                                     <li><a href="user-classes.html" class="nav-link">Classes</a></li>
-                                    <li><a href="user-creators.html" class="nav-link">Creators</a></li>
+                                    <li><a href="#" class="nav-link">Instructors</a></li>
                                     <li><a href="user-materials.html" class="nav-link">Materials</a></li>
                                   </ul>
                                 </div>
@@ -75,10 +75,222 @@
                                   <div class="right-nf-icon-div">
                                     <div class="icon-row-nf">
                                       <div class="icon-box-nf">
-                                        <a href="user-favourites.html" class="link"> <span class="material-icons">favorite</span> </a>
+                                        <a href="user-favourites.html" class="link"> 
+                                          <span class="material-icons material-icons-outlined">favorite_border</span> 
+                                        </a>
                                       </div>
                                       <div class="icon-box-nf">
-                                        <a href="#" class="link" data-toggle="modal" data-target="#notifications-modal"> <span class="material-icons">notifications</span> <span class="text-count-n">1</span> </a>
+  
+                                        <div class="dropdown dropdown dropdown-notification-div">
+                                          <a class="btn btn-default dropdown-toggle link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="bg-custom-icon notifications-icon"></i> <span class="text-count-n">1</span>
+                                          </a>
+                                          <div class="dropdown-menu dropdown-menu-left dropdown-menu-nt-div" aria-labelledby="dropdownMenuLink">
+                                            
+                                            <!-- -->
+  
+                                            <div class="dmenu-common-nt-root">
+                                              <div class="common-header-div">
+                                                <div class="title-heading-div nt-heading-div">
+                                                  <h2>Notifications</h2>
+                                                </div>
+                                              </div>
+                                              <div class="common-body-div">
+  
+                                                <div class="nts-dmenu-common-div">
+                                                  <div class="nts-dmenu-common-inner">
+                                  
+                                                    <div class="nts-dmenu-listing-div">
+                                  
+                                                      <div class="nts-dmenu-box">
+                                                        <a href="#" class="nts-dmenu-row">
+                                                          <div class="nt-left">
+                                                            <div class="thumb-div">
+                                                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                            </div>
+                                                          </div>
+                                                          <div class="nt-right">
+                                                            <div class="text-desc">
+                                                              <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                              <span class="time-span">8h</span>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+  
+                                                      <div class="nts-dmenu-box">
+                                                        <a href="#" class="nts-dmenu-row">
+                                                          <div class="nt-left">
+                                                            <div class="thumb-div">
+                                                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                            </div>
+                                                          </div>
+                                                          <div class="nt-right">
+                                                            <div class="text-desc">
+                                                              <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                              <span class="time-span">8h</span>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+  
+                                                      <div class="nts-dmenu-box">
+                                                        <a href="#" class="nts-dmenu-row">
+                                                          <div class="nt-left">
+                                                            <div class="thumb-div">
+                                                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                            </div>
+                                                          </div>
+                                                          <div class="nt-right">
+                                                            <div class="text-desc">
+                                                              <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                              <span class="time-span">8h</span>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+  
+                                                      <div class="nts-dmenu-box">
+                                                        <a href="#" class="nts-dmenu-row">
+                                                          <div class="nt-left">
+                                                            <div class="thumb-div">
+                                                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                            </div>
+                                                          </div>
+                                                          <div class="nt-right">
+                                                            <div class="text-desc">
+                                                              <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                              <span class="time-span">8h</span>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+  
+                                                      <div class="nts-dmenu-box">
+                                                        <a href="#" class="nts-dmenu-row">
+                                                          <div class="nt-left">
+                                                            <div class="thumb-div">
+                                                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                            </div>
+                                                          </div>
+                                                          <div class="nt-right">
+                                                            <div class="text-desc">
+                                                              <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                              <span class="time-span">8h</span>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+  
+                                                      <div class="nts-dmenu-box">
+                                                        <a href="#" class="nts-dmenu-row">
+                                                          <div class="nt-left">
+                                                            <div class="thumb-div">
+                                                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                            </div>
+                                                          </div>
+                                                          <div class="nt-right">
+                                                            <div class="text-desc">
+                                                              <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                              <span class="time-span">8h</span>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+  
+                                                      <div class="nts-dmenu-box">
+                                                        <a href="#" class="nts-dmenu-row">
+                                                          <div class="nt-left">
+                                                            <div class="thumb-div">
+                                                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                            </div>
+                                                          </div>
+                                                          <div class="nt-right">
+                                                            <div class="text-desc">
+                                                              <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                              <span class="time-span">8h</span>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+  
+                                                      <div class="nts-dmenu-box">
+                                                        <a href="#" class="nts-dmenu-row">
+                                                          <div class="nt-left">
+                                                            <div class="thumb-div">
+                                                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                            </div>
+                                                          </div>
+                                                          <div class="nt-right">
+                                                            <div class="text-desc">
+                                                              <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                              <span class="time-span">8h</span>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+  
+                                                      <div class="nts-dmenu-box">
+                                                        <a href="#" class="nts-dmenu-row">
+                                                          <div class="nt-left">
+                                                            <div class="thumb-div">
+                                                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                            </div>
+                                                          </div>
+                                                          <div class="nt-right">
+                                                            <div class="text-desc">
+                                                              <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                              <span class="time-span">8h</span>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+  
+                                                      <div class="nts-dmenu-box">
+                                                        <a href="#" class="nts-dmenu-row">
+                                                          <div class="nt-left">
+                                                            <div class="thumb-div">
+                                                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                            </div>
+                                                          </div>
+                                                          <div class="nt-right">
+                                                            <div class="text-desc">
+                                                              <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                              <span class="time-span">8h</span>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+  
+                                                      <div class="nts-dmenu-box">
+                                                        <a href="#" class="nts-dmenu-row">
+                                                          <div class="nt-left">
+                                                            <div class="thumb-div">
+                                                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                            </div>
+                                                          </div>
+                                                          <div class="nt-right">
+                                                            <div class="text-desc">
+                                                              <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                              <span class="time-span">8h</span>
+                                                            </div>
+                                                          </div>
+                                                        </a>
+                                                      </div>
+  
+                                                    </div>
+                                  
+                                                  </div>
+                                                </div>
+                                              
+                                              </div>
+                                            </div>
+  
+                                            <!-- -->
+  
+                                          </div>
+                                        </div>
+  
                                       </div>
                                     </div>
                                   </div>
@@ -113,240 +325,156 @@
       </div><!--  End of header with navigation div  -->
     </header>
 
-    <div class="main-middle-area pt-custom-default">
+    <div class="main-middle-area user-main-middle-area main-bg-color">
+      <div class="header-footer-with-min-height02">
+        <!-- <div class="pattern-inner-div pattern-upricing-inner-div"> -->
 
-      <section class="general-book-section general-book-a-seat-section" id="book-a-seat-section">
-        <div class="container container-1000">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="general-book-div">
-                <div class="container-general-center">
+          <section class="general-book-new-section general-book-a-seat-new-section">
+            <div class="container container-970">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
 
-                  <div class="heading-div">
-                    <div class="heading-inner-div">
-                      <h1>Book a seat</h1>
-                    </div>
-                  </div>
+                  <div class="general-book-new-div">
+                    <div class="container-general-new-center">
 
-                  <div class="general-book-root">
-                    
-                    <div class="general-top">
-                      <div class="general-row">
-                        
-                        <div class="book-a-seat-common-inner">
+                      <div class="heading-div">
+                        <div class="heading-inner-div">
+                          <h1>Book a Seat</h1>
+                        </div>
+                      </div>
 
-                          <div class="booking-div-card">
-                            <div class="booking-div-card-inner">
-                              
-                              <div class="img-thumb-root">
-                                <div class="img-thumb"> <img src="assets/images/live-streams/ls-image-01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                                <div class="video-overlay-content-div">
-                                  <div class="video-overlay-content-row">
-                                    <div class="label-div">
-                                      <ul>
-                                        <li><a href="#" class="link link-black">Photography</a></li>
-                                        <li><a href="#" class="link link-black">Filmmaking</a></li>
-                                      </ul>
-                                    </div>
+                      <div class="general-bk-seat-new-body">
+                        <div class="general-bk-seat-new-body-row">
+
+                          <div class="general-bk-seat-new-body-left">
+
+                            <div class="book-seat-user-card-div">
+                              <div class="book-seat-user-card-row">
+                                <div class="user-thumb-img-div">
+                                  <div class="img-div">
+                                    <img src="assets/images/creators/creators3.jpg" class="img-fluid img-responsive" alt="creators" />
                                   </div>
                                 </div>
-                              </div>
-                              
-                              <div class="text-desc-div">
-                                <h2>$20</h2>
-                                <p>Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</p>
-
-                                <div class="time-box">
-                                  <span class="icon-span"><i class="bg-custom-icon calendar-time-icon"></i></span>
-                                  <span class="text">Sept 12, 9:00 PM EST <span class="dot-span"></span> <a href="#" class="link">Michael Gray</a></span>
+                                <div class="text-content-div"> 
+                                  <h3><a href="#" class="link">Michael Gray</a></h3>
+                                  <p>Flimmaker</p>
                                 </div>
-
                               </div>
                             </div>
+
                           </div>
 
-                          <div class="button-oto-session-div">
-                            <a href="user-book-one-to-one.html" class="btn btn-oto-session"> <span class="bg-custom-icon person-group-icon"></span> <span class="text-span">Click here to book one-to-one session </span></a>
+                          <div class="general-bk-seat-new-body-right">
+
+                            <div class="text-desc-div">
+                              <h2>$20</h2>
+                              <p>Vivamus suscipit tortor eget felis porttitor volutpat Mauris blandit aliquet elit</p>
+
+                              <div class="time-box">
+                                <div class="time-box-rounded">
+                                  <span class="icon-span"><i class="bg-custom-icon calendar-time-icon-new"></i></span>
+                                  <span class="text">Sept 12, 9:00 PM EST</span>
+                                </div>
+                              </div>
+
+                              <div class="button-oto-session-div">
+                                <a href="#" class="link-btn"> Click here to book one-to-one session </a>
+                              </div>
+
+                            </div>
+
                           </div>
-      
+
                         </div>
-
                       </div>
-                    </div>
 
-                    <div class="general-bottom">
-                      <div class="general-btn-div">
-                        <a href="#" class="btn btn-common-black btn-black-back mr-20"> Back </a>
-                        <a href="#" class="btn btn-common-primary btn-book"> Book </a>
+                      <div class="general-bottom">
+                        <div class="general-btn-div">
+                          <a href="#" class="btn btn-primary-outline btn-primary-color-02 mh-btn55 btn-black-back mr-24"> 
+                            <span class="text">Back</span> 
+                          </a>
+                          <a href="#" class="btn btn-common-primary mh-btn55 btn-book"> Book </a>
+                        </div>
                       </div>
-                    </div>
 
+                    </div>
                   </div>
-                  
+
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
-        </div>
-      </section>
-
-    </div>
-
-  </div><!-- end of wrapper -->
-
-  <div class="modal right right-slider-modal fade" id="notifications-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-  
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> <i class="fe fe-x close-icon-x"></i> </span></button>
-        </div>
-  
-        <div class="modal-body">
-  
-          <div class="common-modal-body login-to-book-body">
-            <div class="common-header-div">
-              <div class="title-heading-div nt-heading-div">
-                <h2>Notifications</h2>
-              </div>
-            </div>
-            <div class="common-body-div">
-  
-              <div class="common-body-inner-div">
-  
-                <div class="notifications-common-div">
-                  <div class="notifications-common-inner">
-  
-                    <div class="notifications-listing-div">
-  
-                      <div class="notifications-box">
-                        <div class="notifications-row">
-                          <div class="nt-left">
-                            <div class="thumb-div">
-                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
-                            </div>
-                          </div>
-                          <div class="nt-right">
-                            <div class="text-desc">
-                              <h3> <a href="#" class="link">Your seat for michael gray’s stream has been booked</a></h3>
-                              <span class="time-span">17:05</span>
-                            </div>
-                          </div>    
-                        </div>
-                      </div>
-  
-                      <div class="notifications-box">
-                        <div class="notifications-row">
-                          <div class="nt-left">
-                            <div class="thumb-div">
-                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
-                            </div>
-                          </div>
-                          <div class="nt-right">
-                            <div class="text-desc">
-                              <h3> <a href="#" class="link">Your seat for michael gray’s stream has been booked</a></h3>
-                              <span class="time-span">17:05</span>
-                            </div>
-                          </div>    
-                        </div>
-                      </div>
-  
-                      <div class="notifications-box">
-                        <div class="notifications-row">
-                          <div class="nt-left">
-                            <div class="thumb-div">
-                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
-                            </div>
-                          </div>
-                          <div class="nt-right">
-                            <div class="text-desc">
-                              <h3> <a href="#" class="link">Your seat for michael gray’s stream has been booked</a></h3>
-                              <span class="time-span">17:05</span>
-                            </div>
-                          </div>    
-                        </div>
-                      </div>
-  
-                      <div class="notifications-box">
-                        <div class="notifications-row">
-                          <div class="nt-left">
-                            <div class="thumb-div">
-                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
-                            </div>
-                          </div>
-                          <div class="nt-right">
-                            <div class="text-desc">
-                              <h3> <a href="#" class="link">Your seat for michael gray’s stream has been booked</a></h3>
-                              <span class="time-span">17:05</span>
-                            </div>
-                          </div>    
-                        </div>
-                      </div>
-  
-                      <div class="notifications-box">
-                        <div class="notifications-row">
-                          <div class="nt-left">
-                            <div class="thumb-div">
-                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
-                            </div>
-                          </div>
-                          <div class="nt-right">
-                            <div class="text-desc">
-                              <h3> <a href="#" class="link">Your seat for michael gray’s stream has been booked</a></h3>
-                              <span class="time-span">17:05</span>
-                            </div>
-                          </div>    
-                        </div>
-                      </div>
-  
-                      <div class="notifications-box">
-                        <div class="notifications-row">
-                          <div class="nt-left">
-                            <div class="thumb-div">
-                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
-                            </div>
-                          </div>
-                          <div class="nt-right">
-                            <div class="text-desc">
-                              <h3> <a href="#" class="link">Your seat for michael gray’s stream has been booked</a></h3>
-                              <span class="time-span">17:05</span>
-                            </div>
-                          </div>    
-                        </div>
-                      </div>
-  
-                      <div class="notifications-box">
-                        <div class="notifications-row">
-                          <div class="nt-left">
-                            <div class="thumb-div">
-                              <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
-                            </div>
-                          </div>
-                          <div class="nt-right">
-                            <div class="text-desc">
-                              <h3> <a href="#" class="link">Your seat for michael gray’s stream has been booked</a></h3>
-                              <span class="time-span">17:05</span>
-                            </div>
-                          </div>    
-                        </div>
-                      </div>
-  
-                    </div>
-  
-                  </div>
-                </div>
-  
-              </div>
-  
-            </div>
-          </div>
-  
-        </div>
-  
+        <!-- </div> -->
       </div>
     </div>
-  </div>
+
+    <footer>
+      <div class="footer-inner-div">
+  
+        <div class="container container-1200">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+  
+              <div class="footer-content-row">
+                <div class="row">
+                  
+                  <div class="col-lg-4 col-md-4 fn-order01">
+  
+                    <div class="content-footer-div">
+                      <div class="logo-footer">
+                        <a class="logo_link clearfix" href="index.html">
+                          <img src="assets/images/white-icon-logo.svg" class="img-fluid logo_img main-logo" alt="logo">
+                          <h1 class="text-logo"> <span class="text-logo-span1">Creator</span> <span class="text-logo-span2">classes</span></h1>
+                        </a>
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                  <div class="col-lg-4 col-md-4 fn-order02">
+                    <div class="footer-copyright-div">
+                      <div class="footer-copyright-box-root">
+                        <p> <a href="#" class="link">CreatorClases</a> &copy; 2021</p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-lg-4 col-md-4 fn-order03">
+  
+                    <div class="content-footer-div">
+                      <div class="social-icon-div-root">
+                        <ul class="footer-social-ul">
+                          <li> 
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a> 
+                          </li>
+                          <li>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                          </li>
+                          <li>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+  
+                  </div>
+  
+                </div>      
+              </div>
+  
+              
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- end of wrapper -->
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>

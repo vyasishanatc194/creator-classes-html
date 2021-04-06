@@ -150,6 +150,10 @@ body {
     box-shadow: 0 5px 10px 0 rgba(239, 67, 67, 0.3);
     outline: none;
   }
+
+  &.mh-btn55 {
+    min-height: 55px; 
+  }
 }
 
 .btn.btn-common-black {
@@ -339,6 +343,17 @@ body {
     flex-wrap: wrap;
     font-size: 14px;
     line-height: 24px;
+  }
+
+  &.btn-primary-color-02 {
+    &::after {
+      background-color: #1e1e28;
+    }
+  }
+
+  &.mh-btn55 {
+    min-height: 55px;
+    margin-bottom: 0;
   }
 }
 
