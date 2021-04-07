@@ -1,0 +1,40 @@
+.creators-section-new {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  width: 100%;
+
+  .bordertop1 {
+    border-top: 1px solid #282a33;
+  }
+
+  .creators-div-new {
+    padding: 55px 0 135px 0;
+    margin: 0;
+    position: relative;
+
+    .owl-slider-new-main-div {
+      overflow: visible;
+
+      .owl-slider-new-main-slider {
+        overflow: visible;
+
+        .owl-carousel {
+          &.our-pop-classes-owl {
+            .owl-stage-outer {
+              overflow: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.classes-by-instructor-section {
+  .our-pop-classes-div {
+    padding-bottom: 40px;
+  }
+}

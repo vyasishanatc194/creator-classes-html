@@ -1,0 +1,35 @@
+.creators-section-new {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.creators-section-new .bordertop1 {
+  border-top: 1px solid #282a33;
+}
+
+.creators-section-new .creators-div-new {
+  padding: 55px 0 135px 0;
+  margin: 0;
+  position: relative;
+}
+
+.creators-section-new .creators-div-new .owl-slider-new-main-div {
+  overflow: visible;
+}
+
+.creators-section-new .creators-div-new .owl-slider-new-main-div .owl-slider-new-main-slider {
+  overflow: visible;
+}
+
+.creators-section-new .creators-div-new .owl-slider-new-main-div .owl-slider-new-main-slider .owl-carousel.our-pop-classes-owl .owl-stage-outer {
+  overflow: visible;
+}
+
+.classes-by-instructor-section .our-pop-classes-div {
+  padding-bottom: 40px;
+}
+/*# sourceMappingURL=user-instructor-profile-style.css.map */

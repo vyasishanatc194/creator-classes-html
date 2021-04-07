@@ -203,6 +203,10 @@
   position: relative;
 }
 
+.upcoming-live-str-section-new .upcoming-live-str-div-new.pb-50 {
+  padding-bottom: 50px;
+}
+
 .upcoming-live-str-section-new .upcoming-live-str-div-new .owl-slider-new-main-div {
   overflow: visible;
 }

@@ -202,6 +202,10 @@
     margin: 0;
     position: relative;
 
+    &.pb-50 {
+      padding-bottom: 50px;
+    }
+
     .owl-slider-new-main-div {
       overflow: visible;
 

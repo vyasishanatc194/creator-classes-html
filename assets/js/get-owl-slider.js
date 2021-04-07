@@ -139,29 +139,26 @@ $(document).ready(function () {
     nav: false,
     dots: false,
     stagePadding: 0,
-    margin: 15,
-    autoplay: false,
-    autoWidth:true,
+    margin: 30,
+    autoplay: true,
     smartSpeed: 2000,
     responsive: {
       0: {
         items: 1.2,
-        margin: 5,
-        autoWidth:false,
         autoplay: true,
+        dots: true,
+        margin: 15,
       },
       600: {
-        items: 2.3,
-        autoWidth:false,
-        autoplay: true,
+        items: 2,
       },
       1200: {
-        items: 3.1,
+        items: 3,
       },
       1600: {
-        items: 3.15,
-      }
-    }
+        items: 3,
+      },
+    },
   });
 });
 
