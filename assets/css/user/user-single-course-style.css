@@ -707,6 +707,10 @@
   .us-course-tab .us-course-tab-inner {
     margin: 0 0 50px 0;
   }
+  .video-view-div .video-view-center-div .btn-video-btn-center .btn-video-custom {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

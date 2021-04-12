@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>Creator classes</title>
+<title>Upcomming live streams | Creator classes</title>
 <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
 <meta name="theme-color" content="#191919">
 <meta name="msapplication-navbutton-color" content="#191919">
@@ -21,9 +21,9 @@
 <link href="assets/css/header.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/footer.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/tab-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/owl-slider-style.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/user/user-single-course-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/user/user-home-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/user/user-upcomming-live-streams-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
 </head>
@@ -62,10 +62,10 @@
                             <div class="row-nav-div">
                               <div class="left-side">
                                 <ul class="nav ullist-inline" id="nav-res">
-                                  <li class="active"><a href="user-home.html" class="nav-link">Home</a></li>
+                                  <li><a href="user-home.html" class="nav-link">Home</a></li>
                                   <li><a href="user-live-streams.html" class="nav-link">Live streams</a></li>
                                   <li><a href="user-classes.html" class="nav-link">Classes</a></li>
-                                  <li><a href="#" class="nav-link">Instructors</a></li>
+                                  <li class="active"><a href="#" class="nav-link">Instructors</a></li>
                                   <li><a href="user-materials.html" class="nav-link">Materials</a></li>
                                 </ul>
                               </div>
@@ -328,7 +328,7 @@
 
     <div class="header-footer-with-min-height01">
 
-      <section class="single-course-section">
+      <section class="uplstr-section">
         <div class="container container-1200">
           <div class="row">
             <div class="col-lg-12 col-md-12">
@@ -338,298 +338,130 @@
                 <div class="single-course-top">
                   <div class="single-course-top-row">
 
-                    <div class="heading-top-div"> 
-                      <h2>Photography is undoubtedly the art form of the modern day almost everyone has access to a camera and simple, high level editing software.</h2>
+                    <div class="row">
+                      <div class="col-lg-8 col-md-8">
+                        <div class="heading-top-div"> 
+                          <h2>Photography is undoubtedly the art form of the modern day almost everyone has access to a camera.</h2>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row lf-upc-mian-row">
+
+                      <div class="col-lg-8 col-md-7 lf-upc-left-col">
+                        <div class="lf-upc-ls-div">
+                          <div class="lf-upc-ls-row">
+
+                            <div class="video-view-div">
+                              <div class="video-view-center-div">
+                                <video class="video-full-div" id="live-video-stream-play" controls loop muted="false">
+                                  <source src="assets/images/video/video.mp4" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                </video>
+
+                                <div class="btn-video-btn-center">
+                                  <button class="btn-video-custom" id="video-btn" onclick="playPause()"> <span class="bg-custom-icon video-play-new-icon"></span> </button>
+                                </div>
+                                
+                                <div class="btn-top-right-div">
+                                  <div class="sp-label-div">
+                                    <a href="#" class="link link-black-sp"> <i class="bg-custom-icon video-camera-new-icon"></i> Sneak Peek</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+        
+                            <div class="single-category-row">
+                              <div class="single-category-left">
+                                <div class="category-inner">
+                                  <ul class="cate-list-ul">
+                                    <li><a href="#" class="category-link"> <span class="span-text"> Photography </span> </a></li>
+                                    <li><a href="#" class="category-link"> <span class="span-text"> Filmmaking </span> </a></li>
+                                    <li><a href="#" class="category-link"> <span class="span-text"> Video Editing </span> </a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="single-category-right">
+                                <div class="link-div">
+                                  <a href="#" class="link link-custom-primary">+ Add to favorites</a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="our-content-bottom-row">
+                              <div class="our-content-bottom-left">
+                                <div class="our-content-left">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user">
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="our-content-right">
+                                  <h3><a href="#" class="link">Mike Visuals <span class="icon-rounded-span check-icon-rounded"><span class="material-icons">done</span> </span></a></h3>
+                                  <p>Visual Expert</p>
+                                </div>                          
+                              </div>
+                              <div class="our-content-bottom-right">
+                                <h4><span class="material-icons">schedule</span> <span class="txt">Posted 10 hours ago</span>  </h4>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4 col-md-5 lf-upc-left-col">
+                        <div class="rg-upc-ls-div">
+                          <div class="rg-upc-ls-row">
+
+                            <div class="book-now-learn-card-div">
+                              <div class="book-now-learn-card-row">
+
+                                <div class="book-now-learn-card-top-div">
+                                  <a href="#" class="filter-link"> <span class="icon-img-span"> <i class="bg-custom-icon calendar-time-icon-new"></i> </span> <span class="span-text"> Set Reminder </span> </a>
+                                </div>
+
+                                <div class="book-now-learn-card-body-div">
+                                  <div class="heading-title">
+                                    <h3>What you will learn?</h3>
+                                  </div>
+                                  <div class="desc-box">
+                                    <ul class="check-list-ul">
+                                      <li>Color, Light, and Design Techniques</li>
+                                      <li>Capturing Motion in Photos</li>
+                                      <li>Understanding Composition</li>
+                                      <li>Setting Up Photo Studio Lighting</li>
+                                      <li>Color, Light, and Design Techniques</li>
+                                      <li>Capturing Motion in Photos</li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <div class="book-now-learn-card-bottom-div">
+                                  <div class="btn-div-group">
+                                    <a href="#" class="btn btn-primary-outline-icon-text"> 
+                                      <span class="icon-span"><i class="bg-custom-icon invoice-icon-new"></i></span>
+                                      <span class="text">Book Now</span> 
+                                    </a>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      
                     </div>
                     
-                    <div class="video-view-div">
-                      <div class="video-view-center-div">
-                        <video class="video-full-div" id="live-video-stream-play" controls loop muted="false">
-                          <source src="assets/images/video/video.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video>
-                        <div class="btn-video-btn-center">
-                          <button class="btn-video-custom" id="video-btn" onclick="playPause()"> <span class="bg-custom-icon video-play-new-icon"></span> </button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="single-category-row">
-                      <div class="single-category-left">
-                        <div class="category-inner">
-                          <ul class="cate-list-ul">
-                            <li><a href="#" class="category-link"> <span class="span-text"> Photography </span> </a></li>
-                            <li><a href="#" class="category-link"> <span class="span-text"> Filmmaking </span> </a></li>
-                            <li><a href="#" class="category-link"> <span class="span-text"> Video Editing </span> </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="single-category-right">
-                        <div class="link-div">
-                          <a href="#" class="link link-custom-primary">+ Add to favorites</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="our-content-bottom-row">
-                      <div class="our-content-bottom-left">
-                        <div class="our-content-left">
-                          <div class="thumb-img">
-                            <a href="#" class="link">
-                              <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user">
-                            </a>
-                          </div>
-                        </div>
-                        <div class="our-content-right">
-                          <h3><a href="#" class="link">Mike Visuals <span class="icon-rounded-span check-icon-rounded"><span class="material-icons">done</span> </span></a></h3>
-                          <p>Visual Expert</p>
-                        </div>                          
-                      </div>
-                      <div class="our-content-bottom-right">
-                        <h4><span class="material-icons">schedule</span> <span class="txt">Posted 10 hours ago</span>  </h4>
-                      </div>
-                    </div>
+                    
 
                   </div>
                 </div>
 
-                <div class="single-course-body">
-                  <div class="single-course-body-row">
-
-                    <div class="row">
-                      <div class="col-lg-12 col-md-12">
-
-                        <div class="tabs-root-common">
-
-                          <div class="tabs-header-common">
-                            <ul class="nav nav-tabs">
-                              <li class="nav-item">
-                                <a class="nav-link text-uppercase active show" data-toggle="tab" href="#user-single-course-tab-01">Description</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link text-uppercase" data-toggle="tab" href="#user-single-course-tab-02">REviews (43)</a>
-                              </li>
-                            </ul>
-                          </div>
-            
-                          <div class="tabs-body-common">
-                            <div class="tab-content">
-            
-                              <div id="user-single-course-tab-01" class="tab-pane fade active show">
-            
-                                <div class="tab-pane-inner">
-            
-                                  <div class="us-course-tab max-width-770">
-                                    <div class="us-course-tab-inner">
-
-                                      <div class="ques-box-row">
-                                        <div class="heading-title">
-                                          <h3>What you will learn?</h3>
-                                        </div>
-                                        <div class="ques-box">
-                                          <div class="desc-inner-box">
-                                            <ul class="check-list-ul">
-                                              <li class="width-50">Color, Light, and Design Techniques</li>
-                                              <li class="width-50">Understanding Composition</li>
-                                              <li class="width-50">Capturing Motion in Photos</li>
-                                              <li class="width-50">Setting Up Photo Studio Lighting</li>
-                                            </ul>
-                                          </div>
-                                        </div>
-                                        <div class="text-div">
-                                          <p>Remind me to thank John for a lovely weekend. What do they got in there? King Kong? Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? I gave it a cold? I gave it a virus. A computer virus. Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should.</p>
-                                          <p>Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard! Hey, you know how I'm, like, always trying to save the planet? Here's my chance.</p>
-                                          <p>I gave it a cold? I gave it a virus. A computer virus. What do they got in there? King Kong? Jaguar shark! So tell me - does it really exist? Just my luck, no ice. Just my luck, no ice. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows.</p>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                  </div>
-            
-                                </div>
-            
-                              </div>
-            
-                              <div id="user-single-course-tab-02" class="tab-pane fade ">
-            
-                                <div class="tab-pane-inner">
-            
-                                  <div class="us-course-tab max-width-910">
-                                    <div class="us-course-tab-inner">
-
-                                      <div class="cmp-root-div">
-                                        <div class="cmp-root-inner-div">
-
-                                          <div class="comment-list-view-div">
-                                            <div class="comment-list-view-row">
-                            
-                                              <div class="comment-card-box">
-                                                <div class="comment-card-inner">
-                                                  <div class="user-top-row">
-                                                    <div class="user-top-left-div">
-                                                      <div class="img-thumb"> <img src="assets/images/profile/profile-image-4.png" class="img-fluid img-responsive" alt="testimonials" /> </div>
-                                                      <div class="text-content-div">
-                                                        <h3><a href="#" class="link">Martha Rojas</a></h3>
-                                                      </div>
-                                                    </div>
-                                                    <div class="user-top-right-div">
-                                                      <h4> <span class="txt">March 12, 2020</span>  </h4>
-                                                    </div>    
-                                                  </div>
-                                                  <div class="user-desc-row">
-                                                    <div class="desc-div">
-                                                      <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, he without the oops! So you two dig up, dig up dinosaurs? Life finds a way. Jaguar shark! So tell me - does it really exist? We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough.</p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-
-                                              <div class="comment-card-box">
-                                                <div class="comment-card-inner">
-                                                  <div class="user-top-row">
-                                                    <div class="user-top-left-div">
-                                                      <div class="img-thumb"> <img src="assets/images/profile/profile-image-3.png" class="img-fluid img-responsive" alt="testimonials" /> </div>
-                                                      <div class="text-content-div">
-                                                        <h3><a href="#" class="link">Jack Heinz</a></h3>
-                                                      </div>
-                                                    </div>
-                                                    <div class="user-top-right-div">
-                                                      <h4> <span class="txt">March 12, 2020</span>  </h4>
-                                                    </div>    
-                                                  </div>
-                                                  <div class="user-desc-row">
-                                                    <div class="desc-div">
-                                                      <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows.</p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-
-                                              <div class="comment-card-box">
-                                                <div class="comment-card-inner">
-                                                  <div class="user-top-row">
-                                                    <div class="user-top-left-div">
-                                                      <div class="img-thumb"> <img src="assets/images/profile/profile-image-2.png" class="img-fluid img-responsive" alt="testimonials" /> </div>
-                                                      <div class="text-content-div">
-                                                        <h3><a href="#" class="link">Mike Visuals</a></h3>
-                                                      </div>
-                                                    </div>
-                                                    <div class="user-top-right-div">
-                                                      <h4> <span class="txt">March 12, 2017</span>  </h4>
-                                                    </div>    
-                                                  </div>
-                                                  <div class="user-desc-row">
-                                                    <div class="desc-div">
-                                                      <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, he without the oops! So you two dig up, dig up dinosaurs? Life finds a way. Jaguar shark! So tell me.</p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-
-                                              <div class="comment-card-box">
-                                                <div class="comment-card-inner">
-                                                  <div class="user-top-row">
-                                                    <div class="user-top-left-div">
-                                                      <div class="img-thumb"> <img src="assets/images/profile/profile-image-5.png" class="img-fluid img-responsive" alt="testimonials" /> </div>
-                                                      <div class="text-content-div">
-                                                        <h3><a href="#" class="link">Mathew Hodge</a></h3>
-                                                      </div>
-                                                    </div>
-                                                    <div class="user-top-right-div">
-                                                      <h4> <span class="txt">March 12, 2017</span>  </h4>
-                                                    </div>    
-                                                  </div>
-                                                  <div class="user-desc-row">
-                                                    <div class="desc-div">
-                                                      <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows.</p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-
-                                              <div class="comment-card-box">
-                                                <div class="comment-card-inner">
-                                                  <div class="user-top-row">
-                                                    <div class="user-top-left-div">
-                                                      <div class="img-thumb"> <img src="assets/images/profile/profile-image-1.png" class="img-fluid img-responsive" alt="testimonials" /> </div>
-                                                      <div class="text-content-div">
-                                                        <h3><a href="#" class="link">Jaquiline Terez</a></h3>
-                                                      </div>
-                                                    </div>
-                                                    <div class="user-top-right-div">
-                                                      <h4> <span class="txt">March 12, 2016</span>  </h4>
-                                                    </div>    
-                                                  </div>
-                                                  <div class="user-desc-row">
-                                                    <div class="desc-div">
-                                                      <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, he without the oops! So you two dig up, dig up dinosaurs? Life finds a way. Jaguar shark! So tell me  does it really exist.</p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-
-                                              <div class="comment-card-box">
-                                                <div class="comment-card-inner">
-                                                  <div class="user-top-row">
-                                                    <div class="user-top-left-div">
-                                                      <div class="img-thumb"> <img src="assets/images/profile/profile-image-1.png" class="img-fluid img-responsive" alt="testimonials" /> </div>
-                                                      <div class="text-content-div">
-                                                        <h3><a href="#" class="link">Jaquiline Terez</a></h3>
-                                                      </div>
-                                                    </div>
-                                                    <div class="user-top-right-div">
-                                                      <h4> <span class="txt">March 12, 2016</span>  </h4>
-                                                    </div>    
-                                                  </div>
-                                                  <div class="user-desc-row">
-                                                    <div class="desc-div">
-                                                      <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, he without the oops! So you two dig up, dig up dinosaurs? Life finds a way. Jaguar shark! So tell me  does it really exist.</p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                            
-                                            </div>
-                                          </div>
-
-                                          <div class="text-area-ct-div">
-                                            <div class="form-text-area-ct-div">
-                                              <div class="form-group">
-                                                <textarea class="form-control form-textarea" rows="4" placeholder="Write your review"></textarea>
-                                                <span class="tl-icon-span"> <span class="bg-custom-icon write-pen-new-icon"></span> </span>
-                                              </div>
-
-                                              <div class="btn-div">
-                                                <div class="btn-row-div">
-                                                  <a href="#" class="btn btn-primary-outline btn-primary-outline-n45"> 
-                                                    <span class="text">Post</span> 
-                                                  </a>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                  </div>
-                                      
-                                </div>
-            
-                              </div>
-            
-                            </div>
-                          </div>
-            
-                        </div>
-
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
+                
               </div>
 
             </div>
