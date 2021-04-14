@@ -19,10 +19,10 @@
 <link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/owl.carousel.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/header.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/footer.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/user/user-materials-details-style.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/notifications-style.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
 </head>
 
@@ -31,16 +31,17 @@
 <div id="wrapper" class="wrapper user-home-wrapper">
 
 	<header>
-    <div class="header-div header-div2 header-color-2 clearfix" >
+    <div class="header-div header-div2 clearfix" >
       <div class="inner-top-header-div clearfix">
-        <div class="container container-1000">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="header-container">
 
                       <div class="logo-div">
                         <a class="logo_link clearfix" href="index.html">
-                          <img src="assets/images/white-icon-logo.svg" class="img-fluid logo_img main-logo-icon" alt="logo" />
+                          <img src="assets/images/white-icon-logo.svg" class="img-fluid logo_img main-logo" alt="logo" />
+                          <h1 class="text-logo"> <span class="text-logo-span1">Creator</span> <span class="text-logo-span2">classes</span></h1>
                         </a>
                       </div>
 
@@ -62,7 +63,7 @@
                                   <li><a href="user-home.html" class="nav-link">Home</a></li>
                                   <li><a href="user-live-streams.html" class="nav-link">Live streams</a></li>
                                   <li><a href="user-classes.html" class="nav-link">Classes</a></li>
-                                  <li><a href="user-creators.html" class="nav-link">Creators</a></li>
+                                  <li><a href="#" class="nav-link">Instructors</a></li>
                                   <li class="active"><a href="user-materials.html" class="nav-link">Materials</a></li>
                                 </ul>
                               </div>
@@ -71,10 +72,222 @@
                                 <div class="right-nf-icon-div">
                                   <div class="icon-row-nf">
                                     <div class="icon-box-nf">
-                                      <a href="user-favourites.html" class="link"> <span class="material-icons">favorite</span> </a>
+                                      <a href="user-favourites.html" class="link"> 
+                                        <span class="material-icons material-icons-outlined">favorite_border</span> 
+                                      </a>
                                     </div>
                                     <div class="icon-box-nf">
-                                      <a href="#" class="link" data-toggle="modal" data-target="#notifications-modal"> <span class="material-icons">notifications</span> <span class="text-count-n">1</span> </a>
+
+                                      <div class="dropdown dropdown dropdown-notification-div">
+                                        <a class="btn btn-default dropdown-toggle link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="bg-custom-icon notifications-icon"></i> <span class="text-count-n">1</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-left dropdown-menu-nt-div" aria-labelledby="dropdownMenuLink">
+                                          
+                                          <!-- -->
+
+                                          <div class="dmenu-common-nt-root">
+                                            <div class="common-header-div">
+                                              <div class="title-heading-div nt-heading-div">
+                                                <h2>Notifications</h2>
+                                              </div>
+                                            </div>
+                                            <div class="common-body-div">
+
+                                              <div class="nts-dmenu-common-div">
+                                                <div class="nts-dmenu-common-inner">
+                                
+                                                  <div class="nts-dmenu-listing-div">
+                                
+                                                    <div class="nts-dmenu-box">
+                                                      <a href="#" class="nts-dmenu-row">
+                                                        <div class="nt-left">
+                                                          <div class="thumb-div">
+                                                            <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                          </div>
+                                                        </div>
+                                                        <div class="nt-right">
+                                                          <div class="text-desc">
+                                                            <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                            <span class="time-span">8h</span>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+
+                                                    <div class="nts-dmenu-box">
+                                                      <a href="#" class="nts-dmenu-row">
+                                                        <div class="nt-left">
+                                                          <div class="thumb-div">
+                                                            <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                          </div>
+                                                        </div>
+                                                        <div class="nt-right">
+                                                          <div class="text-desc">
+                                                            <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                            <span class="time-span">8h</span>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+
+                                                    <div class="nts-dmenu-box">
+                                                      <a href="#" class="nts-dmenu-row">
+                                                        <div class="nt-left">
+                                                          <div class="thumb-div">
+                                                            <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                          </div>
+                                                        </div>
+                                                        <div class="nt-right">
+                                                          <div class="text-desc">
+                                                            <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                            <span class="time-span">8h</span>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+
+                                                    <div class="nts-dmenu-box">
+                                                      <a href="#" class="nts-dmenu-row">
+                                                        <div class="nt-left">
+                                                          <div class="thumb-div">
+                                                            <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                          </div>
+                                                        </div>
+                                                        <div class="nt-right">
+                                                          <div class="text-desc">
+                                                            <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                            <span class="time-span">8h</span>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+
+                                                    <div class="nts-dmenu-box">
+                                                      <a href="#" class="nts-dmenu-row">
+                                                        <div class="nt-left">
+                                                          <div class="thumb-div">
+                                                            <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                          </div>
+                                                        </div>
+                                                        <div class="nt-right">
+                                                          <div class="text-desc">
+                                                            <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                            <span class="time-span">8h</span>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+
+                                                    <div class="nts-dmenu-box">
+                                                      <a href="#" class="nts-dmenu-row">
+                                                        <div class="nt-left">
+                                                          <div class="thumb-div">
+                                                            <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                          </div>
+                                                        </div>
+                                                        <div class="nt-right">
+                                                          <div class="text-desc">
+                                                            <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                            <span class="time-span">8h</span>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+
+                                                    <div class="nts-dmenu-box">
+                                                      <a href="#" class="nts-dmenu-row">
+                                                        <div class="nt-left">
+                                                          <div class="thumb-div">
+                                                            <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                          </div>
+                                                        </div>
+                                                        <div class="nt-right">
+                                                          <div class="text-desc">
+                                                            <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                            <span class="time-span">8h</span>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+
+                                                    <div class="nts-dmenu-box">
+                                                      <a href="#" class="nts-dmenu-row">
+                                                        <div class="nt-left">
+                                                          <div class="thumb-div">
+                                                            <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                          </div>
+                                                        </div>
+                                                        <div class="nt-right">
+                                                          <div class="text-desc">
+                                                            <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                            <span class="time-span">8h</span>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+
+                                                    <div class="nts-dmenu-box">
+                                                      <a href="#" class="nts-dmenu-row">
+                                                        <div class="nt-left">
+                                                          <div class="thumb-div">
+                                                            <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                          </div>
+                                                        </div>
+                                                        <div class="nt-right">
+                                                          <div class="text-desc">
+                                                            <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                            <span class="time-span">8h</span>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+
+                                                    <div class="nts-dmenu-box">
+                                                      <a href="#" class="nts-dmenu-row">
+                                                        <div class="nt-left">
+                                                          <div class="thumb-div">
+                                                            <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                          </div>
+                                                        </div>
+                                                        <div class="nt-right">
+                                                          <div class="text-desc">
+                                                            <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                            <span class="time-span">8h</span>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+
+                                                    <div class="nts-dmenu-box">
+                                                      <a href="#" class="nts-dmenu-row">
+                                                        <div class="nt-left">
+                                                          <div class="thumb-div">
+                                                            <img src="assets/images/user-02.jpg" class="img-fluid" alt="img" />
+                                                          </div>
+                                                        </div>
+                                                        <div class="nt-right">
+                                                          <div class="text-desc">
+                                                            <h3> Your seat for <span class="bold-font">Michael Gray’s</span> stream has been booked </h3>
+                                                            <span class="time-span">8h</span>
+                                                          </div>
+                                                        </div>
+                                                      </a>
+                                                    </div>
+
+                                                  </div>
+                                
+                                                </div>
+                                              </div>
+                                            
+                                            </div>
+                                          </div>
+
+                                          <!-- -->
+
+                                        </div>
+                                      </div>
+
                                     </div>
                                   </div>
                                 </div>
@@ -109,255 +322,325 @@
     </div><!--  End of header with navigation div  -->
   </header>
 
-  <div class="main-middle-area user-creators-main-middle-area">
+  <div class="main-middle-area user-main-middle-area main-bg-color">
+    <div class="header-footer-with-min-height02">
+      <div class="pattern-inner-div pattern-upricing-inner-div">
     
-    <section class="materials-banner-section" id="materials-banner-section">
-      <div class="materials-banner-div">
-        <div class="container container-1000">
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="materials-banner-root" style="background-image: url(assets/images/materials/background-materials-cover.jpg);">
-                <div class="banner-heading-div">
-                  <h1>Photo Presets</h1>
+        <section class="materials-details-section" id="materials-details-section">
+          <div class="materials-details-div">
+            <div class="container container-1200">
+
+              <div class="heading-div">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <div class="heading-inner-div">
+                      <h2>Photo Presets</h2>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <div class="materials-details-list-div">
+              
+                <div class="materials-list-root-div">
+
+                  <div class="row">
+
+                    <div class="col-lg-6 col-md-6">
+                      <div class="mtd-common-row-box">
+                        <div class="mtd-common-row">
+                          <div class="mtd-video-img-thumb">
+                            <div class="img-thumb"> <img src="assets/images/user-home/img-01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                          </div>
+                          <div class="mtd-content-div">
+                            <div class="mtd-content-row">
+                              <div class="mtd-content-top-row">
+                                <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
+                                <div class="mtd-content-dw-row">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user">
+                                    </a>
+                                  </div>
+                                  <div class="our-content-right">
+                                    <h3><a href="#" class="link">Mike Visuals</a></h3>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="mtd-content-dw-right-bottom">
+                              <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                      <div class="mtd-common-row-box">
+                        <div class="mtd-common-row">
+                          <div class="mtd-video-img-thumb">
+                            <div class="img-thumb"> <img src="assets/images/user-home/img-02.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                          </div>
+                          <div class="mtd-content-div">
+                            <div class="mtd-content-row">
+                              <div class="mtd-content-top-row">
+                                <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
+                                <div class="mtd-content-dw-row">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user">
+                                    </a>
+                                  </div>
+                                  <div class="our-content-right">
+                                    <h3><a href="#" class="link">Mike Visuals</a></h3>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="mtd-content-dw-right-bottom">
+                              <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                      <div class="mtd-common-row-box">
+                        <div class="mtd-common-row">
+                          <div class="mtd-video-img-thumb">
+                            <div class="img-thumb"> <img src="assets/images/user-home/img-03.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                          </div>
+                          <div class="mtd-content-div">
+                            <div class="mtd-content-row">
+                              <div class="mtd-content-top-row">
+                                <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
+                                <div class="mtd-content-dw-row">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user">
+                                    </a>
+                                  </div>
+                                  <div class="our-content-right">
+                                    <h3><a href="#" class="link">Mike Visuals</a></h3>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="mtd-content-dw-right-bottom">
+                              <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                      <div class="mtd-common-row-box">
+                        <div class="mtd-common-row">
+                          <div class="mtd-video-img-thumb">
+                            <div class="img-thumb"> <img src="assets/images/user-home/img-04.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                          </div>
+                          <div class="mtd-content-div">
+                            <div class="mtd-content-row">
+                              <div class="mtd-content-top-row">
+                                <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
+                                <div class="mtd-content-dw-row">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user">
+                                    </a>
+                                  </div>
+                                  <div class="our-content-right">
+                                    <h3><a href="#" class="link">Mike Visuals</a></h3>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="mtd-content-dw-right-bottom">
+                              <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                      <div class="mtd-common-row-box">
+                        <div class="mtd-common-row">
+                          <div class="mtd-video-img-thumb">
+                            <div class="img-thumb"> <img src="assets/images/user-home/img-05.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                          </div>
+                          <div class="mtd-content-div">
+                            <div class="mtd-content-row">
+                              <div class="mtd-content-top-row">
+                                <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
+                                <div class="mtd-content-dw-row">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user">
+                                    </a>
+                                  </div>
+                                  <div class="our-content-right">
+                                    <h3><a href="#" class="link">Mike Visuals</a></h3>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="mtd-content-dw-right-bottom">
+                              <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                      <div class="mtd-common-row-box">
+                        <div class="mtd-common-row">
+                          <div class="mtd-video-img-thumb">
+                            <div class="img-thumb"> <img src="assets/images/user-home/img-06.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                          </div>
+                          <div class="mtd-content-div">
+                            <div class="mtd-content-row">
+                              <div class="mtd-content-top-row">
+                                <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
+                                <div class="mtd-content-dw-row">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user">
+                                    </a>
+                                  </div>
+                                  <div class="our-content-right">
+                                    <h3><a href="#" class="link">Mike Visuals</a></h3>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="mtd-content-dw-right-bottom">
+                              <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                      <div class="mtd-common-row-box">
+                        <div class="mtd-common-row">
+                          <div class="mtd-video-img-thumb">
+                            <div class="img-thumb"> <img src="assets/images/user-home/img-07.jpg" class="img-fluid img-responsive" alt="image" /> </div>
+                          </div>
+                          <div class="mtd-content-div">
+                            <div class="mtd-content-row">
+                              <div class="mtd-content-top-row">
+                                <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
+                                <div class="mtd-content-dw-row">
+                                  <div class="thumb-img">
+                                    <a href="#" class="link">
+                                      <img src="assets/images/creators/creators3.jpg" class="img-fluid user" alt="user">
+                                    </a>
+                                  </div>
+                                  <div class="our-content-right">
+                                    <h3><a href="#" class="link">Mike Visuals</a></h3>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            <div class="mtd-content-dw-right-bottom">
+                              <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
             </div>
+
           </div>
-        </div>
+        </section>
+
       </div>
-    </section>
-
-    <section class="materials-details-section" id="materials-details-section">
-      <div class="materials-details-div">
-        <div class="container container-1000">
-
-          <div class="heading-div">
-            <div class="row mlr-8">
-              <div class="col-lg-12 col-md-12 plr-8">
-                <div class="heading-inner-div">
-                  <h2>List of Photo Presets</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="materials-details-list-div">
-          
-            <div class="materials-list-root-div">
-
-              <div class="row mlr-8">
-
-                <div class="col-lg-6 col-md-6 plr-8">
-                  <div class="mtd-common-row-box">
-                    <div class="mtd-common-row">
-                      <div class="mtd-video-img-thumb">
-                        <div class="img-thumb"> <img src="assets/images/user-home/img-01.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                      </div>
-                      <div class="mtd-content-div">
-                        <div class="mtd-content-row">
-                          <div class="mtd-content-top-row">
-                            <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
-                            <div class="mtd-content-dw-row">
-                              <div class="mtd-content-dw-left">
-                                <h4><a href="#" class="link">By Michael Gray</a></h4>    
-                              </div>
-                              <div class="mtd-content-dw-right">
-                                <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 plr-8">
-                  <div class="mtd-common-row-box">
-                    <div class="mtd-common-row">
-                      <div class="mtd-video-img-thumb">
-                        <div class="img-thumb"> <img src="assets/images/user-home/img-02.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                      </div>
-                      <div class="mtd-content-div">
-                        <div class="mtd-content-row">
-                          <div class="mtd-content-top-row">
-                            <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
-                            <div class="mtd-content-dw-row">
-                              <div class="mtd-content-dw-left">
-                                <h4><a href="#" class="link">By Michael Gray</a></h4>    
-                              </div>
-                              <div class="mtd-content-dw-right">
-                                <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 plr-8">
-                  <div class="mtd-common-row-box">
-                    <div class="mtd-common-row">
-                      <div class="mtd-video-img-thumb">
-                        <div class="img-thumb"> <img src="assets/images/user-home/img-03.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                      </div>
-                      <div class="mtd-content-div">
-                        <div class="mtd-content-row">
-                          <div class="mtd-content-top-row">
-                            <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
-                            <div class="mtd-content-dw-row">
-                              <div class="mtd-content-dw-left">
-                                <h4><a href="#" class="link">By Michael Gray</a></h4>    
-                              </div>
-                              <div class="mtd-content-dw-right">
-                                <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 plr-8">
-                  <div class="mtd-common-row-box">
-                    <div class="mtd-common-row">
-                      <div class="mtd-video-img-thumb">
-                        <div class="img-thumb"> <img src="assets/images/user-home/img-04.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                      </div>
-                      <div class="mtd-content-div">
-                        <div class="mtd-content-row">
-                          <div class="mtd-content-top-row">
-                            <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
-                            <div class="mtd-content-dw-row">
-                              <div class="mtd-content-dw-left">
-                                <h4><a href="#" class="link">By Michael Gray</a></h4>    
-                              </div>
-                              <div class="mtd-content-dw-right">
-                                <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 plr-8">
-                  <div class="mtd-common-row-box">
-                    <div class="mtd-common-row">
-                      <div class="mtd-video-img-thumb">
-                        <div class="img-thumb"> <img src="assets/images/user-home/img-05.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                      </div>
-                      <div class="mtd-content-div">
-                        <div class="mtd-content-row">
-                          <div class="mtd-content-top-row">
-                            <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
-                            <div class="mtd-content-dw-row">
-                              <div class="mtd-content-dw-left">
-                                <h4><a href="#" class="link">By Michael Gray</a></h4>    
-                              </div>
-                              <div class="mtd-content-dw-right">
-                                <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 plr-8">
-                  <div class="mtd-common-row-box">
-                    <div class="mtd-common-row">
-                      <div class="mtd-video-img-thumb">
-                        <div class="img-thumb"> <img src="assets/images/user-home/img-06.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                      </div>
-                      <div class="mtd-content-div">
-                        <div class="mtd-content-row">
-                          <div class="mtd-content-top-row">
-                            <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
-                            <div class="mtd-content-dw-row">
-                              <div class="mtd-content-dw-left">
-                                <h4><a href="#" class="link">By Michael Gray</a></h4>    
-                              </div>
-                              <div class="mtd-content-dw-right">
-                                <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 plr-8">
-                  <div class="mtd-common-row-box">
-                    <div class="mtd-common-row">
-                      <div class="mtd-video-img-thumb">
-                        <div class="img-thumb"> <img src="assets/images/user-home/img-07.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                      </div>
-                      <div class="mtd-content-div">
-                        <div class="mtd-content-row">
-                          <div class="mtd-content-top-row">
-                            <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
-                            <div class="mtd-content-dw-row">
-                              <div class="mtd-content-dw-left">
-                                <h4><a href="#" class="link">By Michael Gray</a></h4>    
-                              </div>
-                              <div class="mtd-content-dw-right">
-                                <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 plr-8">
-                  <div class="mtd-common-row-box">
-                    <div class="mtd-common-row">
-                      <div class="mtd-video-img-thumb">
-                        <div class="img-thumb"> <img src="assets/images/user-home/img-08.jpg" class="img-fluid img-responsive" alt="image" /> </div>
-                      </div>
-                      <div class="mtd-content-div">
-                        <div class="mtd-content-row">
-                          <div class="mtd-content-top-row">
-                            <h3><a href="#" class="link">Vivamus suscipit tortor eget felis porttitor </a></h3>
-                            <div class="mtd-content-dw-row">
-                              <div class="mtd-content-dw-left">
-                                <h4><a href="#" class="link">By Michael Gray</a></h4>    
-                              </div>
-                              <div class="mtd-content-dw-right">
-                                <a href="#" class="btn btn-download-icon"> <i class="bg-custom-icon downloading-file-icon"></i> </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-    
+    </div>
   </div>
+
+  <footer>
+    <div class="footer-inner-div">
+
+      <div class="container container-1200">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+
+            <div class="footer-content-row">
+              <div class="row">
+                
+                <div class="col-lg-4 col-md-4 fn-order01">
+
+                  <div class="content-footer-div">
+                    <div class="logo-footer">
+                      <a class="logo_link clearfix" href="index.html">
+                        <img src="assets/images/white-icon-logo.svg" class="img-fluid logo_img main-logo" alt="logo">
+                        <h1 class="text-logo"> <span class="text-logo-span1">Creator</span> <span class="text-logo-span2">classes</span></h1>
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 fn-order02">
+                  <div class="footer-copyright-div">
+                    <div class="footer-copyright-box-root">
+                      <p> <a href="#" class="link">CreatorClases</a> &copy; 2021</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 fn-order03">
+
+                  <div class="content-footer-div">
+                    <div class="social-icon-div-root">
+                      <ul class="footer-social-ul">
+                        <li> 
+                          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a> 
+                        </li>
+                        <li>
+                          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>      
+            </div>
+
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </div><!-- end of wrapper -->
 

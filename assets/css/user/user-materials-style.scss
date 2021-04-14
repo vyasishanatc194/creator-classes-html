@@ -92,8 +92,11 @@
 
     .materials-list-div {
       .heading-div {
+        margin: 0 auto 30px auto;
+
         h2 {
           font-size: 20px;
+          line-height: 1.5;
         }
       }
     }
@@ -101,7 +104,11 @@
 
   .materials-list-root-div {
     .materials-slider-box {
+      margin: 0 0 20px 0;
+
       .creators-content-div {
+        padding: 16px 20px;
+
         h3 {
           font-size: 18px;
         }
@@ -116,8 +123,11 @@
 
     .materials-list-div {
       .heading-div {
+        margin: 0 auto 30px auto;
+
         h2 {
-          font-size: 20px;
+          font-size: 24px;
+          line-height: 1.5;
         }
       }
     }
@@ -127,11 +137,13 @@
     .materials-slider-box {
       .creators-img-mask-thumb {
         .img-responsive {
-          height: 240px;
+          height: 200px;
         }
       }
 
       .creators-content-div {
+        padding: 14px 20px;
+
         h3 {
           font-size: 18px;
         }
