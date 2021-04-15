@@ -314,41 +314,49 @@
 }
 
 .form-general-root .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 34px;
   position: relative;
 }
 
+.form-general-root .form-group label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #808191;
+  margin: 0 0 12px 0;
+}
+
 .form-general-root .form-group .form-control {
+  background: #2d2d39;
+  border-radius: 8px;
   color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 30px;
-  min-height: 60px;
-  font-size: 18px;
-  padding: 8px 25px 8px 35px;
-  line-height: 24px;
+  border: 1px solid rgba(128, 129, 145, 0);
+  min-height: 52px;
+  font-size: 16px;
+  padding: 15px 20px 15px 20px;
+  line-height: 19px;
   margin: 0 0 5px 0;
-  font-weight: 400;
-  background: transparent;
+  font-weight: 500;
 }
 
 .form-general-root .form-group .form-control::-webkit-input-placeholder {
-  color: #6c6c6c;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .form-general-root .form-group .form-control::-moz-placeholder {
-  color: #6c6c6c;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .form-general-root .form-group .form-control:-ms-input-placeholder {
-  color: #6c6c6c;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .form-general-root .form-group .form-control:-moz-placeholder {
-  color: #6c6c6c;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .form-general-root .form-group .form-control:hover, .form-general-root .form-group .form-control:focus, .form-general-root .form-group .form-control:active {
-  border-color: rgba(255, 255, 255, 0.74);
+  border-color: rgba(128, 129, 145, 0.6);
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
@@ -418,8 +426,92 @@
   right: 30px;
 }
 
+.form-general-root .form-group.credit-card-form-group .form-group-control {
+  position: relative;
+}
+
 .form-general-root .form-group.credit-card-form-group .form-control {
-  padding-right: 80px;
+  padding-right: 90px;
+}
+
+.form-general-root .form-group .select-card-dropdown-div {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-left: 1px solid #808191;
+}
+
+.form-general-root .form-group .select-card-dropdown-div .dd-container {
+  position: relative;
+  width: 90px !important;
+}
+
+.form-general-root .form-group .select-card-dropdown-div .dd-selected {
+  padding: 10px 20px;
+}
+
+.form-general-root .form-group .select-card-dropdown-div .dd-select {
+  width: inherit !important;
+  background: transparent !important;
+  border: none;
+}
+
+.form-general-root .form-group .select-card-dropdown-div .dd-selected-image {
+  width: 34px;
+  height: 24px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.form-general-root .form-group .select-card-dropdown-div .dd-option {
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #2d2d391a;
+}
+
+.form-general-root .form-group .select-card-dropdown-div .dd-pointer {
+  border: none !important;
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  right: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.293 0.292969L5.99997 4.58597L1.70697 0.292969L0.292969 1.70697L5.99997 7.41397L11.707 1.70697L10.293 0.292969Z' fill='%23808191'/%3E%3C/svg%3E%0A");
+}
+
+.form-general-root .form-group .select-card-dropdown-div .dd-pointer.dd-pointer-up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: -4px;
+}
+
+.form-general-root .form-group.error .form-control {
+  border: 1px solid #ee2f46;
+}
+
+.form-general-root .form-group .invalid-feedback {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ee2f46;
+  margin-top: 1px;
 }
 
 .form-general-root .custom-checkbox {
@@ -437,18 +529,27 @@
 
 .form-general-root .custom-checkbox .custom-control-label {
   margin-bottom: 0;
+  margin-top: 4px;
   cursor: pointer;
-  padding: 0 0 0 26px;
+  padding: 3px 0 3px 34px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .form-general-root .custom-checkbox .custom-control-label::before {
   background-color: transparent;
-  border: 1px solid white;
-  border-radius: 1px;
+  background: #2d2d39;
+  border: 1px solid rgba(128, 129, 145, 0.6);
+  width: 24px;
+  height: 24px;
 }
 
 .form-general-root .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
-  background-size: 10px;
+  width: 24px;
+  height: 24px;
+  background-size: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='11' viewBox='0 0 12 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.2 6.94922L1.8 4.54922L0 6.34922L4.2 10.5492L12 2.74922L10.2 0.949219L4.2 6.94922Z' fill='%23EF6B18'/%3E%3C/svg%3E%0A");
 }
 
 .form-general-root .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
@@ -457,8 +558,8 @@
 }
 
 .form-general-root .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #ff5f00;
-  border: 1px solid #ff5f00;
+  background-color: #2d2d39;
+  border: 1px solid rgba(128, 129, 145, 0.6);
 }
 
 @media (max-width: 767px) {
