@@ -286,4 +286,108 @@
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0;
 }
+
+.user-classes-list-section {
+  padding: 0 0 140px 0;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.user-classes-list-section .user-classes-list-div {
+  padding: 55px 0 0 0;
+  margin: 0;
+  position: relative;
+}
+
+.user-classes-list-section .user-classes-list-div .heading-div {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.user-classes-list-section .user-classes-list-div .heading-div .heading-title-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.user-classes-list-section .user-classes-list-div .heading-div h2 {
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  letter-spacing: 0;
+  font-family: "Moderat Extended", sans-serif;
+}
+
+.user-classes-list-section .user-classes-list-div .heading-div .heading-title-left {
+  padding: 0;
+  margin: 0;
+  width: calc(100% - 240px);
+}
+
+.user-classes-list-section .user-classes-list-div .heading-div .heading-title-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 240px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.user-classes-list-section .user-classes-list-div .heading-div .heading-title-right .form-group {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .user-classes-list-section {
+    padding: 50px 0 70px 0;
+  }
+  .user-classes-list-section .user-classes-list-div .heading-div .heading-title-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user-classes-list-section .user-classes-list-div .heading-div .heading-title-row .heading-title-left {
+    width: 100%;
+  }
+  .user-classes-list-section .user-classes-list-div .heading-div .heading-title-row .heading-title-left h2 {
+    font-size: 24px;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .user-classes-list-section .user-classes-list-div .heading-div .heading-title-row .heading-title-right {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .user-classes-list-section {
+    padding: 50px 0 70px 0;
+  }
+}
 /*# sourceMappingURL=user-classes-style.css.map */

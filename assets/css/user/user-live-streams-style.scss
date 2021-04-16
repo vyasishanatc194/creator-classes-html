@@ -90,6 +90,36 @@
   }
 }
 
+.upcoming-live-str-sec-new2 {
+  .upcoming-live-str-div-new {
+    padding: 55px 0 35px 0;
+  }
+}
+
+.oto-sessions-section {
+  .heading-div {
+    margin: 0 0 60px 0;
+
+    h2 {
+      padding: 0;
+      margin: 0;
+      display: block;
+      width: 100%;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 1.2;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0;
+      font-family: "Moderat Extended", sans-serif;
+    }
+  }
+
+  .our-card-classes-div {
+    padding: 100px 0 50px 0;
+  }
+}
+
 @media (max-width: 767px) {
   .upcoming-live-str-section {
     .upcoming-live-str-div {
@@ -128,6 +158,20 @@
           font-size: 18px;
         }
       }
+    }
+  }
+
+  .oto-sessions-section {
+    .heading-div {
+      margin: 0 0 40px 0;
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+
+    .our-card-classes-div {
+      padding: 60px 0 20px 0;
     }
   }
 }
@@ -170,6 +214,16 @@
           font-size: 18px;
         }
       }
+    }
+  }
+
+  .oto-sessions-section {
+    .heading-div {
+      margin: 0 0 40px 0;
+    }
+
+    .our-card-classes-div {
+      padding: 60px 0 20px 0;
     }
   }
 }
