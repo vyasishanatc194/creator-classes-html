@@ -25,6 +25,11 @@ body {
   z-index: 2;
 }
 
+.relative-index {
+  position: relative;
+  z-index: 2;
+}
+
 .main-middle-area.pt-custom-0 {
   padding-top: 0;
 }
@@ -79,6 +84,16 @@ body {
 .plr-12 {
   padding-right: 12px !important;
   padding-left: 12px !important;
+}
+
+.mlr-14 {
+  margin-right: -14px !important;
+  margin-left: -14px !important;
+}
+
+.plr-14 {
+  padding-right: 14px !important;
+  padding-left: 14px !important;
 }
 
 .mlr-20 {
@@ -465,6 +480,12 @@ body {
   &:hover {
     color: #ef4443;
   }
+}
+
+.btn.flex-center-aj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .select2-new-group {

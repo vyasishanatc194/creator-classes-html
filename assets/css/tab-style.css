@@ -80,6 +80,24 @@
           box-shadow: none;
 }
 
+.tabs-root-common .heading-tb-top-div .heading-tb-top-inner-div {
+  margin: 0 0 70px 0;
+}
+
+.tabs-root-common .heading-tb-top-div .heading-tb-top-inner-div h1 {
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: 0;
+  font-family: "Moderat Extended", sans-serif;
+  text-align: center;
+}
+
 .tabs-root-common .tabs-header-common {
   padding: 0;
   margin: 0 0 20px 0;
@@ -163,6 +181,12 @@
   }
   .tabs-root-common .tabs-body-common .tab-pane-inner {
     padding-top: 10px;
+  }
+  .tabs-root-common .heading-tb-top-div .heading-tb-top-inner-div {
+    margin: 0 0 40px 0;
+  }
+  .tabs-root-common .heading-tb-top-div .heading-tb-top-inner-div h1 {
+    font-size: 30px;
   }
 }
 

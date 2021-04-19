@@ -1,7 +1,8 @@
 .profile-settings-section {
-  padding: 70px 0 10px 0;
+  padding: 70px 0 30px 0;
   margin: 0;
   position: relative;
+  z-index: 2;
 }
 
 .profile-settings-section .profile-settings-div {
@@ -17,9 +18,27 @@
 }
 
 .profile-settings-root-div .edit-profile-div {
-  padding: 50px 0 10px 0;
+  padding: 30px 0 40px 0;
   margin: 0;
   position: relative;
+}
+
+.edit-common-form-div .text-content-tb-profile-div .heading-bx h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.edit-common-form-div .text-content-tb-profile-div .desc-div p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  color: #fff;
+  display: block;
+  margin: 0 0 30px 0;
 }
 
 .edit-common-form-div .profile-pic-upload {
@@ -30,17 +49,19 @@
 }
 
 .edit-common-form-div .profile-pic-upload .circle {
-  height: 240px;
-  width: 240px;
+  height: 230px;
+  width: 230px;
   overflow: hidden;
   border-radius: 100%;
   position: relative;
+  border: 3px solid #ef6b18;
   margin: 0 auto;
+  padding: 9px;
 }
 
 .edit-common-form-div .profile-pic-upload .circle .profile-pic {
-  height: 240px;
-  width: 240px;
+  height: 206px;
+  width: 206px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
@@ -50,12 +71,11 @@
 }
 
 .edit-common-form-div .profile-pic-upload .circle .filelabel-icon {
-  height: 50px;
-  width: 100%;
+  height: 206px;
+  width: 206px;
   color: #fff;
-  background: rgba(0, 0, 0, 0.67);
-  -webkit-box-shadow: 0 3px 5px 0 #e8e8e8;
-          box-shadow: 0 3px 5px 0 #e8e8e8;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.85)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,18 +85,37 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 0 0 100% 100%;
-  font-size: 15px;
+  border-radius: 100%;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  font-weight: 700;
+  top: 9px;
+  left: 9px;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+
+.edit-common-form-div .profile-pic-upload .circle .filelabel-icon span.text {
+  margin: 12px 0 0 0;
+  display: block;
+  width: 100%;
 }
 
 .edit-common-form-div .profile-pic-upload .circle .image-picture-icon {
   font-size: 15px;
   margin: 0 8px 0 0;
+}
+
+.edit-common-form-div .profile-pic-upload .circle:hover .filelabel-icon, .edit-common-form-div .profile-pic-upload .circle:focus .filelabel-icon {
+  opacity: 1;
 }
 
 .edit-common-form-div .edit-btn-icon {
@@ -95,11 +134,12 @@
 }
 
 .edit-common-form-div .form-group label {
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
   color: #fff;
   letter-spacing: 0;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
 }
 
 .edit-common-form-div .form-group label.oto-label {
@@ -136,50 +176,18 @@
 }
 
 .edit-common-form-div .form-group .form-control {
-  padding: 12px 20px;
-  border: 1px solid #505050;
-  border-radius: 8px;
-  background-color: transparent;
-  font-weight: 400;
-  font-size: 18px;
-  color: #fff;
-  letter-spacing: 0;
-  line-height: 1.3;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  min-height: 50px;
+  border: 2px solid #282a33;
+  background: transparent;
 }
 
-.edit-common-form-div .form-group .form-control::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.34);
-}
-
-.edit-common-form-div .form-group .form-control::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.34);
-}
-
-.edit-common-form-div .form-group .form-control:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.34);
-}
-
-.edit-common-form-div .form-group .form-control:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.34);
+.edit-common-form-div .form-group .form-control.focus {
+  background: #2d2d39;
+  border-color: rgba(128, 129, 145, 0);
 }
 
 .edit-common-form-div .form-group textarea.form-control {
-  padding: 12px 20px;
-  border: 1px solid #505050;
-  border-radius: 8px;
-  background-color: transparent;
-  font-weight: 400;
-  font-size: 18px;
-  color: #fff;
-  letter-spacing: 0;
-  line-height: 1.3;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  resize: none;
-  min-height: 160px;
+  border: 2px solid #282a33;
+  background: #18171c;
 }
 
 .edit-common-form-div .form-group .category-control-row .category-inner {
@@ -308,6 +316,10 @@
   margin-bottom: 15px;
 }
 
+.edit-common-form-div .form-group.mb-30 {
+  margin-bottom: 30px;
+}
+
 .edit-common-form-div .form-group.form-group-edit .form-control {
   padding-right: 44px;
 }
@@ -316,6 +328,10 @@
   padding-left: 54px;
   padding-right: 20px;
   padding-top: 18px;
+}
+
+.edit-common-form-div .mb-36 {
+  margin-bottom: 36px;
 }
 
 .edit-common-form-div .user-name-div {
@@ -392,8 +408,38 @@
   margin-right: 20px;
 }
 
+.edit-common-form-div .submit-bottom-div .submit-bottom-div-row .btn.btn-primary-outline {
+  min-width: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+}
+
+.edit-common-form-div .submit-bottom-div .submit-bottom-div-row .btn.btn-primary-outline::after {
+  background-color: #111117;
+}
+
+.edit-common-form-div .submit-bottom-div .submit-bottom-div-row .mr-24 {
+  margin-right: 24px;
+}
+
+.edit-common-form-div .submit-bottom-div .pt-30 {
+  padding-top: 30px;
+}
+
+.edit-common-form-div .form-general-root.pt-20 {
+  padding-top: 20px;
+}
+
 .pro-credit-card-div {
-  padding: 60px 0;
+  padding: 30px 0;
   margin: 0;
   position: relative;
 }
@@ -405,13 +451,16 @@
 }
 
 .pro-credit-card-div .pro-credit-card-box {
-  padding: 20px;
+  padding: 40px;
   margin: 0 auto;
   width: 100%;
-  max-width: 490px;
-  background: url(../../images/background/creadit-card-bg.svg) no-repeat;
+  max-width: 660px;
+  background: rgba(128, 129, 145, 0.08);
+  border: 3px solid #808191;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  border-radius: 40px;
   background-size: cover;
-  border-radius: 13px;
   position: relative;
 }
 
@@ -423,7 +472,7 @@
 
 .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-top {
   padding: 0;
-  margin: 0 0 90px 0;
+  margin: 0 0 170px 0;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,6 +491,22 @@
 
 .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-top .pro-cc-top-left .icon-div .img-icon {
   height: 36px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-top .pro-cc-top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-top .pro-cc-top-right .icon-div .img-fluid.img-icon {
+  height: 70px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -468,38 +533,9 @@
 }
 
 .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom {
-  padding: 0;
+  padding: 0 0 0 20px;
   margin: 0 auto;
   position: relative;
-}
-
-.pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-number-div {
-  padding: 0;
-  margin: 0 0 30px 0;
-  position: relative;
-}
-
-.pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-number-div p {
-  font-weight: 600;
-  font-size: 24px;
-  color: #fff;
-  letter-spacing: 0;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-
-.pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-number-div p span.hidden-text-star {
-  font-size: 30px;
-  line-height: 30px;
-  display: inline-block;
-  height: 18px;
-  margin: 0 15px 0 0;
 }
 
 .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div {
@@ -517,14 +553,29 @@
   width: 100%;
 }
 
+.pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .pro-cc-details-left {
+  width: 100%;
+  max-width: 414px;
+}
+
+.pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .div-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
 .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .div-box p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4;
   color: #fff;
   letter-spacing: 0;
-  display: block;
-  margin: 0 0 4px 0;
+  margin: 0 0 16px 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  display: inline-block;
 }
 
 .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .div-box h4 {
@@ -536,32 +587,84 @@
   display: block;
 }
 
+.pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .pro-cc-number-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .pro-cc-number-div .text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .pro-cc-number-div p {
+  color: #fff;
+  letter-spacing: 0;
+  text-align: left;
+  width: 100%;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: 0.15em;
+}
+
+.pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .pro-cc-number-div p span.hidden-text-star {
+  font-size: 30px;
+  line-height: 30px;
+  display: inline-block;
+  height: 18px;
+  margin: 0 15px 0 0;
+}
+
 .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .pro-cc-details-right .div-box p,
 .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .pro-cc-details-right .div-box h4 {
   text-align: right;
 }
 
+.pro-credit-card-div .pro-credit-bottom-div {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.pro-credit-card-div .pro-credit-bottom-div .pro-credit-bottom-div-row {
+  padding: 60px 0 20px 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  max-width: 760px;
+}
+
+.pro-credit-card-div .pro-credit-bottom-div .pro-credit-bottom-div-row .btn.btn-primary-outline {
+  min-width: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+}
+
 @media (max-width: 767px) {
   .profile-settings-root-div .edit-profile-div {
     padding: 25px 0 10px 0;
-  }
-  .edit-common-form-div .profile-pic-upload .circle {
-    height: 160px;
-    width: 160px;
-  }
-  .edit-common-form-div .profile-pic-upload .circle .profile-pic {
-    height: 160px;
-    width: 160px;
-  }
-  .edit-common-form-div .profile-pic-upload .circle .filelabel-icon {
-    height: 36px;
-    font-size: 12px;
-  }
-  .edit-common-form-div .profile-pic-upload .circle .image-picture-icon {
-    font-size: 15px;
-    margin: 4px 8px 0 0;
-    width: 14px;
-    height: 16px;
   }
   .edit-common-form-div .user-name-div .form-control.form-control-line {
     padding: 10px 30px 10px 30px;
@@ -598,29 +701,25 @@
   .edit-common-form-div .submit-bottom-div .submit-bottom-div-row {
     padding: 10px 0 0 0;
   }
-  .edit-common-form-div .submit-bottom-div .submit-bottom-div-row .btn.btn-common-black,
-  .edit-common-form-div .submit-bottom-div .submit-bottom-div-row .btn.btn-common-white {
+  .edit-common-form-div .submit-bottom-div .submit-bottom-div-row .btn.btn-primary-outline {
     min-width: 120px;
-    font-size: 14px;
-    min-height: 46px;
-    padding: 6px 20px 5px 20px;
+    padding: 6px 25px 5px 25px;
   }
   .edit-common-form-div .submit-bottom-div .submit-bottom-div-row .mr-20 {
     margin-right: 10px;
   }
-  .pro-credit-card-div {
-    padding: 20px 0;
+  .pro-credit-card-div .pro-credit-card-box {
+    padding: 20px;
+    border-radius: 20px;
   }
   .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-top {
-    margin: 0 0 70px 0;
+    margin: 0 0 85px 0;
   }
-  .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-top .pro-cc-top-left .icon-div .img-icon {
-    height: 28px;
+  .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-top .pro-cc-top-right .icon-div .img-fluid.img-icon {
+    height: 40px;
   }
-  .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-top .btn.btn-white-small-round {
-    font-size: 14px;
-    line-height: 21px;
-    padding: 4px 15px;
+  .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom {
+    padding: 0;
   }
   .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-number-div {
     margin: 0 0 20px 0;
@@ -638,6 +737,14 @@
   }
   .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .div-box h4 {
     font-size: 12px;
+  }
+  .pro-credit-card-div .pro-credit-card-box .pro-credit-card-box-inner .pro-cc-bottom .pro-cc-details-div .pro-cc-number-div p {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 3px;
+  }
+  .pro-credit-card-div .pro-credit-bottom-div .pro-credit-bottom-div-row {
+    padding: 40px 0 20px 0;
   }
 }
 /*# sourceMappingURL=user-profile-settings-style.css.map */

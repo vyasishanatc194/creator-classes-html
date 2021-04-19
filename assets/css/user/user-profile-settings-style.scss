@@ -1,7 +1,8 @@
 .profile-settings-section {
-  padding: 70px 0 10px 0;
+  padding: 70px 0 30px 0;
   margin: 0;
   position: relative;
+  z-index: 2;
 
   .profile-settings-div {
     padding: 0;
@@ -16,13 +17,37 @@
   position: relative;
 
   .edit-profile-div {
-    padding: 50px 0 10px 0;
+    padding: 30px 0 40px 0;
     margin: 0;
     position: relative;
   }
 }
 
 .edit-common-form-div {
+  .text-content-tb-profile-div {
+    .heading-bx {
+      h2 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #fff;
+        text-align: center;
+        margin: 0 0 30px 0;
+      }
+    }
+
+    .desc-div {
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 27px;
+        color: #fff;
+        display: block;
+        margin: 0 0 30px 0;
+      }
+    }
+  }
+
   .profile-pic-upload {
     padding: 0;
     margin: 0 auto 30px auto;
@@ -30,16 +55,18 @@
     display: block;
 
     .circle {
-      height: 240px;
-      width: 240px;
+      height: 230px;
+      width: 230px;
       overflow: hidden;
       border-radius: 100%;
       position: relative;
+      border: 3px solid rgba(239, 107, 24, 1);
       margin: 0 auto;
+      padding: 9px;
 
       .profile-pic {
-        height: 240px;
-        width: 240px;
+        height: 206px;
+        width: 206px;
         object-fit: cover;
         border-radius: 100%;
         display: block;
@@ -48,26 +75,43 @@
       }
 
       .filelabel-icon {
-        height: 50px;
-        width: 100%;
+        height: 206px;
+        width: 206px;
         color: #fff;
-        background: rgba(0, 0, 0, 0.67);
-        box-shadow: 0 3px 5px 0 #e8e8e8;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 0 0 100% 100%;
-        font-size: 15px;
+        border-radius: 100%;
         position: absolute;
-        bottom: 0;
-        left: 0;
-        font-weight: 700;
+        top: 9px;
+        left: 9px;
         cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.8s;
+
+        span.text {
+          margin: 12px 0 0 0;
+          display: block;
+          width: 100%;
+        }
       }
 
       .image-picture-icon {
         font-size: 15px;
         margin: 0 8px 0 0;
+      }
+
+      &:hover,
+      &:focus {
+        .filelabel-icon {
+          opacity: 1;
+        }
       }
     }
   }
@@ -86,11 +130,12 @@
     position: relative;
 
     label {
-      font-weight: 400;
-      font-size: 18px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
       color: #fff;
       letter-spacing: 0;
-      margin: 0 0 10px 0;
+      margin: 0 0 12px 0;
 
       &.oto-label {
         display: flex;
@@ -118,48 +163,18 @@
     }
 
     .form-control {
-      padding: 12px 20px;
-      border: 1px solid #505050;
-      border-radius: 8px;
-      background-color: transparent;
-      font-weight: 400;
-      font-size: 18px;
-      color: #fff;
-      letter-spacing: 0;
-      line-height: 1.3;
-      box-shadow: none;
-      min-height: 50px;
+      border: 2px solid #282a33;
+      background: transparent;
 
-      &::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, 0.34);
-      }
-
-      &::-moz-placeholder {
-        color: rgba(255, 255, 255, 0.34);
-      }
-
-      &:-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.34);
-      }
-
-      &:-moz-placeholder {
-        color: rgba(255, 255, 255, 0.34);
+      &.focus {
+        background: #2d2d39;
+        border-color: rgba(128, 129, 145, 0);
       }
     }
 
     textarea.form-control {
-      padding: 12px 20px;
-      border: 1px solid #505050;
-      border-radius: 8px;
-      background-color: transparent;
-      font-weight: 400;
-      font-size: 18px;
-      color: #fff;
-      letter-spacing: 0;
-      line-height: 1.3;
-      box-shadow: none;
-      resize: none;
-      min-height: 160px;
+      border: 2px solid #282a33;
+      background: #18171c;
     }
 
     .category-control-row {
@@ -274,6 +289,10 @@
       margin-bottom: 15px;
     }
 
+    &.mb-30 {
+      margin-bottom: 30px;
+    }
+
     &.form-group-edit {
       .form-control {
         padding-right: 44px;
@@ -285,6 +304,10 @@
         padding-top: 18px;
       }
     }
+  }
+
+  .mb-36 {
+    margin-bottom: 36px;
   }
 
   .user-name-div {
@@ -351,12 +374,38 @@
       .mr-20 {
         margin-right: 20px;
       }
+
+      .btn.btn-primary-outline {
+        min-width: 165px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+
+        &::after {
+          background-color: #111117;
+        }
+      }
+
+      .mr-24 {
+        margin-right: 24px;
+      }
+    }
+
+    .pt-30 {
+      padding-top: 30px;
+    }
+  }
+
+  .form-general-root {
+    &.pt-20 {
+      padding-top: 20px;
     }
   }
 }
 
 .pro-credit-card-div {
-  padding: 60px 0;
+  padding: 30px 0;
   margin: 0;
   position: relative;
 
@@ -367,13 +416,15 @@
   }
 
   .pro-credit-card-box {
-    padding: 20px;
+    padding: 40px;
     margin: 0 auto;
     width: 100%;
-    max-width: 490px;
-    background: url(../../images/background/creadit-card-bg.svg) no-repeat;
+    max-width: 660px;
+    background: rgba(128, 129, 145, 0.08);
+    border: 3px solid #808191;
+    backdrop-filter: blur(15px);
+    border-radius: 40px;
     background-size: cover;
-    border-radius: 13px;
     position: relative;
 
     .pro-credit-card-box-inner {
@@ -383,7 +434,7 @@
 
       .pro-cc-top {
         padding: 0;
-        margin: 0 0 90px 0;
+        margin: 0 0 170px 0;
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -396,6 +447,19 @@
           .icon-div {
             .img-icon {
               height: 36px;
+              object-fit: contain;
+            }
+          }
+        }
+
+        .pro-cc-top-right {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+
+          .icon-div {
+            .img-fluid.img-icon {
+              height: 70px;
               object-fit: contain;
             }
           }
@@ -421,34 +485,9 @@
       }
 
       .pro-cc-bottom {
-        padding: 0;
+        padding: 0 0 0 20px;
         margin: 0 auto;
         position: relative;
-
-        .pro-cc-number-div {
-          padding: 0;
-          margin: 0 0 30px 0;
-          position: relative;
-
-          p {
-            font-weight: 600;
-            font-size: 24px;
-            color: #fff;
-            letter-spacing: 0;
-            text-align: left;
-            display: flex;
-            align-items: center;
-            width: 100%;
-
-            span.hidden-text-star {
-              font-size: 30px;
-              line-height: 30px;
-              display: inline-block;
-              height: 18px;
-              margin: 0 15px 0 0;
-            }
-          }
-        }
 
         .pro-cc-details-div {
           padding: 0;
@@ -459,15 +498,24 @@
           flex-wrap: wrap;
           width: 100%;
 
+          .pro-cc-details-left {
+            width: 100%;
+            max-width: 414px;
+          }
+
           .div-box {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
             p {
-              font-weight: 400;
-              font-size: 14px;
-              line-height: 1.4;
               color: #fff;
               letter-spacing: 0;
-              display: block;
-              margin: 0 0 4px 0;
+              margin: 0 0 16px 0;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 20px;
+              display: inline-block;
             }
 
             h4 {
@@ -477,6 +525,37 @@
               color: #fff;
               letter-spacing: 0;
               display: block;
+            }
+          }
+
+          .pro-cc-number-div {
+            padding: 0;
+            margin: 0;
+            position: relative;
+
+            .text {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+            }
+
+            p {
+              color: #fff;
+              letter-spacing: 0;
+              text-align: left;
+              width: 100%;
+              font-weight: 600;
+              font-size: 32px;
+              line-height: 32px;
+              letter-spacing: 0.15em;
+
+              span.hidden-text-star {
+                font-size: 30px;
+                line-height: 30px;
+                display: inline-block;
+                height: 18px;
+                margin: 0 15px 0 0;
+              }
             }
           }
 
@@ -492,6 +571,30 @@
       }
     }
   }
+
+  .pro-credit-bottom-div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .pro-credit-bottom-div-row {
+      padding: 60px 0 20px 0;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      width: 100%;
+      max-width: 760px;
+
+      .btn.btn-primary-outline {
+        min-width: 165px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -502,30 +605,6 @@
   }
 
   .edit-common-form-div {
-    .profile-pic-upload {
-      .circle {
-        height: 160px;
-        width: 160px;
-
-        .profile-pic {
-          height: 160px;
-          width: 160px;
-        }
-
-        .filelabel-icon {
-          height: 36px;
-          font-size: 12px;
-        }
-
-        .image-picture-icon {
-          font-size: 15px;
-          margin: 4px 8px 0 0;
-          width: 14px;
-          height: 16px;
-        }
-      }
-    }
-
     .user-name-div {
       .form-control.form-control-line {
         padding: 10px 30px 10px 30px;
@@ -578,12 +657,9 @@
       .submit-bottom-div-row {
         padding: 10px 0 0 0;
 
-        .btn.btn-common-black,
-        .btn.btn-common-white {
+        .btn.btn-primary-outline {
           min-width: 120px;
-          font-size: 14px;
-          min-height: 46px;
-          padding: 6px 20px 5px 20px;
+          padding: 6px 25px 5px 25px;
         }
 
         .mr-20 {
@@ -594,29 +670,26 @@
   }
 
   .pro-credit-card-div {
-    padding: 20px 0;
-
     .pro-credit-card-box {
+      padding: 20px;
+      border-radius: 20px;
+
       .pro-credit-card-box-inner {
         .pro-cc-top {
-          margin: 0 0 70px 0;
+          margin: 0 0 85px 0;
 
-          .pro-cc-top-left {
+          .pro-cc-top-right {
             .icon-div {
-              .img-icon {
-                height: 28px;
+              .img-fluid.img-icon {
+                height: 40px;
               }
             }
-          }
-
-          .btn.btn-white-small-round {
-            font-size: 14px;
-            line-height: 21px;
-            padding: 4px 15px;
           }
         }
 
         .pro-cc-bottom {
+          padding: 0;
+
           .pro-cc-number-div {
             margin: 0 0 20px 0;
 
@@ -641,8 +714,22 @@
                 font-size: 12px;
               }
             }
+
+            .pro-cc-number-div {
+              p {
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: 3px;
+              }
+            }
           }
         }
+      }
+    }
+
+    .pro-credit-bottom-div {
+      .pro-credit-bottom-div-row {
+        padding: 40px 0 20px 0;
       }
     }
   }

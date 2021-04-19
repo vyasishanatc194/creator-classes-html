@@ -562,6 +562,63 @@
   border: 1px solid rgba(128, 129, 145, 0.6);
 }
 
+.form-general-root .form-group-textarea-ct-general .input-control-row {
+  position: relative;
+}
+
+.form-general-root .form-group-textarea-ct-general .input-control-row textarea.form-control {
+  background: transparent;
+  border: 2px solid #282a33;
+  border-radius: 7px;
+  resize: none;
+  min-height: 140px;
+  padding: 20px 20px 20px 48px;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.7);
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-general-root .form-group-textarea-ct-general .input-control-row textarea.form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-general-root .form-group-textarea-ct-general .input-control-row textarea.form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-general-root .form-group-textarea-ct-general .input-control-row textarea.form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-general-root .form-group-textarea-ct-general .input-control-row textarea.form-control:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-general-root .form-group-textarea-ct-general .input-control-row .tl-icon-span {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-general-root .pass-form-group-control {
+  position: relative;
+}
+
+.form-general-root .pass-form-group-control .pass-hide {
+  height: 52px;
+  width: 52px;
+  color: #808191;
+}
+
 @media (max-width: 767px) {
   .form-ls-root .social-button-div .sb-div-row .sb-div .icon-i {
     font-size: 16px;

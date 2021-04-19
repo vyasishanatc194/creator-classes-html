@@ -510,6 +510,60 @@
   }
 
   /* End of checkbox */
+
+  .form-group-textarea-ct-general {
+    .input-control-row {
+      position: relative;
+
+      textarea.form-control {
+        background: transparent;
+        border: 2px solid #282a33;
+        border-radius: 7px;
+        resize: none;
+        min-height: 140px;
+        padding: 20px 20px 20px 48px;
+        font-size: 14px;
+        line-height: 25px;
+        color: rgba(255, 255, 255, 0.7);
+        outline: none;
+        box-shadow: none;
+
+        &::-webkit-input-placeholder {
+          color: rgba(255, 255, 255, 0.7);
+        }
+
+        &::-moz-placeholder {
+          color: rgba(255, 255, 255, 0.7);
+        }
+
+        &:-ms-input-placeholder {
+          color: rgba(255, 255, 255, 0.7);
+        }
+
+        &:-moz-placeholder {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+
+      .tl-icon-span {
+        position: absolute;
+        top: 22px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .pass-form-group-control {
+    position: relative;
+
+    .pass-hide {
+      height: 52px;
+      width: 52px;
+      color: #808191;
+    }
+  }
 }
 
 @media (max-width: 767px) {
