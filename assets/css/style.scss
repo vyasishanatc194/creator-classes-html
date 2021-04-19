@@ -2490,6 +2490,59 @@ body {
           }
         }
       }
+
+      .ntf-tabs-root-common {
+        .ntf-tabs-header-common {
+          padding: 10px 21px 24px 21px;
+
+          .nav-tabs {
+            border-bottom: 0 solid rgba(255, 255, 255, 0.34);
+            max-width: 770px;
+            margin: 0 auto;
+
+            .nav-item {
+              width: 50%;
+              margin-bottom: 0;
+              border-bottom: 0;
+
+              .nav-link {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                border-color: transparent;
+                font-weight: 700;
+                padding: 12px 10px;
+                margin: 0 0 2px 0;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgba(255, 255, 255, 0.4);
+                letter-spacing: 0;
+                text-align: center;
+                border-bottom: 1px solid rgba(240, 243, 246, 0.1);
+                transition: all 0.8s;
+                position: relative;
+                min-height: 44px;
+
+                &.active {
+                  color: #fff;
+                  font-weight: 700;
+                  background-color: transparent;
+
+                  &::before {
+                    content: "";
+                    height: 3px;
+                    background: linear-gradient(114.74deg, #ef4443 8.09%, #ef6b18 93.47%);
+                    display: block;
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

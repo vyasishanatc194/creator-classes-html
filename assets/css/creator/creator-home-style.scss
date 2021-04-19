@@ -435,6 +435,11 @@
 
           .general-cre-content-row {
             .general-cre-content-top-row {
+              p {
+                font-size: 16px;
+                line-height: 24px;
+              }
+
               .time-box {
                 .time-box-rounded {
                   padding: 6px 12px;
@@ -454,7 +459,21 @@
                   }
                 }
               }
+
+              .general-btn-div {
+                padding: 16px 0 0 0;
+
+                .btn.btn-primary-outline {
+                  min-width: 115px;
+                }
+              }
             }
+          }
+        }
+
+        .general-video-img-cre-thumb {
+          .img-responsive {
+            height: 235px;
           }
         }
       }
@@ -465,7 +484,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .schedule-main-creator-section {
     .schedule-main-creator-div {
-      padding: 50px 0 45px 0;
+      padding: 50px 0 70px 0;
 
       .heading-inner-div {
         margin: 0 0 20px 0;
@@ -483,10 +502,20 @@
       }
 
       .button-tab-div {
+        padding: 30px 24px 20px 24px;
+
         .button-tab-box {
           .btn.btn-big-black {
             min-height: 70px;
             font-size: 16px;
+
+            .img-span {
+              .img-icon {
+                width: 22px;
+                object-fit: contain;
+                margin: 0 0 -2px 0;
+              }
+            }
           }
         }
       }
@@ -496,8 +525,10 @@
   .general-oto-streams-section {
     .general-oto-streams-div {
       .general-oto-heading-div {
-        p {
-          font-size: 18px;
+        margin: 0 0 30px 0;
+
+        h1 {
+          font-size: 24px;
         }
       }
     }
@@ -508,57 +539,50 @@
       .general-common-cre-box {
         margin: 0 0 25px 0;
 
-        .general-video-img-cre-thumb {
-          width: 290px;
-
-          .img-responsive {
-            height: 200px;
-          }
-        }
-
         .general-content-cre-div {
-          width: calc(100% - 290px);
-          padding: 10px 20px 10px 20px;
+          padding: 16px 20px 16px 20px;
 
           .general-cre-content-row {
             .general-cre-content-top-row {
+              p {
+                font-size: 16px;
+                line-height: 24px;
+              }
+
               .time-box {
-                margin: 0 0 15px 0;
+                .time-box-rounded {
+                  padding: 6px 12px;
 
-                span.icon-span {
-                  width: 26px;
+                  .icon-span {
+                    .calendar-time-icon-new {
+                      width: 20px;
+                      height: 20px;
+                    }
+                  }
 
-                  .bg-custom-icon {
-                    width: 26px;
-                    height: 26px;
+                  .text {
+                    width: calc(100% - 20px);
+                    font-size: 14px;
+                    line-height: 19px;
+                    padding: 0 0 0 6px;
                   }
                 }
-
-                .text {
-                  font-size: 20px;
-                  width: calc(100% - 36px);
-                }
-              }
-
-              p {
-                font-size: 18px;
-              }
-
-              .link.link-color {
-                font-size: 12px;
               }
 
               .general-btn-div {
-                .btn.btn-common-primary,
-                .btn.btn-common-black {
-                  font-size: 14px;
-                  line-height: 20px;
-                  min-width: 90px;
-                  padding: 2px 20px 1px 20px;
-                  min-height: 40px;
+                padding: 16px 0 0 0;
+
+                .btn.btn-primary-outline {
+                  min-width: 115px;
                 }
               }
             }
+          }
+        }
+
+        .general-video-img-cre-thumb {
+          .img-responsive {
+            height: 235px;
           }
         }
       }
