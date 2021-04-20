@@ -3275,7 +3275,7 @@ body {
   font-weight: 700;
   padding: 12px 10px;
   margin: 0 0 2px 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 17px;
   color: rgba(255, 255, 255, 0.4);
   letter-spacing: 0;
@@ -3302,6 +3302,10 @@ body {
   bottom: -1px;
   left: 0;
   width: 100%;
+}
+
+.dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .ntf-tabs-root-common .nts-dmenu-listing-div {
+  max-height: calc(100vh - 325px);
 }
 
 .common-card-creators-root .creators-img-mask-slider-bx-new {
@@ -3874,6 +3878,15 @@ body {
   .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right .text-desc .time-span {
     font-size: 10px;
   }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .ntf-tabs-root-common .ntf-tabs-header-common {
+    padding: 0 15px 15px 15px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .ntf-tabs-root-common .ntf-tabs-header-common .nav-tabs {
+    padding: 0;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .ntf-tabs-root-common .ntf-tabs-header-common .nav-tabs .nav-item .nav-link {
+    font-size: 10px;
+  }
   .search-feed-card-classes-section .common-bottom-div .btn.btn-primary-outline.btn-primary-outline-big {
     min-width: 130px;
     -webkit-box-pack: center;
@@ -4035,6 +4048,15 @@ body {
     line-height: 16px;
   }
   .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .nts-dmenu-listing-div .nts-dmenu-box .nts-dmenu-row .nt-right .text-desc .time-span {
+    font-size: 10px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .ntf-tabs-root-common .ntf-tabs-header-common {
+    padding: 0 15px 15px 15px;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .ntf-tabs-root-common .ntf-tabs-header-common .nav-tabs {
+    padding: 0;
+  }
+  .dmenu-common-nt-root .nts-dmenu-common-div .nts-dmenu-common-inner .ntf-tabs-root-common .ntf-tabs-header-common .nav-tabs .nav-item .nav-link {
     font-size: 10px;
   }
 }

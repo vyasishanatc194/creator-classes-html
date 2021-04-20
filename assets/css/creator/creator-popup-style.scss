@@ -31,6 +31,14 @@
       }
     }
   }
+
+  .general-list-of-seat-holders-section {
+    .general-details-div {
+      .container-general-center {
+        max-width: 680px;
+      }
+    }
+  }
 }
 
 .general-view-details-div {
@@ -230,65 +238,71 @@
 }
 
 .list-seat-holders-div {
+  padding: 40px 8px;
+  background: #1e1e27;
+  border: 2px solid #282a33;
+  border-radius: 15px;
+  position: relative;
+
   .list-seat-holders-inner {
-    max-height: calc(100vh - 185px);
-    overflow-y: auto;
+    max-height: calc(100vh - 425px);
+    overflow-y: scroll;
+    padding: 0 24px 0 32px;
 
     .seat-listing-div {
-      padding: 0 10px 0 0;
+      padding: 0;
 
       .seat-user-listing-box {
-        padding: 12px 0 12px 0;
+        padding: 0;
         margin: 0 0 10px 0;
         position: relative;
-        background-color: transparent;
         transition: all 0.8s;
-        box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.19);
+        background-color: #1e1e27;
+        border: 2px solid #282a33;
+        border-radius: 12px;
+
+        .card-header {
+          padding: 0 24px 0 24px;
+          border: none;
+        }
 
         .seat-user-listing-row {
-          padding: 0;
+          padding: 16px 51px 16px 0;
           margin: 0;
           display: flex;
-          align-items: flex-start;
+          align-items: center;
+          border-bottom: 1px solid rgba(128, 129, 145, 0);
 
           .nt-left {
             display: flex;
             flex-wrap: wrap;
-            width: 50px;
+            align-items: center;
+            width: 60%;
 
             .thumb-div {
               display: flex;
+              flex-wrap: wrap;
+              width: 48px;
             }
 
             img.img-fluid {
-              height: 50px;
-              width: 50px;
+              height: 48px;
+              width: 48px;
               border-radius: 100px;
               object-fit: cover;
             }
-          }
-
-          .nt-right {
-            padding: 3px 0 3px 12px;
-            margin: 0;
-            position: relative;
-            width: calc(100% - 50px);
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            min-height: 50px;
 
             h3 {
               padding: 0;
-              margin: 0 0 2px 0;
+              margin: 0 0 1px 0;
               position: relative;
-              font-weight: 700;
-              font-size: 18px;
-              line-height: 1.4;
               color: #fff;
               display: inline-block;
               max-width: 100%;
               letter-spacing: 0;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 20px;
 
               a {
                 color: inherit;
@@ -297,32 +311,160 @@
 
             p {
               font-weight: 400;
-              font-size: 14px;
-              color: rgba(255, 255, 255, 0.68);
+              color: rgba(255, 255, 255, 0.6);
               letter-spacing: 0;
               display: block;
               width: 100%;
+              font-size: 14px;
+              line-height: 20px;
             }
 
             .text-desc {
-              width: calc(100% - 100px);
+              width: calc(100% - 48px);
+              padding: 0 0 0 12px;
             }
+          }
+
+          .nt-right {
+            margin: 0;
+            position: relative;
+            width: calc(100% - 60%);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            min-height: 48px;
 
             .user-link {
               position: relative;
-              padding: 0 0 0 0;
-              width: 100px;
-              text-align: right;
 
-              .link.link-color {
-                font-weight: 400;
+              .link.btn-block {
+                font-weight: 500;
                 font-size: 14px;
-                color: #f00000;
-                letter-spacing: 0;
-                display: block;
-                text-decoration: underline;
+                line-height: 16px;
+                text-align: center;
+                border: 1px solid #808191;
+                border-radius: 49px;
+                padding: 11px 30px;
+                color: #fff;
+                transition: all 0.8s;
+                min-width: 100px;
               }
             }
+          }
+
+          .abs-arrow-right-div {
+            position: absolute;
+            right: 24px;
+          }
+
+          .card-link.card-link-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 30px;
+            border: 1px solid #808191;
+            border-radius: 77px;
+            color: #808191;
+            padding: 2px 0 0 0;
+
+            .rounded-link {
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+            }
+
+            .arrow-icon {
+              transform: rotate(180deg);
+            }
+
+            &.collapsed {
+              .arrow-icon {
+                transform: rotate(0);
+              }
+            }
+          }
+        }
+
+        .card-body {
+          padding: 16px 24px 16px 24px;
+          border: none;
+        }
+
+        .seat-user-content-div {
+          .note-text-div {
+            padding: 0;
+            margin: 0 0 20px 0;
+            position: relative;
+
+            h4 {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 20px;
+              color: #fff;
+              margin: 0 0 8px 0;
+              display: block;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 23px;
+              color: rgba(255, 255, 255, 0.7);
+              margin: 0 0 8px 0;
+              display: block;
+            }
+          }
+
+          .common-form-div {
+            .form-group {
+              &.mb-10 {
+                margin-bottom: 10px;
+              }
+
+              label {
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0 0 12px 0;
+              }
+
+              .category-control-row {
+                .category-inner {
+                  .category-list-ul {
+                    li {
+                      .filter-link {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        min-height: 32px;
+                        padding: 6px 15px 6px 15px;
+                      }
+                    }
+                  }
+
+                  .slot-category-list-ul {
+                    li {
+                      .filter-link {
+                        font-size: 16px;
+                        line-height: 19px;
+                        font-weight: 700;
+                        color: #fff;
+                        min-height: 40px;
+                        padding: 6px 18px 6px 18px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &.active {
+          background: rgba(128, 129, 145, 0.05);
+
+          .seat-user-listing-row {
+            border-bottom: 1px solid rgba(128, 129, 145, 0.16);
           }
         }
       }
@@ -519,19 +661,19 @@
 @media (min-width: 1025px) {
   .list-seat-holders-div {
     .list-seat-holders-inner {
-      &::-webkit-scrollbar-track {
-        border-radius: 0;
-        background-color: transparent;
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
       }
 
-      &::-webkit-scrollbar {
-        width: 4px;
-        background-color: #000;
+      &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 50px;
       }
 
       &::-webkit-scrollbar-thumb {
-        border-radius: 0;
-        background-color: #ff5f00;
+        background-color: #808191;
+        border-radius: 50px;
       }
     }
   }
@@ -591,50 +733,6 @@
     }
   }
 
-  .list-seat-holders-div {
-    .list-seat-holders-inner {
-      .seat-listing-div {
-        .seat-user-listing-box {
-          .seat-user-listing-row {
-            .nt-left {
-              width: 44px;
-
-              img.img-fluid {
-                height: 44px;
-                width: 44px;
-              }
-            }
-
-            .nt-right {
-              width: calc(100% - 44px);
-              min-height: 44px;
-
-              h3 {
-                font-size: 16px;
-              }
-
-              p {
-                font-size: 12px;
-              }
-
-              .text-desc {
-                width: calc(100% - 75px);
-              }
-
-              .user-link {
-                width: 75px;
-
-                .link.link-color {
-                  font-size: 12px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
   .messages-modal {
     .messages-stream-div {
       min-height: 220px;
@@ -656,6 +754,55 @@
         .desc-text-div {
           p {
             font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .list-seat-holders-div {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+
+    .list-seat-holders-inner {
+      padding: 0;
+      max-height: calc(100vh - 200px);
+
+      .seat-listing-div {
+        .seat-user-listing-box {
+          .card-header {
+            padding: 0 16px 0 16px;
+            border: none;
+            position: relative;
+          }
+
+          .seat-user-listing-row {
+            flex-wrap: wrap;
+            padding: 16px 42px 16px 0;
+
+            .nt-left {
+              width: 100%;
+            }
+
+            .nt-right {
+              width: 100%;
+
+              .user-link {
+                position: relative;
+                width: 100%;
+                padding: 12px 0 0 0;
+              }
+            }
+
+            .abs-arrow-right-div {
+              right: 16px;
+              bottom: 22px;
+            }
+          }
+
+          .card-body {
+            padding: 16px 16px 16px 16px;
           }
         }
       }
