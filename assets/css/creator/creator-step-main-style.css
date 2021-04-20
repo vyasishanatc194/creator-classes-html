@@ -458,6 +458,10 @@
   color: white;
 }
 
+.step-black-tabs-root-common .tab-form-div .tab-form-body .mb-40 {
+  margin-bottom: 40px;
+}
+
 .step-black-tabs-root-common .tab-form-div .tab-form-bottom.mt-40 {
   margin-top: 40px;
 }
@@ -499,7 +503,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 .step-black-tabs-root-common .tab-form-div .tab-form-bottom .general-btn-div-row .general-btn-div-right {
@@ -635,12 +640,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 40px 0;
+  margin: 0 auto 40px auto;
   padding: 28px 0 0 0;
+  max-width: 700px;
 }
 
 .seat-box-root .seat-box-inner .seat-box-list .seat-icon-box {
-  padding: 7px;
+  padding: 6px;
   margin: 0 0 10px 0;
 }
 
@@ -798,21 +804,24 @@
   }
   .step-black-root-div .step-black-heading-div .step-black-heading-row h2 {
     font-size: 18px;
-    margin: 0 0 10px 0;
-  }
-  .step-black-root-div .step-black-tabs-root-common .step-tabs-header-common .nav-tabs .nav-item {
-    padding: 0 20px 0 0;
-    position: relative;
-    min-width: 50%;
+    margin: 0 0 30px 0;
   }
   .step-black-root-div .step-black-tabs-root-common .step-tabs-header-common .nav-tabs .nav-item .nav-link {
-    font-size: 13px;
-    padding: 15px 0 10px 0;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 25px 0;
   }
   .step-black-root-div .step-black-tabs-root-common .step-tabs-header-common .nav-tabs .nav-item .nav-link .root-span span.number-span {
-    margin: 0 8px 0 0;
-    height: 24px;
-    width: 24px;
+    height: 30px;
+    width: 30px;
+    top: -15px;
+    border: 1px solid #282a33;
+    border-radius: 47px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .step-black-root-div .step-black-tabs-root-common .step-tabs-header-common .nav-tabs .nav-item .nav-link .root-span span.number-span .check-span .material-icons-outlined {
+    font-size: 18px;
   }
   .step-black-root-div .step-black-tabs-root-common .tab-form-div .tab-form-body .center-area-div .plr-xs-0 {
     padding-right: 0 !important;
@@ -849,18 +858,16 @@
     min-width: 120px;
     min-height: 44px;
   }
-  .step-black-root-div .step-black-tabs-root-common .tab-form-div .tab-form-bottom .tab-cre-btn-div .btn.btn-common-black {
-    min-width: 110px;
-    font-size: 14px;
-    min-height: 44px;
-  }
-  .step-black-root-div .step-black-tabs-root-common .tab-form-div .tab-form-bottom .tab-cre-btn-div .btn.btn-common-white {
-    min-width: 110px;
-    font-size: 14px;
-    min-height: 44px;
-  }
-  .step-black-root-div .step-black-tabs-root-common .tab-form-div .tab-form-bottom .tab-cre-btn-div .mr-20 {
+  .step-black-root-div .step-black-tabs-root-common .tab-form-div .tab-form-bottom .general-btn-div-row .mr-24 {
     margin-right: 10px;
+  }
+  .step-black-root-div .step-black-tabs-root-common .tab-form-div .tab-form-bottom .general-btn-div-row .btn.btn-primary-outline {
+    min-width: 110px;
+    min-height: 48px;
+  }
+  .step-black-root-div .step-black-tabs-root-common .tab-form-div .tab-form-bottom .general-btn-div-row .btn-common-primary {
+    min-width: 110px;
+    min-height: 48px;
   }
   .step-add-material-div .step-black-tabs-root-common .step-tabs-header-common .nav-tabs .nav-item {
     width: 50%;
@@ -870,13 +877,9 @@
   .step-add-material-div .step-black-tabs-root-common .step-tabs-header-common .nav-tabs .nav-item .nav-link {
     font-size: 11.5px;
   }
-}
-
-@media (max-width: 767px) and (max-width: 350px) {
-  .step-black-root-div .step-black-tabs-root-common .step-tabs-header-common .nav-tabs .nav-item {
-    padding: 0 20px 0 0;
-    position: relative;
-    min-width: 100%;
+  .seat-box-root .seat-box-inner .seat-box-list .seat-icon-box .seat-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -894,20 +897,6 @@
     font-size: 18px;
     margin: 0 0 10px 0;
   }
-  .step-black-root-div .step-black-tabs-root-common .step-tabs-header-common .nav-tabs .nav-item {
-    padding: 0 20px 0 0;
-    position: relative;
-    min-width: 25%;
-  }
-  .step-black-root-div .step-black-tabs-root-common .step-tabs-header-common .nav-tabs .nav-item .nav-link {
-    font-size: 13px;
-    padding: 15px 0;
-  }
-  .step-black-root-div .step-black-tabs-root-common .step-tabs-header-common .nav-tabs .nav-item .nav-link .root-span span.number-span {
-    margin: 0 8px 0 0;
-    height: 24px;
-    width: 24px;
-  }
   .step-black-root-div .step-black-tabs-root-common .tab-form-div .tab-form-body .center-area-div .plr-xs-0 {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -955,6 +944,10 @@
   }
   .step-black-root-div .step-black-tabs-root-common .tab-form-div .tab-form-bottom .tab-cre-btn-div .mr-20 {
     margin-right: 10px;
+  }
+  .seat-box-root .seat-box-inner .seat-box-list .seat-icon-box .seat-icon {
+    width: 39px;
+    height: 39px;
   }
 }
 /*# sourceMappingURL=creator-step-main-style.css.map */

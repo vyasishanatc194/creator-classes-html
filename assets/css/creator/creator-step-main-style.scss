@@ -436,6 +436,10 @@
           }
         }
       }
+
+      .mb-40 {
+        margin-bottom: 40px;
+      }
     }
 
     .tab-form-bottom {
@@ -470,7 +474,8 @@
         flex-wrap: wrap;
         width: 100%;
         justify-content: space-between;
-        max-width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
 
         .general-btn-div-right {
           display: flex;
@@ -591,11 +596,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 0 0 40px 0;
+      margin: 0 auto 40px auto;
       padding: 28px 0 0 0;
+      max-width: 700px;
 
       .seat-icon-box {
-        padding: 7px;
+        padding: 6px;
         margin: 0 0 10px 0;
 
         .seat-icon-link {
@@ -748,7 +754,7 @@
       .step-black-heading-row {
         h2 {
           font-size: 18px;
-          margin: 0 0 10px 0;
+          margin: 0 0 30px 0;
         }
       }
     }
@@ -757,19 +763,26 @@
       .step-tabs-header-common {
         .nav-tabs {
           .nav-item {
-            padding: 0 20px 0 0;
-            position: relative;
-            min-width: 50%;
-
             .nav-link {
-              font-size: 13px;
-              padding: 15px 0 10px 0;
+              font-size: 10px;
+              line-height: 12px;
+              padding: 25px 0;
 
               .root-span {
                 span.number-span {
-                  margin: 0 8px 0 0;
-                  height: 24px;
-                  width: 24px;
+                  height: 30px;
+                  width: 30px;
+                  top: -15px;
+                  border: 1px solid #282a33;
+                  border-radius: 47px;
+                  font-size: 14px;
+                  line-height: 16px;
+
+                  .check-span {
+                    .material-icons-outlined {
+                      font-size: 18px;
+                    }
+                  }
                 }
               }
             }
@@ -841,21 +854,19 @@
         }
 
         .tab-form-bottom {
-          .tab-cre-btn-div {
-            .btn.btn-common-black {
-              min-width: 110px;
-              font-size: 14px;
-              min-height: 44px;
-            }
-
-            .btn.btn-common-white {
-              min-width: 110px;
-              font-size: 14px;
-              min-height: 44px;
-            }
-
-            .mr-20 {
+          .general-btn-div-row {
+            .mr-24 {
               margin-right: 10px;
+            }
+          
+            .btn.btn-primary-outline {
+              min-width: 110px;
+              min-height: 48px;
+            }
+          
+            .btn-common-primary {
+              min-width: 110px;
+              min-height: 48px;
             }
           }
         }
@@ -878,23 +889,25 @@
           }
         }
       }
+
+      
     }
   }
 
-  @media (max-width: 350px) {
-    .step-black-root-div {
-      .step-black-tabs-root-common {
-        .step-tabs-header-common {
-          .nav-tabs {
-            .nav-item {
-              padding: 0 20px 0 0;
-              position: relative;
-              min-width: 100%;
-            }
+  .seat-box-root {
+    .seat-box-inner {
+      .seat-box-list {
+        .seat-icon-box {
+          .seat-icon {
+            width: 24px;
+            height: 24px;
           }
         }
       }
     }
+  }
+
+  @media (max-width: 350px) {
   }
 }
 
@@ -920,29 +933,6 @@
     }
 
     .step-black-tabs-root-common {
-      .step-tabs-header-common {
-        .nav-tabs {
-          .nav-item {
-            padding: 0 20px 0 0;
-            position: relative;
-            min-width: 25%;
-
-            .nav-link {
-              font-size: 13px;
-              padding: 15px 0;
-
-              .root-span {
-                span.number-span {
-                  margin: 0 8px 0 0;
-                  height: 24px;
-                  width: 24px;
-                }
-              }
-            }
-          }
-        }
-      }
-
       .tab-form-div {
         .tab-form-body {
           .center-area-div {
@@ -1023,6 +1013,19 @@
             .mr-20 {
               margin-right: 10px;
             }
+          }
+        }
+      }
+    }
+  }
+
+  .seat-box-root {
+    .seat-box-inner {
+      .seat-box-list {
+        .seat-icon-box {
+          .seat-icon {
+            width: 39px;
+            height: 39px;
           }
         }
       }

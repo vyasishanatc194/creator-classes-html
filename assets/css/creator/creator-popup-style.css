@@ -35,6 +35,65 @@
   max-width: 680px;
 }
 
+.general-pop-root .congratulations-pop-section .general-payment-div .heading-div h5 {
+  color: #ef6b18;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.general-pop-root .congratulations-pop-section .general-payment-div .heading-div h1 {
+  text-align: center;
+}
+
+.general-pop-root .congratulations-pop-section .general-payment-div .general-message-root .gen-mess-thumb-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.general-pop-root .congratulations-pop-section .general-payment-div .general-message-root .text-content-div p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #fff;
+}
+
+.general-pop-root .congratulations-pop-section .general-payment-div .general-message-root .text-content-div .prag-div {
+  padding: 0;
+  max-width: 371px;
+  margin: 0 auto 40px auto;
+}
+
+.general-pop-root .congratulations-pop-section .general-payment-div .general-message-root .text-content-div .btn-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.general-pop-root .congratulations-pop-section .general-payment-div .general-message-root .text-content-div .btn-div .btn-common-primary {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  min-width: 180px;
+}
+
 .general-view-details-div {
   padding: 0;
   margin: 0;

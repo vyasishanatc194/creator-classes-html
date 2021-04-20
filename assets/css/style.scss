@@ -512,6 +512,17 @@ body {
       }
     }
   }
+
+  &.select2-new-group2 {
+    .select-custom2 span.select2-selection.select2-selection--single {
+      background: #2d2d39;
+
+      .select2-selection__arrow b::before {
+        color: #808191;
+        margin: 9px 0 0 0;
+      }
+    }
+  }
 }
 
 .common-form-div {
@@ -594,6 +605,10 @@ body {
       &:-moz-placeholder {
         color: rgba(255, 255, 255, 0.7);
       }
+    }
+
+    textarea.textrea-no-icon {
+      padding: 20px 20px 20px 20px;
     }
 
     &.form-group-textarea-ct {
@@ -830,12 +845,12 @@ body {
           display: flex;
           align-items: center;
           flex-wrap: wrap;
-          width: 24px;
+          width: 30px;
           margin: 0 12px 0 0;
         }
 
         .text {
-          width: calc(100% - 36px);
+          width: calc(100% - 42px);
         }
       }
     }
@@ -3118,7 +3133,8 @@ body {
           font-size: 16px;
 
           .calendar-time-icon,
-          .time-clock-icon {
+          .time-clock-icon-new,
+          .money-icon-new {
             width: 18px;
             height: 18px;
           }

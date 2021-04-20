@@ -223,9 +223,9 @@ body {
 }
 
 .calendar-time-icon {
-  width: 23px;
-  height: 23px;
-  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='23px' height='23px' viewBox='0 0 23 23' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Eevent%3C/title%3E%3Cg id='Symbols' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' opacity='0.6'%3E%3Cg id='event' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M20.8182715,13.4948627 L20.8182715,3.78512818 C20.8182715,2.74136022 19.9690096,1.89254191 18.9256852,1.89254191 L16.5599857,1.89254191 C16.298456,1.89254191 16.086828,2.10416984 16.086828,2.36569957 L16.086828,4.73139913 C16.086828,5.25303915 15.6626407,5.67767009 15.1405571,5.67767009 C14.6184735,5.67771445 14.1942861,5.2530835 14.1942861,4.73144349 C14.1942861,4.33591084 14.4484082,3.97967861 14.8263754,3.84523211 C15.0148933,3.77776489 15.1405571,3.59940482 15.1405571,3.3993541 L15.1405571,0.473157656 C15.1405571,0.211627935 14.9289735,-2.4158453e-13 14.6674438,-2.4158453e-13 C14.405914,-2.4158453e-13 14.1942861,0.211627935 14.1942861,0.473157656 L14.1942861,1.89258627 L7.09714306,1.89258627 C6.83561334,1.89258627 6.6239854,2.1042142 6.6239854,2.36574392 L6.6239854,4.73144349 C6.6239854,5.2530835 6.19979803,5.67771445 5.67771445,5.67771445 C5.15563086,5.67771445 4.73144349,5.2530835 4.73144349,4.73144349 C4.73144349,4.33591084 4.98556557,3.97967861 5.36353279,3.84523211 C5.55205066,3.77776489 5.67771445,3.59940482 5.67771445,3.3993541 L5.67771445,0.473157656 C5.67771445,0.211627935 5.46608651,-2.4158453e-13 5.20455679,-2.4158453e-13 C4.94302707,-2.4158453e-13 4.73139913,0.211627935 4.73139913,0.473157656 L4.73139913,1.89258627 L1.89254191,1.89258627 C0.849261881,1.89258627 -2.46913601e-13,2.74136022 -2.46913601e-13,3.78512818 L-2.46913601e-13,18.9256852 C-2.46913601e-13,19.9694532 0.849261881,20.8182715 1.89258627,20.8182715 L13.494774,20.8182715 C14.4503155,21.9734646 15.8938744,22.7108578 17.506301,22.7108578 C20.3756316,22.7108578 22.7108578,20.3761195 22.7108578,17.506301 C22.7108578,15.8937414 21.9733759,14.4502268 20.8182715,13.4948627 Z M12.3016998,17.506301 C12.3016998,17.9988427 12.3750666,18.4737747 12.5034805,18.9257296 L1.89258627,18.9257296 L1.89258627,7.57030071 L18.9257296,7.57030071 L18.9257296,12.5035249 C18.4737747,12.3750222 17.9988427,12.3017442 17.506301,12.3017442 C14.6369261,12.3016998 12.3016998,14.6364825 12.3016998,17.506301 Z M19.2602268,19.2602268 C19.1678309,19.3526228 19.0467359,19.3988429 18.9256852,19.3988429 C18.8046346,19.3988429 18.683584,19.3526228 18.5911437,19.2602268 L17.1717151,17.8407982 C17.0830008,17.7520839 17.033099,17.6319648 17.033099,17.5062566 L17.033099,14.6673994 C17.033099,14.4058697 17.2447269,14.1942418 17.5062566,14.1942418 C17.7677864,14.1942418 17.9794143,14.4058697 17.9794143,14.6673994 L17.9794143,17.3103311 L19.2602268,18.5911437 C19.445063,18.7760242 19.445063,19.075435 19.2602268,19.2602268 Z' id='Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.86572 11.7554H26.1457' stroke='url(%23paint0_linear)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.5527 16.6372H20.5642' stroke='url(%23paint1_linear)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.0059 16.6372H15.0175' stroke='url(%23paint2_linear)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.44727 16.6372H9.45884' stroke='url(%23paint3_linear)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.5527 21.4954H20.5642' stroke='url(%23paint4_linear)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15.0059 21.4954H15.0175' stroke='url(%23paint5_linear)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.44727 21.4954H9.45884' stroke='url(%23paint6_linear)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.0547 2.5V6.61347' stroke='url(%23paint7_linear)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.95703 2.5V6.61347' stroke='url(%23paint8_linear)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M20.2979 4.47388H9.7137C6.04284 4.47388 3.75 6.5188 3.75 10.2777V21.5898C3.75 25.4076 6.04284 27.4999 9.7137 27.4999H20.2863C23.9688 27.4999 26.25 25.4431 26.25 21.6843V10.2777C26.2615 6.5188 23.9803 4.47388 20.2979 4.47388Z' stroke='url(%23paint9_linear)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='-1.33718' y1='12.5185' x2='-1.07599' y2='15.2003' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='20.55' y1='17.4003' x2='20.5644' y2='17.4004' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint2_linear' x1='15.0031' y1='17.4003' x2='15.0176' y2='17.4004' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint3_linear' x1='9.44456' y1='17.4003' x2='9.459' y2='17.4004' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint4_linear' x1='20.55' y1='22.2585' x2='20.5644' y2='22.2586' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint5_linear' x1='15.0031' y1='22.2585' x2='15.0176' y2='22.2586' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint6_linear' x1='9.44456' y1='22.2585' x2='9.459' y2='22.2586' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint7_linear' x1='19.8212' y1='5.63914' x2='21.0533' y2='5.77717' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint8_linear' x1='9.72351' y1='5.63914' x2='10.9556' y2='5.77717' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint9_linear' x1='-1.5043' y1='22.0458' x2='21.8335' y2='32.555' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
 }
 
 .calendar-time-icon.white-color-icon {
@@ -370,6 +370,12 @@ body {
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='24px' height='24px' viewBox='0 0 24 24' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Eclock%3C/title%3E%3Cg id='Page-2' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='clock' fill='%23FFFFFF' fill-rule='nonzero'%3E%3Cpath d='M12,0 C5.37271875,0 0,5.37271875 0,12 C0,18.6272812 5.37271875,24 12,24 C18.6272812,24 24,18.6272812 24,12 C24,5.37271875 18.6272812,0 12,0 Z M12,21.9999844 C6.47728125,21.9999844 2.00001562,17.5227188 2.00001562,12 C2.00001562,6.47728125 6.47728125,2.00001562 12,2.00001562 C17.5227187,2.00001562 21.9999844,6.47728125 21.9999844,12 C21.9999844,17.5227187 17.5227187,21.9999844 12,21.9999844 Z' id='Shape'%3E%3C/path%3E%3Cpath d='M12,3.99998437 C11.4477187,3.99998437 11.0000156,4.4476875 11.0000156,4.99996875 L11.0000156,10.9999687 L8.00001562,10.9999687 C7.44773437,10.9999687 7.00003125,11.4476719 7.00003125,11.9999531 C7.00003125,12.5522344 7.44773437,12.9999375 8.00001562,12.9999375 L12,12.9999375 C12.5522813,12.9999375 12.9999844,12.5522344 12.9999844,11.9999531 L12.9999844,5.00001562 C12.9999844,4.44773437 12.5522813,3.99998437 12,3.99998437 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.time-clock-icon-new {
+  width: 30px;
+  height: 30px;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M26.562 15.0007C26.562 21.387 21.3858 26.5632 14.9995 26.5632C8.61326 26.5632 3.43701 21.387 3.43701 15.0007C3.43701 8.61448 8.61326 3.43823 14.9995 3.43823C21.3858 3.43823 26.562 8.61448 26.562 15.0007Z' stroke='url(%23paint0_linear)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19.2892 18.6786L14.5767 15.8674V9.80859' stroke='url(%23paint1_linear)' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='-1.96323' y1='21.0858' x2='21.833' y2='32.0518' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear' x1='13.4762' y1='16.5776' x2='19.0228' y2='17.9356' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23EF4443'/%3E%3Cstop offset='0.999754' stop-color='%23EF6B18'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
 .seat-icon {
   width: 40px;
   height: 40px;
@@ -424,6 +430,12 @@ body {
   width: 20px;
   height: 20px;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.8713 13.1315C17.8713 16.1133 16.1141 17.8704 13.1322 17.8704H6.64346C3.65393 17.8704 1.89673 16.1133 1.89673 13.1315V6.63542C1.89673 3.65362 2.99213 1.89648 5.97405 1.89648H7.63998C8.23857 1.89648 8.80221 2.1783 9.16139 2.65715L9.92209 3.66883C10.282 4.14673 10.8451 4.4283 11.4435 4.42949H13.8016C16.7911 4.42949 17.8942 5.95082 17.8942 8.9935L17.8713 13.1315Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.88257 12.0742H13.8775' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.money-icon-new {
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/icons/custom/money-icon-new.png);
 }
 
 /* customs general css */
@@ -1014,6 +1026,15 @@ body {
   color: rgba(255, 255, 255, 0.75);
 }
 
+.select2-new-group.select2-new-group2 .select-custom2 span.select2-selection.select2-selection--single {
+  background: #2d2d39;
+}
+
+.select2-new-group.select2-new-group2 .select-custom2 span.select2-selection.select2-selection--single .select2-selection__arrow b::before {
+  color: #808191;
+  margin: 9px 0 0 0;
+}
+
 .common-form-div .form-group {
   margin: 0 0 20px 0;
 }
@@ -1104,6 +1125,10 @@ body {
 
 .common-form-div .form-group textarea.form-control:-moz-placeholder {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.common-form-div .form-group textarea.textrea-no-icon {
+  padding: 20px 20px 20px 20px;
 }
 
 .common-form-div .form-group.form-group-textarea-ct .input-control-row {
@@ -1357,12 +1382,12 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 24px;
+  width: 30px;
   margin: 0 12px 0 0;
 }
 
 .common-form-updated-div .form-group .label-heading-div h4 .text {
-  width: calc(100% - 36px);
+  width: calc(100% - 42px);
 }
 
 .common-form-updated-div .form-group.select-date-form-group .input-control-row {
@@ -3814,7 +3839,8 @@ body {
     font-size: 16px;
   }
   .common-form-updated-div .form-group .label-heading-div h4 .calendar-time-icon,
-  .common-form-updated-div .form-group .label-heading-div h4 .time-clock-icon {
+  .common-form-updated-div .form-group .label-heading-div h4 .time-clock-icon-new,
+  .common-form-updated-div .form-group .label-heading-div h4 .money-icon-new {
     width: 18px;
     height: 18px;
   }

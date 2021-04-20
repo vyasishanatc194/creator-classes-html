@@ -747,19 +747,33 @@
                                           <div class="container container-750">
 
                                             <div class="common-form-div common-form-updated-div">
-                                              <div class="row">
+                                              <div class="row mlr-12 mb-40">
                                                 
-                                                <div class="col-lg-12 col-md-12">
-                                                  <div class="form-group select2-form-group select-date-form-group mb-40">
+                                                <div class="col-lg-12 col-md-12 plr-12">
+                                                  <div class="form-group select2-form-group select-date-form-group">
                                                     <div class="label-heading-div">
-                                                      <h4> <span class="icon-span"> <i class="bg-custom-icon calendar-time-icon white-color-icon"></i> </span> <span class="text">Date</span></h4>
+                                                      <h4> <span class="icon-span"> <i class="bg-custom-icon calendar-time-icon"></i> </span> <span class="text">Date</span></h4>
                                                     </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-4 plr-12">
+                                                  <div class="form-group select2-form-group select2-new-group select2-new-group2 mb-10">
+                                                    <label for="">Day</label>
                                                     <div class="input-control-row">
-                                                      <div class="select-box select-custom2 select-custom2-general mr-10">
+                                                      <div class="select-box select-custom2 select-custom2-general round-12 mr-10">
                                                         <select class="js-select2" id ="day" name = "dd" >
                                                         </select>
                                                       </div>
-                                                      <div class="select-box select-custom2 select-custom2-general mr-10">
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-4 plr-12">
+                                                  <div class="form-group select2-form-group select2-new-group select2-new-group2 mb-10">
+                                                    <label for="">Month</label>
+                                                    <div class="input-control-row">
+                                                      <div class="select-box select-custom2 select-custom2-general round-12 mr-10">
                                                         <select class="js-select2" id ="month" name = "mm" onchange="change_month(this)">
                                                           <option >Month</option>
                                                           <option value="1">January</option>
@@ -776,65 +790,161 @@
                                                           <option value="12">December</option>
                                                         </select>
                                                       </div>
-                                                      <div class="select-box select-custom2 select-custom2-general">
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-lg-4 col-md-4 plr-12">
+                                                  <div class="form-group select2-form-group select2-new-group select2-new-group2 mb-10">
+                                                    <label for="">Year</label>
+                                                    <div class="input-control-row">
+                                                      <div class="select-box select-custom2 select-custom2-general round-12 mr-10">
                                                         <select class="js-select2" id ="year" name = "yyyy" onchange="change_year(this)">
                                                         </select>
                                                       </div>
                                                     </div>
-                                                  </div>    
-                                                </div>
-
-                                                <div class="col-lg-12 col-md-12">
-                                                  <div class="form-group timepicker-form-group mb-40">
-                                                    <div class="label-heading-div">
-                                                      <h4> <span class="icon-span"> <i class="bg-custom-icon time-clock-icon"></i> </span> <span class="text">Time</span></h4>
-                                                    </div>
-                                                    <div class="input-control-row">
-                                                      
-                                                      <div class="time-picker-custom-div d-none">
-                                                        <div id="time-picker01"></div>
-                                                      </div>
-
-                                                      <div class="form-date-time-root-block">
-
-                                                        <div class="form-date-time-row-block">
-                                                          <div class="row mlr-10">
-                
-                                                            <div class="col-lg-8 col-md-8 date-col-6 plr-10">
-                                                              <div class="date-input-box">
-                                                                <div class="input-control-row">
-                                                                  <div class="input-group">
-                                                                    <input id="datetime-picker1" type='text' class="form-control custom-form-control" placeholder="Select a day and time" />
-                                                                  </div>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                
-                                                            <div class="col-lg-4 col-md-4 timezone-col-4 plr-10">
-                                                              <div class="form-group select2-form-group select2-form-group-cs1">
-                                                                <div class="select-box select-custom2 select-custom2-general">
-                                                                  <select class="js-select2" id="select-timezone">
-                                                                    <option>EST </option>
-                                                                    <option>GMT </option>
-                                                                    <option>IST</option>
-                                                                    <option>CST </option>
-                                                                    <option>PT </option>
-                                                                    <option>MST </option>
-                                                                  </select>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-
-                                                          </div>
-                                                        </div>
-                
-                                                      </div>  
-
-                                                    </div>
-                                                  </div>    
+                                                  </div>
                                                 </div>
 
                                               </div>
+
+                                              <div class="row mlr-12 mb-40">
+                                                <div class="col-lg-12 col-md-12 plr-12">
+                                                  <div class="form-group select2-form-group select-date-form-group">
+                                                    <div class="label-heading-div">
+                                                      <h4> <span class="icon-span"> <i class="bg-custom-icon time-clock-icon-new"></i> </span> <span class="text">Time</span></h4>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-3 plr-12">
+                                                  <div class="form-group select2-form-group select2-new-group select2-new-group2 mb-10">
+                                                    <label for="">Hour</label>
+                                                    <div class="input-control-row">
+                                                      <div class="select-box select-custom2 select-custom2-general round-12 mr-10">
+                                                        <select class="js-select2" id="js-select2">
+                                                          <option selected>01</option>
+                                                          <option>02</option>
+                                                          <option>03</option>
+                                                          <option>04</option>
+                                                          <option>05</option>
+                                                          <option>06</option>
+                                                          <option>07</option>
+                                                          <option>08</option>
+                                                          <option>09</option>
+                                                          <option>10</option>
+                                                          <option>11</option>
+                                                          <option>12</option>
+                                                        </select>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-3 plr-12">
+                                                  <div class="form-group select2-form-group select2-new-group select2-new-group2 mb-10">
+                                                    <label for="">Minute</label>
+                                                    <div class="input-control-row">
+                                                      <div class="select-box select-custom2 select-custom2-general round-12 mr-10">
+                                                        <select class="js-select2" id="js-select2">
+                                                          <option selected>0</option>
+                                                          <option>1</option>
+                                                          <option>2</option>
+                                                          <option>3</option>
+                                                          <option>4</option>
+                                                          <option>5</option>
+                                                          <option>10</option>
+                                                          <option>15</option>
+                                                          <option>20</option>
+                                                          <option>25</option>
+                                                          <option>30</option>
+                                                          <option>35</option>
+                                                          <option>40</option>
+                                                          <option>45</option>
+                                                          <option>50</option>
+                                                          <option>55</option>
+                                                          <option>60</option>
+                                                        </select>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-3 plr-12">
+                                                  <div class="form-group select2-form-group select2-new-group select2-new-group2 mb-10">
+                                                    <label for="">am/pm</label>
+                                                    <div class="input-control-row">
+                                                      <div class="select-box select-custom2 select-custom2-general round-12 mr-10">
+                                                        <select class="js-select2" id="js-select2">
+                                                          <option selected>am</option>
+                                                          <option>pm</option>
+                                                        </select>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-3 plr-12">
+                                                  <div class="form-group select2-form-group select2-new-group select2-new-group2 mb-10">
+                                                    <label for="">Timezone</label>
+                                                    <div class="input-control-row">
+                                                      <div class="select-box select-custom2 select-custom2-general round-12 mr-10">
+                                                        <select class="js-select2" id="js-select2">
+                                                          <option>PST </option>
+                                                          <option>EST </option>
+                                                          <option>GMT </option>
+                                                          <option>IST</option>
+                                                          <option>CST </option>
+                                                          <option>MST </option>
+                                                        </select>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+
+                                              </div>
+
+                                              <div class="row mlr-12 mb-40">
+                                                <div class="col-lg-12 col-md-12 plr-12">
+                                                  <div class="form-group select2-form-group select-date-form-group">
+                                                    <div class="label-heading-div">
+                                                      <h4> <span class="icon-span"> <i class="bg-custom-icon money-icon-new"></i> </span> <span class="text">Fix your Amount</span></h4>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-lg-12 col-md-12 plr-12">
+                                                  <div class="form-group select2-form-group select2-new-group select2-new-group2 mb-10">
+                                                    <label for="">USD</label>
+                                                    <div class="input-control-row">
+                                                      <div class="select-box select-custom2 select-custom2-general round-12 mr-10">
+                                                        <select class="js-select2" id="js-select2">
+                                                          <option>10</option>
+                                                          <option>20</option>
+                                                          <option>30</option>
+                                                          <option>40</option>
+                                                          <option>50</option>
+                                                          <option>100</option>
+                                                          <option>150</option>
+                                                          <option>200</option>
+                                                          <option>250</option>
+                                                          <option>300</option>
+                                                          <option>350</option>
+                                                          <option>400</option>
+                                                          <option>450</option>
+                                                          <option>500</option>
+                                                          <option>550</option>
+                                                          <option>600</option>
+                                                        </select>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+
+                                              </div>
+
                                             </div>
 
                                           </div>
@@ -875,10 +985,10 @@
                                               <div class="row">
                                                 
                                                 <div class="col-lg-12 col-md-12">
-                                                  <div class="form-group select2-form-group mb-10">
+                                                  <div class="form-group select2-form-group select2-new-group select2-new-group2 mb-10">
                                                     <label for="">Enter Number of Seats</label>
                                                     <div class="input-control-row">
-                                                      <div class="select-box select-custom2 select-custom2-general mr-10">
+                                                      <div class="select-box select-custom2 select-custom2-general round-12 mr-10">
                                                         <select class="js-select2" id ="number-of-seats-select">
                                                         </select>
                                                       </div>
@@ -915,7 +1025,7 @@
                                             <a href="#" class="btn btn-primary-outline btn-primary-color-02 mh-btn55 btn-black-back mr-24"> 
                                               <span class="text">Back</span> 
                                             </a>
-                                            <a href="#" class="btn btn-common-primary mh-btn55 btn-done disabled"> Done </a>
+                                            <a href="#" data-toggle="modal" data-target="#congratulations-modal" class="btn btn-common-primary mh-btn55 btn-done"> Done </a>
                                           </div>
                                         </div>
 
@@ -1015,25 +1125,61 @@
 
   </div><!-- end of wrapper -->
 
-  <div class="modal messages-modal fade" id="congratulations-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal center center-common-modal fade" id="congratulations-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-lg" role="document">
       <div class="modal-content">
-
-        <div class="modal-body">
-
-          <div class="messages-stream-div">
-            <div class="messages-stream-row">
-              <div class="heading-div">
-                <h2 data-outline-text="Congratulations">Congratulations</h2>
-              </div>
-              <div class="desc-text-div">
-                <p>Your stream is scheduled!!</p>
-              </div>
-            </div>
-          </div>
-
+  
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> <i class="fe fe-x close-icon-x"></i> </span></button>
         </div>
+  
+        <div class="modal-body">
+  
+          <div class="general-pop-root">
+            <section class="general-payment-section congratulations-pop-section general-details-pop-section" id="payment-details-section">
+              <div class="container container-970">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <div class="general-payment-div general-details-div">
+                      <div class="container-general-center">
 
+                        <div class="heading-div mb-0">
+                          <div class="heading-inner-div">
+                            <h5>Mike,</h5>
+                            <h1>Congratulations</h1>
+                          </div>
+                        </div>
+  
+                        <div class="general-message-root">
+                          
+                          <div class="general-message-inner-div">
+                            <div class="gen-mess-thumb-div">
+                              <img src="assets/images/character-successfull.png" class="img-fluid img-char" alt="img">
+                            </div>
+  
+                            <div class="text-content-div">
+                              <div class="prag-div">
+                                <p>Your stream is scheduled!!</p>
+                              </div>
+                              <div class="btn-div"> 
+                                <a href="creator-add-a-class.html" class="btn btn-common-primary mh-btn55 btn-addclass"> Add a Class </a>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+            </section>
+          </div>
+  
+        </div>
+  
       </div>
     </div>
   </div>
@@ -1070,11 +1216,8 @@
         } else if (".step-tabs-header-common-step3 li.nav-item.step3") {
           $(this).parent().addClass("active");
         }
-
       });
-
      
-
       /* select 2 */
       $(".js-select2").select2({
         placeholder: "Select here",
@@ -1107,14 +1250,14 @@
       });
 
       var option = '<option value="seat">Select seat</option>';
-      for (var i = 1; i <= 92; i++) {
+      for (var i = 1; i <= 91; i++) {
         option += '<option value="' + i + '">' + i + "</option>";
       }
       $("#number-of-seats-select").append(option);
 
       // code clone
       var i = 0;
-      var counter4 = 91;
+      var counter4 = 89;
       var original = document.getElementById('seat-icon-box');
 
       function duplicate() {
@@ -1122,7 +1265,7 @@
         while (i <= counter4){
           var clone = original.cloneNode(true);
           clone.id = "seat-icon-box";
-          original.parentNode.appendChild(clone);
+          original.parentNode.appendChild(clone); 
           i++;
         }
         
@@ -1132,6 +1275,7 @@
       }
 
       duplicate();
+      
       /* End of select seat number */
 
       /* flat picker */
@@ -1144,6 +1288,8 @@
         // altFormat: "j F Y",
         dateFormat: "Y-m-d H:i",
       });
+
+      
     });
   </script>
 
