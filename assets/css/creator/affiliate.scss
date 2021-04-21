@@ -830,70 +830,76 @@
 
 .view-details-modal {
   .modal-dialog {
-    max-width: 350px;
+    max-width: 630px;
   }
 
   .modal-content {
-    border-radius: 10px;
+    background: #1E1E27;
+    border: 2px solid #282A33;
+    border-radius: 15px;
   }
 
   .close.close-btn {
     position: absolute;
-    top: -20px;
-    right: -20px;
-    background-image: linear-gradient(121deg, #ef4443 2%, #ef6b18 100%);
+    top: 40px;
+    right: 40px;
     border-radius: 100px;
     opacity: 1;
-    height: 44px;
-    width: 44px;
+    height: 36px;
+    width: 36px;
     color: #fff;
+    border: none;
     outline: none;
+    background: transparent;
     box-shadow: none;
+    font-size: 32px;
+    z-index: 99;
   }
 }
 
 .view-details-custom-div {
   .view-details-custom-row {
-    padding: 50px 50px 40px 50px;
+    padding: 100px 100px 85px 100px;
     position: relative;
 
     .heading-title-div {
-      padding: 0 0 10px 0;
-      border-bottom: 1px solid rgba(151, 151, 151, 0.21);
+      padding: 0 0 24px 0;
+      border-bottom: 1px solid rgba(128, 129, 145, 0.3);
 
       h2 {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.5;
-        color: #ff5f00;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        color: #EF6B18;
         letter-spacing: 0;
       }
     }
 
     .desc-text-div {
-      padding: 10px 0 0 0;
+      padding: 14px 0 0 0;
 
       .desc-text-row-div {
-        padding: 10px 0;
+        padding: 15px 0;
         margin: 0;
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         width: 100%;
 
         p {
-          font-weight: 600;
-          font-size: 18px;
-          line-height: 26px;
-          color: #212121;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          color: rgba(255, 255, 255, 0.75);
           letter-spacing: 0;
+          padding: 2px 0 0 0;
         }
 
         h2 {
-          font-size: 24px;
-          font-weight: 800;
-          line-height: 26px;
-          color: #212121;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 43px;
+          color: #fff;
           letter-spacing: 0;
           font-family: "Moderat Extended", sans-serif;
         }
@@ -1217,16 +1223,40 @@
     }
 
     .close.close-btn {
-      top: -20px;
-      right: 20px;
-      height: 40px;
-      width: 40px;
+      top: 15px;
+      right: 15px;
+      font-size: 24px;
     }
   }
 
   .view-details-custom-div {
     .view-details-custom-row {
-      padding: 50px 30px 40px 30px;
+      padding: 60px 30px 40px 30px;
+
+      .heading-title-div {
+        padding: 0 0 16px 0;
+
+        h2 {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+
+      .desc-text-div {
+        .desc-text-row-div {
+          padding: 10px 0;
+          
+          p {
+            font-size: 16px;
+            line-height: 22px;
+          }
+
+          h2 {
+            font-size: 26px;
+            line-height: 36px;
+          }
+        }
+      }
     }
   }
 }
