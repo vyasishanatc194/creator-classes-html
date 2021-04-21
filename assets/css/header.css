@@ -246,6 +246,24 @@
   background-image: url(../images/icons/custom/money-icon-new.png);
 }
 
+.google-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icons/social/google.png);
+}
+
+.facebook-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icons/social/facebook.png);
+}
+
+.twitter-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icons/social/twitter.png);
+}
+
 header {
   position: relative;
 }
