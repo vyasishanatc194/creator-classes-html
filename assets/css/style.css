@@ -151,6 +151,10 @@ body {
   max-width: 800px;
 }
 
+.container-870 {
+  max-width: 900px;
+}
+
 .container-970 {
   max-width: 1000px;
 }
@@ -478,6 +482,10 @@ body {
 
 .header-footer-with-min-height03 {
   min-height: calc(100vh - 90px);
+}
+
+.header-footer-with-min-height-108 {
+  min-height: calc(100vh - 108px);
 }
 
 .mlr-5 {

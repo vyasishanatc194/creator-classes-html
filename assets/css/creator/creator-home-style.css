@@ -248,6 +248,40 @@
   font-size: 21px;
 }
 
+.general-list-common-div .general-list-panel-div .general-common-cre-box .general-video-img-cre-thumb .time-box-abs {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.general-list-common-div .general-list-panel-div .general-common-cre-box .general-video-img-cre-thumb .time-box-abs .time-button {
+  padding: 2px 12px 0 12px;
+  margin: 0;
+  position: relative;
+  background-color: rgba(27, 29, 33, 0.7);
+  min-height: 28px;
+  color: #ef4443;
+  border: none;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
 .general-list-common-div .general-list-panel-div .general-common-cre-box .general-content-cre-div {
   width: 100%;
   padding: 24px 40px 24px 40px;
@@ -349,6 +383,17 @@
   font-size: 16px;
   line-height: 19px;
   padding: 0 0 0 10px;
+}
+
+.general-list-common-div .general-list-panel-div .general-common-cre-box .general-content-cre-div .general-cre-content-row .general-cre-content-top-row .time-row-no-style .time-box .time-box-rounded {
+  border: none;
+  padding: 8px 0;
+}
+
+.general-list-common-div .general-list-panel-div .general-common-cre-box .general-content-cre-div .general-cre-content-row .general-cre-content-top-row .time-row-no-style .time-box .time-box-rounded .text {
+  font-weight: 500;
+  color: #808191;
+  font-size: 14px;
 }
 
 .general-list-common-div .general-list-panel-div .general-common-cre-box .general-content-cre-div .general-cre-content-row .general-cre-content-top-row .link-div {

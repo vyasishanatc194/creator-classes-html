@@ -209,6 +209,33 @@
             }
           }
         }
+
+        .time-box-abs {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+
+          .time-button {
+            padding: 2px 12px 0 12px;
+            margin: 0;
+            position: relative;
+            background-color: rgba(27, 29, 33, 0.7);
+            min-height: 28px;
+            color: #ef4443;
+            border: none;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+            box-shadow: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: #fff;
+          }
+        }
       }
 
       .general-content-cre-div {
@@ -291,6 +318,21 @@
                   font-size: 16px;
                   line-height: 19px;
                   padding: 0 0 0 10px;
+                }
+              }
+            }
+
+            .time-row-no-style {
+              .time-box {
+                .time-box-rounded {
+                  border: none;
+                  padding: 8px 0;
+
+                  .text {
+                    font-weight: 500;
+                    color: #808191;
+                    font-size: 14px;
+                  }
                 }
               }
             }

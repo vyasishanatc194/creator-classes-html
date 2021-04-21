@@ -4,7 +4,7 @@
   position: relative;
 
   .my-earnings-div {
-    padding: 40px 0;
+    padding: 70px 0;
     margin: 0;
     position: relative;
   }
@@ -12,10 +12,16 @@
 
 .me-inner-div {
   padding: 18px 40px;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
   position: relative;
-  background: #212121;
+  background: #1e1e27;
+  border: 2px solid #282a33;
   border-radius: 16px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 
   .me-content-row {
     display: flex;
@@ -25,21 +31,21 @@
     width: 100%;
 
     p {
-      font-weight: 400;
+      font-weight: 500;
       font-size: 24px;
-      line-height: 1.4;
-      color: #fff;
+      line-height: 28px;
+      color: rgba(255, 255, 255, 0.75);
       letter-spacing: 0;
     }
 
     h3 {
       padding: 0;
-      margin: 0 0 0 0;
+      margin: 0;
       display: block;
       width: 100%;
-      font-weight: 800;
-      font-size: 34px;
-      line-height: 1.3;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
       color: #fff;
       letter-spacing: 0;
       font-family: "Moderat Extended", sans-serif;
@@ -66,8 +72,9 @@
   padding: 0;
   margin: 0 0 10px 0;
   position: relative;
-  border-radius: 16px;
-  background: #212121;
+  border-radius: 15px;
+  background: #1e1e27;
+  border: 2px solid #282a33;
 
   .me-graph-view-row {
     padding: 0;
@@ -76,11 +83,10 @@
   }
 
   .me-graph-view-header {
-    padding: 24px 40px;
+    padding: 24px 40px 0 40px;
     margin: 0;
     position: relative;
-    border-radius: 16px 16px 0 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px 15px 0 0;
 
     .me-graph-view-header-row {
       display: flex;
@@ -88,38 +94,42 @@
       justify-content: space-between;
       flex-wrap: wrap;
       width: 100%;
+      padding: 0 0 24px 0;
+      border-bottom: 1px solid rgba(128, 129, 145, 0.5);
 
       p {
-        font-weight: 400;
+        font-weight: 600;
         font-size: 18px;
-        line-height: 1.4;
+        line-height: 21px;
         color: #fff;
         letter-spacing: 0;
       }
 
       h2 {
         padding: 0;
-        margin: 0 0 0 0;
+        margin: 0;
         display: inline-block;
-        font-weight: 800;
-        font-size: 42px;
-        line-height: 1.3;
-        color: #ff5f00;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 65px;
+        color: #ef6b18;
         letter-spacing: 0;
         font-family: "Moderat Extended", sans-serif;
 
         span.text {
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 1.4;
-          color: #fff;
+          color: rgba(255, 255, 255, 0.75);
           letter-spacing: 0;
           font-family: "Gilroy", sans-serif;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          position: relative;
+          top: -2px;
         }
       }
 
       .me-content-header-left {
-        padding: 6px 0 5px 0;
+        padding: 6px 0 6px 0;
         margin: 0;
         position: relative;
         width: 70%;
@@ -133,14 +143,14 @@
         text-align: right;
 
         p {
-          padding: 15px 0 0 0;
+          padding: 12px 0 6px 0;
         }
       }
     }
   }
 
   .me-graph-view-body {
-    padding: 24px 40px;
+    padding: 24px 40px 24px 40px;
     margin: 0;
     position: relative;
     width: 100%;
@@ -161,9 +171,9 @@
 
       .img-graph {
         width: 100%;
-        max-width: 900px;
+        max-width: 100%;
         object-fit: contain;
-        margin: 0 auto 20px auto;
+        margin: 0 auto;
       }
     }
   }
@@ -176,21 +186,22 @@
     .me-content-row {
       p {
         font-size: 16px;
-        margin: 0 0 0 0;
+        line-height: 24px;
+        margin: 0;
       }
 
       h3 {
         font-size: 24px;
-        margin: 0 0 0 0;
+        margin: 0;
       }
 
       .me-content-left {
-        padding: 0 0 0 0;
+        margin: 0;
         width: 100%;
       }
 
       .me-content-right {
-        padding: 0 0 0 0;
+        margin: 0;
         width: 100%;
         text-align: left;
       }
@@ -202,8 +213,11 @@
       padding: 15px 20px;
 
       .me-graph-view-header-row {
+        padding: 0 0 20px 0;
+
         h2 {
-          font-size: 26px;
+          font-size: 28px;
+          line-height: 36px;
 
           span.text {
             font-size: 14px;
@@ -216,7 +230,7 @@
         }
 
         .me-content-header-right {
-          padding: 0 0 0 0;
+          padding: 0;
           width: 100%;
           text-align: left;
 
@@ -232,30 +246,44 @@
       padding: 15px 20px;
     }
   }
+
+  .my-earnings-section {
+    .my-earnings-div {
+      padding: 50px 0;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .me-inner-div {
-    padding: 18px 30px;
+    padding: 15px 30px;
+    min-height: 80px;
 
     .me-content-row {
       p {
         font-size: 16px;
-        margin: 0 0 0 0;
+        margin: 0;
       }
 
       h3 {
         font-size: 24px;
-        margin: 0 0 0 0;
+        margin: 0;
       }
 
       .me-content-left {
-        padding: 0 0 0 0;
+        margin: 0;
+        padding: 7px 0 7px 0;
       }
 
       .me-content-right {
-        padding: 0 0 0 0;
+        margin: 0;
       }
+    }
+  }
+
+  .my-earnings-section {
+    .my-earnings-div {
+      padding: 50px 0;
     }
   }
 
@@ -264,8 +292,11 @@
       padding: 15px 30px;
 
       .me-graph-view-header-row {
+        padding: 0 0 16px 0;
+
         h2 {
-          font-size: 26px;
+          font-size: 28px;
+          line-height: 36px;
 
           span.text {
             font-size: 14px;

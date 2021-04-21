@@ -4,9 +4,28 @@
   position: relative;
 
   .ct-funds-div {
-    padding: 40px 0;
+    padding: 70px 0;
     margin: 0;
     position: relative;
+  }
+
+  .heading-div {
+    padding: 0;
+    margin: 0 auto 36px auto;
+    position: relative;
+
+    h2 {
+      padding: 0;
+      margin: 0;
+      display: block;
+      width: 100%;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 65px;
+      color: #fff;
+      letter-spacing: 0;
+      font-family: "Moderat Extended", sans-serif;
+    }
   }
 }
 
@@ -15,63 +34,51 @@
   margin: 0;
   position: relative;
 
-  .ct-funds-content-row {
-    padding: 0;
-    margin: 0 0 10px 0;
+  .ct-funds-content-box {
+    padding: 30px 20px;
+    margin: 0 0 30px 0;
     position: relative;
+    background: #1e1e27;
+    border: 2px solid #282a33;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: #212121;
-    border-radius: 16px;
+    align-items: center;
+    min-height: 220px;
 
-    .ct-funds-content-box {
-      padding: 30px 20px;
+    &.border-left-tf {
+      border-left: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    &.border-right-tf {
+      border-right: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .ct-funds-box-row {
+      padding: 0;
       margin: 0;
       position: relative;
-      width: 33.3%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      min-height: 195px;
 
-      &.border-left-tf {
-        border-left: 1px solid rgba(255, 255, 255, 0.07);
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 0;
+        display: block;
       }
 
-      &.border-right-tf {
-        border-right: 1px solid rgba(255, 255, 255, 0.07);
-      }
-
-      .ct-funds-box-row {
+      h2 {
         padding: 0;
-        margin: 0;
-        position: relative;
-
-        p {
-          font-weight: 400;
-          font-size: 24px;
-          line-height: 1.4;
-          color: #fff;
-          letter-spacing: 0;
-          text-align: center;
-          display: block;
-        }
-
-        h2 {
-          padding: 0;
-          margin: 0 0 0 0;
-          display: block;
-          font-weight: 800;
-          font-size: 42px;
-          line-height: 1.3;
-          color: #ff5f00;
-          letter-spacing: 0;
-          text-align: center;
-          font-family: "Moderat Extended", sans-serif;
-        }
+        margin: 0 0 15px 0;
+        display: block;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        color: #ef6b18;
+        letter-spacing: 0;
+        text-align: center;
       }
     }
   }
@@ -88,34 +95,32 @@
     position: relative;
 
     .ct-payment-card-box {
-      padding: 55px 20px 50px 20px;
+      padding: 60px 20px 50px 20px;
       margin: 0;
       position: relative;
       width: 100%;
-      background-color: #212121;
-      border-radius: 16px;
+      background-color: transparent;
 
       p {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.3;
-        color: #f3f3f3;
-        letter-spacing: 0.4px;
+        color: rgba(255, 255, 255, 0.72);
         text-align: center;
         display: block;
-        max-width: 560px;
-        margin: 0 auto 30px auto;
+        max-width: 775px;
+        margin: 0 auto 40px auto;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 35px;
       }
 
       .center-img-div {
         padding: 0;
-        margin: 0 0 25px 0;
+        margin: 0 0 24px 0;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
 
         .img-stripe {
-          width: 91px;
+          width: 160px;
           object-fit: contain;
         }
       }
@@ -126,17 +131,8 @@
         flex-wrap: wrap;
         padding: 10px 0 10px 0;
 
-        .btn.btn-common-primary.btn-connect {
-          font-weight: 400;
-          font-size: 24px;
-          color: #fff;
-          letter-spacing: 0;
-          text-align: center;
-          width: 100%;
-          max-width: 280px;
-          border-radius: 13px;
-          min-height: 54px;
-          background-image: linear-gradient(257deg, #ef4443 0%, #ef6b18 87%);
+        .btn.btn-primary-outline {
+          min-width: 177px;
         }
       }
     }
@@ -144,56 +140,33 @@
 }
 
 @media (max-width: 767px) {
-  .ct-funds-inner-div {
-    .ct-funds-content-row {
-      .ct-funds-content-box {
-        width: 100%;
-        min-height: 120px;
-        border: none;
-
-        .ct-funds-box-row {
-          p {
-            font-size: 16px;
-          }
-
-          h2 {
-            font-size: 28px;
-          }
-        }
-
-        &.border-right-tf {
-          border-right: none;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-        }
-
-        &.border-left-tf {
-          border-left: none;
-          border-top: 1px solid rgba(255, 255, 255, 0.07);
-        }
+  .ct-funds-section {
+    .heading-div {
+      h2 {
+        font-size: 30px;
+        line-height: 36px;
       }
+    }
+  }
+
+  .ct-funds-inner-div {
+    .ct-funds-content-box {
+      margin: 0 0 15px 0;
+      min-height: 180px;
     }
   }
 
   .ct-payment-div {
     .ct-payment-row {
       .ct-payment-card-box {
-        padding: 40px 20px 30px 20px;
+        p {
+          font-size: 16px;
+          line-height: 26px;
+        }
 
         .center-img-div {
-          margin: 0 0 20px 0;
-        }
-
-        p {
-          font-size: 14px;
-          letter-spacing: 0.1px;
-          margin: 0 auto 20px auto;
-        }
-
-        .center-btn-div {
-          .btn.btn-common-primary.btn-connect {
-            font-size: 18px;
-            max-width: 170px;
-            min-height: 44px;
+          .img-stripe {
+            width: 130px;
           }
         }
       }
@@ -202,45 +175,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .ct-funds-inner-div {
-    .ct-funds-content-row {
-      .ct-funds-content-box {
-        .ct-funds-box-row {
-          p {
-            font-size: 16px;
-          }
-
-          h2 {
-            font-size: 28px;
-          }
-        }
-      }
-    }
-  }
-
-  .ct-payment-div {
-    .ct-payment-row {
-      .ct-payment-card-box {
-        padding: 40px 20px 35px 20px;
-
-        .center-img-div {
-          margin: 0 0 20px 0;
-        }
-
-        p {
-          font-size: 14px;
-          letter-spacing: 0.1px;
-          max-width: 400px;
-          margin: 0 auto 20px auto;
-        }
-
-        .center-btn-div {
-          .btn.btn-common-primary.btn-connect {
-            font-size: 18px;
-            max-width: 170px;
-            min-height: 44px;
-          }
-        }
+  .ct-funds-section {
+    .heading-div {
+      h2 {
+        font-size: 36px;
+        line-height: 48px;
       }
     }
   }
