@@ -235,6 +235,22 @@
     }
   }
 
+  .step-tabs-header-common-step2 {
+    .nav-tabs {
+      .nav-item {
+        width: 50%;
+
+        &:first-child {
+          // padding-left: 40px;
+        }
+
+        &:last-child {
+          // padding-right: 40px;
+        }
+      }
+    }
+  }
+
   .tab-form-div {
     padding: 30px 0 0 0;
 
@@ -633,16 +649,19 @@
   position: relative;
 
   .add-materials-category-box {
-    padding: 0;
-    margin: 0 0 20px 0;
-    position: relative;
     width: 100%;
+    padding: 0;
+    margin: 0 0 24px 0;
+    position: relative;
+    background: #1e1e27;
+    border-radius: 12px;
+    border: 2px solid #282a33;
 
     .creators-img-mask-thumb {
       padding: 0;
       margin: 0;
       position: relative;
-      border: 1px solid transparent;
+      border-bottom: 2px solid #282A33;
 
       .img-thumb {
         padding: 0;
@@ -651,23 +670,11 @@
         display: flex;
         flex-wrap: wrap;
 
-        &::before {
-          content: "";
-          padding: 0;
-          margin: 0;
-          position: absolute;
-          background-color: rgba(25, 25, 25, 0.5);
-          height: 100%;
-          width: 100%;
-          z-index: 3;
-          border-radius: 6px;
-        }
-
         .img-responsive {
           width: 100%;
-          height: 144px;
+          height: 150px;
           object-fit: cover;
-          border-radius: 6px;
+          border-radius: 10px 10px 0 0;
         }
       }
 
@@ -695,44 +702,26 @@
     }
 
     .creators-content-div {
-      padding: 0;
-      margin: 0;
-      position: absolute;
-      top: 0;
-      z-index: 4;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
+      padding: 20px 24px;
 
       h3 {
-        font-weight: 700;
-        font-size: 18px;
+        display: block;
+        margin: 0;
         color: #fff;
         letter-spacing: 0;
         text-align: center;
-        display: block;
-        width: 100%;
+        word-break: break-word;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
       }
     }
 
     &.active {
+      border: 2px solid #EF4443;
+
       .creators-img-mask-thumb {
-        border: 1px solid #fff;
-        border-radius: 6px;
-
-        .img-thumb {
-          .img-responsive {
-            padding: 10px;
-          }
-        }
-
-        .cancel-button-div {
-          display: block;
-        }
+        border-bottom: 2px solid #EF4443;
       }
     }
   }
