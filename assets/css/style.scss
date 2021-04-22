@@ -2831,6 +2831,99 @@ body {
   }
 }
 
+.general-book-course-div {
+  padding: 0 0 60px 0;
+
+  .heading-div {
+    margin: 0 auto 40px auto;
+
+    h1 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 49px;
+      color: #fff;
+      text-align: center;
+      font-family: "Moderat Extended", sans-serif;
+      max-width: 551px;
+      margin: 0 auto 20px auto;
+
+      .color-txt {
+        color: #EF6B18;
+      }
+    }
+  }
+
+  .our-pricing-plan-full-card {
+    display: flex;
+    margin: 0 0 46px 0;
+
+    .flex-plan-card-inner {
+      padding: 0;
+      display: flex;
+      align-items: stretch;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .flex-plan-card-inner-left-div {
+        padding: 40px;
+        width: 50%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 15px 0px 0px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .flex-plan-card-inner-right-div {
+        padding: 25px 30px;
+        width: 50%;
+      }
+
+      .min-details-div {
+        .fp-title-top {
+          .fp-title-top-left {
+            padding-top: 12px;
+          }
+
+          .label-span {
+            background: #1e1e28;
+          }
+        }
+      }
+    }
+  }
+
+  .bk-co-card-bottom-root {
+    .plan-btn {
+      width: 100%;
+      margin: 0 0 10px 0;
+      display: flex;
+      justify-content: center;
+
+      .btn.btn-primary-outline.btn-primary-outline-big {
+        min-height: 55px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #ef6a1a;
+        width: 100%;
+        max-width: 310px;
+        justify-content: center;
+        
+        &::after {
+          background-color: inherit;
+        }
+
+        &.active::after {
+          height: auto;
+          
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 1025px) {
   .max-md-1920 {
     margin: 0 auto;
@@ -3363,6 +3456,32 @@ body {
       .btn.btn-primary-outline.btn-primary-outline-big {
         min-width: 130px;
         justify-content: center;
+      }
+    }
+  }
+
+  .general-book-course-div {
+    padding: 0 0 40px 0;
+    
+    .heading-div {
+      h1 {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+
+    .our-pricing-plan-full-card {
+      .flex-plan-card-inner {
+        .flex-plan-card-inner-left-div {
+          padding: 30px;
+          width: 100%;
+          height: auto;
+        }
+
+        .flex-plan-card-inner-right-div {
+          padding: 30px 15px 10px 15px;
+          width: 100%;
+        }
       }
     }
   }
