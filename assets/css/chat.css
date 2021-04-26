@@ -676,6 +676,9 @@
   .general-chat-section .container-general-video-div .general-video-root .general-video-content .general-video-bottom-fixed {
     height: 70px;
   }
+  .general-chat-section .container-general-video-div .general-video-root .general-video-content .general-video-bottom-fixed .white-icon-text-list .white-icon-text-list-row .white-icon-text-box {
+    padding: 0 6px;
+  }
   .general-chat-section .container-general-video-div.active {
     width: 100%;
   }

@@ -633,6 +633,14 @@
 
           .general-video-bottom-fixed {
             height: 70px;
+
+            .white-icon-text-list {
+              .white-icon-text-list-row {
+                .white-icon-text-box {
+                  padding: 0 6px;
+                }
+              }
+            }
           }
         }
       }
