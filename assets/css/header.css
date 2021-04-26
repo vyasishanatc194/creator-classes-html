@@ -190,6 +190,12 @@
   background-image: url(../images/icons/custom/call-end.png);
 }
 
+.chat-new-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icons/custom/chat.png);
+}
+
 .sort-down-icon {
   width: 22px;
   height: 20px;
